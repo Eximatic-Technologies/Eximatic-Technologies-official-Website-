@@ -1,0 +1,2353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#ffffff">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<!-- SEO Meta Tags -->
+<title>Solutions | Eximatic Technologies - Industry-Specific Solutions</title>
+<meta name="description" content="Discover Eximatic's tailored solutions for various industries. Smart infrastructure and automation for offices, retail, healthcare, and more.">
+<meta name="keywords" content="industry solutions, smart office, retail automation, healthcare tech, unified infrastructure">
+<meta property="og:title" content="Solutions | Eximatic Technologies">
+<meta property="og:description" content="Industry-specific smart infrastructure solutions">
+<link rel="icon" type="image/png" href="images/EX logo.png">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',sans-serif;background:#ffffff;color:#111;overflow-x:hidden}
+/* ===== SERVICES HERO ===== */
+.services-hero{
+height:65vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+position:relative;
+padding-top:120px;
+overflow:hidden;
+}
+
+/* ===== SERVICES HERO ===== */
+.services-hero{
+height:65vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+position:relative;
+padding-top:120px;
+overflow:hidden;
+}
+
+.hero-grid{
+position:absolute;inset:0;
+background-image:
+linear-gradient(rgba(0,0,0,0.03) 1px, transparent 1px),
+linear-gradient(90deg, rgba(0,0,0,0.03) 1px, transparent 1px);
+background-size:60px 60px;
+}
+
+.hero-glow{
+position:absolute;
+width:700px;height:700px;
+background:radial-gradient(circle, rgba(255,30,30,.15), transparent 60%);
+top:-150px;left:-150px;
+}
+
+.services-hero-content{position:relative;z-index:2;max-width:900px}
+
+.hero-chip{
+display:inline-block;
+background:#111;color:#fff;
+padding:8px 22px;border-radius:30px;
+font-size:13px;letter-spacing:1px;margin-bottom:20px
+}
+
+.services-hero h1{
+font-size:86px;
+font-weight:900;
+letter-spacing:-3px;
+}
+
+.services-hero p{
+margin-top:18px;
+font-size:20px;
+color:#555;
+}
+
+.hero-cta{margin-top:32px}
+.btn-red,.btn-white{
+padding:14px 36px;border-radius:40px;
+text-decoration:none;font-weight:600;margin:0 10px;display:inline-block
+}
+.btn-red{background:#ff1e1e;color:white}
+.btn-white{border:2px solid #111;color:#111}
+/* ===== NAVBAR ===== */
+nav{
+position:fixed;top:25px;left:50%;transform:translateX(-50%);
+width:92%;padding:16px 50px;display:flex;justify-content:space-between;align-items:center;
+backdrop-filter:blur(18px);
+background:rgba(255,255,255,0.75);
+border:1px solid rgba(0,0,0,0.08);
+border-radius:14px;z-index:1000;
+}
+nav img{height:42px}
+nav a{
+margin-left:40px;
+text-decoration:none;
+font-weight:600;
+color:#111;
+position:relative;
+}
+nav a::after{
+content:"";
+position:absolute;
+left:0;bottom:-6px;
+width:0;height:2px;background:#ff1e1e;
+transition:.3s;
+}
+nav a:hover::after{width:100%}
+nav a:hover{color:#ff1e1e}
+
+/* ===== HERO ===== */
+.hero{
+height:75vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding-top:120px;
+position:relative;
+}
+.hero::before{
+content:"";
+position:absolute;
+width:600px;height:600px;
+background:radial-gradient(circle,#ff1e1e22,transparent 70%);
+top:-150px;right:-150px;
+}
+.hero h1{
+font-size:92px;
+font-weight:900;
+letter-spacing:-3px;
+}
+.hero p{
+margin-top:20px;
+font-size:22px;
+color:#555;
+max-width:900px;
+margin-inline:auto;
+}
+
+/* ===== SOLUTION BLOCKS (Bright Cards) ===== */
+.solution{
+display:flex;
+align-items:center;
+justify-content:center;
+gap:80px;
+padding:140px 10%;
+}
+
+.solution:nth-child(even){
+flex-direction:row-reverse;
+background:#fafafa;
+}
+
+.solution-text{
+flex:1;
+}
+.solution-text h2{
+font-size:56px;
+margin-bottom:20px;
+}
+.solution-text p{
+font-size:20px;
+color:#444;
+line-height:1.8;
+}
+
+.solution-media{
+flex:1;
+height:420px;
+border-radius:30px;
+overflow:hidden;
+box-shadow:0 40px 80px rgba(0,0,0,.12);
+}
+.solution-media img{
+width:100%;
+height:100%;
+object-fit:cover;
+}
+
+/* ===== WHO WE ARE STRIP ===== */
+.strip{
+background:#fff;
+padding:160px 10%;
+text-align:center;
+border-top:1px solid #eee;
+border-bottom:1px solid #eee;
+}
+.strip h2{
+font-size:60px;
+margin-bottom:20px;
+}
+.strip p{
+font-size:22px;
+color:#555;
+max-width:900px;
+margin:auto;
+}
+
+/* ===== CONTACT ===== */
+.contact{
+padding:160px 10%;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:80px;
+}
+.contact h2{font-size:54px;margin-bottom:20px}
+.contact input,.contact textarea{
+width:100%;
+padding:16px;
+margin-bottom:16px;
+border-radius:10px;
+border:1px solid #ddd;
+font-size:16px;
+}
+.contact button{
+padding:14px 40px;
+background:#ff1e1e;
+border:none;
+border-radius:40px;
+color:white;
+font-weight:600;
+}
+/* ===== SOLUTIONS HERO ===== */
+.solve{
+    position:relative;
+    height:90vh;
+    overflow:hidden;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+}
+
+.solve-video{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    filter:brightness(45%);
+    z-index:0;
+}
+
+.solve-overlay{
+    position:absolute;
+    inset:0;
+    background:linear-gradient(to bottom, rgba(0, 0, 0, 0.053), rgba(0, 0, 0, 0.103));
+    z-index:1;
+}
+
+.solve-center{
+    position:relative;
+    z-index:2;
+    max-width:1000px;
+    padding:0 20px;
+}
+
+.solve-center h2{
+    color:#ffffff;
+    font-size:68px;
+    font-weight:900;
+    letter-spacing:-2px;
+}
+
+.solve-center p{
+    font-size:22px;
+    color:#e5e7eb;
+    margin-top:25px;
+    line-height:1.7;
+}
+/* ===== INTERACTIVE SOLUTIONS BAND ===== */
+.solutions-band{
+    position:relative;
+    padding:110px 8%;
+    background:#0b0b0d;
+    overflow:hidden;
+}
+
+/* subtle top gradient */
+.solutions-band::before{
+    content:"";
+    position:absolute;
+    top:0;left:0;right:0;height:160px;
+    background:radial-gradient(circle at top, rgba(255,30,30,.25), transparent 70%);
+}
+
+/* connecting line */
+.band-line{
+    position:absolute;
+    top:50%;
+    left:10%;
+    right:10%;
+    height:2px;
+    background:linear-gradient(to right, transparent, #ff1e1e, transparent);
+    opacity:.25;
+}
+
+/* grid */
+.band-grid{
+    position:relative;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:40px;
+    z-index:2;
+}
+
+/* glass cards */
+.band-card{
+    text-align:center;
+    padding:40px 25px;
+    border-radius:24px;
+    background:rgba(255,255,255,0.03);
+    border:1px solid rgba(255,255,255,0.08);
+    backdrop-filter:blur(12px);
+    transition:.5s ease;
+    cursor:pointer;
+}
+
+/* hover effect */
+.band-card:hover{
+    transform:translateY(-12px);
+    background:rgba(255,30,30,0.08);
+    border-color:#ff1e1e;
+    box-shadow:0 20px 60px rgba(255,30,30,.2);
+}
+
+.band-card h3{
+    color:#ff1e1e;
+    font-size:28px;
+    font-weight:800;
+    margin-bottom:14px;
+    letter-spacing:.5px;
+}
+
+.band-card p{
+    color:#e5e7eb;
+    font-size:17px;
+    line-height:1.6;
+}
+/* ===== CLEAN SOLUTIONS STRIP ===== */
+.solutions-strip{
+    background:#0b0b0d;
+    padding:80px 8%;
+}
+
+.strip-container{
+    max-width:1300px;
+    margin:auto;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:30px;
+}
+
+/* each block */
+.strip-item{
+    text-align:center;
+    flex:1;
+}
+
+.strip-item h3{
+    color:#ff1e1e;
+    font-size:26px;
+    font-weight:800;
+    margin-bottom:10px;
+    letter-spacing:.5px;
+}
+
+.strip-item p{
+    color:#d1d5db;
+    font-size:17px;
+    font-weight:500;
+}
+
+/* thin dividers */
+.strip-divider{
+    width:1px;
+    height:50px;
+    background:rgba(255,255,255,0.15);
+}
+/* ========== WHO SECTION ========== */
+.who-section{
+    position:relative;
+    padding:180px 10%;
+    background:#fff;
+    overflow:hidden;
+}
+
+/* ===== 3D X GRID BACKGROUND ===== */
+.x-grid{
+    position:absolute;
+    inset:0;
+    z-index:0;
+    background:
+      repeating-linear-gradient(45deg, rgba(0,0,0,0.04) 0 2px, transparent 2px 80px),
+      repeating-linear-gradient(-45deg, rgba(0,0,0,0.04) 0 2px, transparent 2px 80px);
+    transform:perspective(1200px) rotateX(55deg) scale(1.8);
+    transform-origin:top;
+    opacity:.6;
+    transition:0.6s ease;
+}
+
+/* Red glow on hover */
+.who-section:hover .x-grid{
+    background:
+      repeating-linear-gradient(45deg, rgba(255,30,30,0.12) 0 2px, transparent 2px 80px),
+      repeating-linear-gradient(-45deg, rgba(255,30,30,0.12) 0 2px, transparent 2px 80px);
+}
+
+/* ===== Layout ===== */
+.who-container{
+    position:relative;
+    z-index:2;
+    max-width:1300px;
+    margin:auto;
+    display:flex;
+    gap:120px;
+    align-items:flex-start;
+}
+
+/* ===== LEFT TEXT ===== */
+.who-question{
+    font-size:76px;
+    font-weight:900;
+    line-height:1.08;
+    letter-spacing:-2px;
+    color:#111;
+    margin-bottom:30px;
+}
+
+.who-desc{
+    font-size:21px;
+    line-height:1.9;
+    color:#444;
+    max-width:560px;
+}
+
+/* ===== VERTICAL CARD STACK ===== */
+.v-stack{
+    display:flex;
+    flex-direction:column;
+    gap:26px;
+    margin-top:40px;
+}
+
+.v-card{
+    padding:22px 30px;
+    border-radius:14px;
+    background:#111;
+    color:#fff;
+    font-weight:600;
+    letter-spacing:.5px;
+    box-shadow:0 30px 60px rgba(0,0,0,.12);
+    transform:translateX(0);
+    transition:0.5s cubic-bezier(.23,1,.32,1);
+    cursor:pointer;
+}
+
+/* Elegant reveal interaction */
+.v-card:hover{
+    transform:translateX(18px);
+    background:#ff1e1e;
+    box-shadow:0 40px 80px rgba(255,30,30,.25);
+}
+/* ===== SYSTEM LAYOUT ===== */
+.card-system{
+    display:flex;
+    gap:60px;
+    align-items:center;
+}
+
+/* LEFT CARDS */
+.card-list{
+    display:flex;
+    flex-direction:column;
+    gap:22px;
+}
+
+.sys-card{
+    background:#111;
+    color:#fff;
+    padding:18px 28px;
+    border-radius:14px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.35s ease;
+    width:320px;
+}
+
+.sys-card:hover{
+    background:#ff1e1e;
+    transform:translateX(10px);
+}
+
+/* RIGHT INFO AREA */
+.info-area{
+    position:relative;
+    width:380px;
+    height:220px;
+}
+
+.info-box{
+    position:absolute;
+    inset:0;
+    background:#fff;
+    border-radius:22px;
+    box-shadow:0 40px 100px rgba(0,0,0,.12);
+    padding:30px;
+    opacity:0;
+    transform:translateY(20px);
+    transition:.45s ease;
+    pointer-events:none;
+}
+
+.info-box h3{
+    font-size:24px;
+    margin-bottom:12px;
+}
+
+.info-box p{
+    color:#555;
+    line-height:1.6;
+}
+
+/* ACTIVE STATE */
+.info-box.active{
+    opacity:1;
+    transform:translateY(0);
+}
+/* ===== CONTACT PRO SECTION ===== */
+.contact-pro{
+    position:relative;
+    padding:160px 10%;
+    background:#fff;
+    overflow:hidden;
+}
+
+.contact-grid{
+    position:absolute; inset:0;
+    background-image:
+        linear-gradient(rgba(0,0,0,0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0,0,0,0.04) 1px, transparent 1px);
+    background-size:60px 60px;
+}
+
+.contact-glow{
+    position:absolute;
+    width:650px;height:650px;
+    background:radial-gradient(circle, rgba(255,30,30,.15), transparent 60%);
+    top:-120px;right:-120px;
+}
+
+/* layout */
+.contact-wrap{
+    position:relative;
+    z-index:2;
+    display:flex;
+    gap:80px;
+    align-items:center;
+    justify-content:space-between;
+}
+
+/* ===== LEFT INFO ===== */
+.contact-info{
+    flex:1;
+    max-width:520px;
+}
+
+.info-chip{
+    display:inline-block;
+    padding:8px 20px;
+    background:#111;
+    color:#fff;
+    border-radius:30px;
+    font-size:13px;
+    letter-spacing:1px;
+    margin-bottom:25px;
+}
+
+.contact-info h2{
+    font-size:58px;
+    font-weight:900;
+    letter-spacing:-2px;
+}
+
+.contact-info p{
+    margin:20px 0 40px;
+    font-size:19px;
+    color:#555;
+    line-height:1.7;
+}
+
+.info-block{
+    margin-bottom:25px;
+}
+
+.info-block span{
+    display:block;
+    font-size:14px;
+    color:#888;
+    margin-bottom:6px;
+}
+
+.info-block strong{
+    font-size:22px;
+    font-weight:700;
+}
+
+/* ===== RIGHT FORM CARD ===== */
+.contact-card{
+    flex:1;
+    background:rgba(255,255,255,.85);
+    backdrop-filter:blur(14px);
+    border-radius:28px;
+    padding:60px 60px;
+    box-shadow:0 60px 120px rgba(0,0,0,.12);
+}
+
+/* form */
+.contact-form{
+    display:flex;
+    flex-direction:column;
+    gap:26px;
+}
+
+.input-group{
+    position:relative;
+}
+
+.input-group input,
+.input-group textarea{
+    width:100%;
+    padding:22px 20px;
+    border-radius:14px;
+    border:2px solid #e5e5e5;
+    font-size:17px;
+    outline:none;
+    transition:.35s ease;
+    background:#fff;
+}
+
+.input-group textarea{
+    height:140px;
+    resize:none;
+}
+
+.input-group label{
+    position:absolute;
+    left:18px;
+    top:20px;
+    color:#777;
+    font-size:15px;
+    pointer-events:none;
+    transition:.35s ease;
+    background:#fff;
+    padding:0 6px;
+}
+
+/* focus */
+.input-group input:focus,
+.input-group textarea:focus{
+    border-color:#ff1e1e;
+    box-shadow:0 0 0 4px rgba(255,30,30,.08);
+}
+
+.input-group input:focus + label,
+.input-group textarea:focus + label,
+.input-group input:valid + label,
+.input-group textarea:valid + label{
+    top:-10px;
+    font-size:13px;
+    color:#ff1e1e;
+}
+
+/* button */
+.contact-btn{
+    margin-top:15px;
+    padding:18px;
+    border-radius:50px;
+    border:none;
+    background:#ff1e1e;
+    color:#fff;
+    font-weight:700;
+    font-size:18px;
+    cursor:pointer;
+    transition:.35s ease;
+}
+
+.contact-btn:hover{
+    transform:translateY(-3px);
+    box-shadow:0 20px 40px rgba(255,30,30,.25);
+}
+/* ===== FADE IN ANIMATION ===== */
+.fade-init{
+    opacity:0;
+    transform:translateY(30px);
+    transition:opacity .9s ease, transform .9s cubic-bezier(.23,1,.32,1);
+    will-change:opacity, transform;
+}
+
+.fade-show{
+    opacity:1;
+    transform:translateY(0);
+}
+
+
+/* ===== UNIFIED SECTION ===== */
+.unified-section{
+padding:140px 8%;
+background:#ffffff;
+}
+
+.unified-container{
+display:flex;
+gap:30px;
+align-items:center;
+max-width:1400px;
+margin:0 auto;
+}
+
+.unified-image{
+flex:1;
+}
+
+.unified-image img{
+width:100%;
+border-radius:30px;
+box-shadow:0 40px 80px rgba(0,0,0,.15);
+}
+
+.unified-text{
+flex:1;
+}
+
+.unified-text h3{
+font-size:48px;
+font-weight:900;
+margin-bottom:20px;
+}
+
+.unified-text p{
+font-size:20px;
+color:#555;
+line-height:1.8;
+}
+
+/* ===== FOOTER ===== */
+footer{
+text-align:center;
+padding:60px;
+color:#777;
+border-top:1px solid #eee;
+}
+
+.footer-grid{
+display:grid;
+grid-template-columns:2fr 1fr 1fr;
+gap:60px;
+max-width:1400px;
+margin:0 auto;
+}
+
+.footer-grid h3,
+.footer-grid h4{
+color:#fff;
+margin-bottom:20px;
+}
+
+.footer-grid p{
+color:#aaa;
+margin-bottom:10px;
+}
+
+.footer-grid a{
+display:block;
+color:#aaa;
+text-decoration:none;
+margin-bottom:8px;
+transition:color 0.3s ease;
+}
+
+.footer-grid a:hover{
+color:#ff1e1e;
+}
+
+.footer-bottom{
+text-align:center;
+margin-top:40px;
+color:#777;
+border-top:1px solid rgba(255,255,255,0.1);
+padding-top:30px;
+}
+
+.site-footer{
+background:#111;
+color:#aaa;
+padding:80px 10%;
+}
+
+/* Mobile Menu - Professional Design */
+.mobile-menu-toggle{
+display:none;
+font-size:26px;
+cursor:pointer;
+color:#111;
+width:44px;
+height:44px;
+align-items:center;
+justify-content:center;
+border-radius:10px;
+background:transparent;
+transition:all 0.3s ease;
+flex-shrink:0;
+user-select:none;
+-webkit-tap-highlight-color:transparent;
+}
+
+.mobile-menu-toggle:hover{
+background:rgba(0,0,0,0.08);
+}
+
+.mobile-menu-toggle:active{
+background:rgba(0,0,0,0.12);
+transform:scale(0.88);
+}
+
+.nav-links{
+display:flex;
+align-items:center;
+}
+
+/* Mobile Navigation */
+@media (max-width:768px){
+
+/* Base fixes */
+html{
+overflow-x:hidden !important;
+max-width:100vw !important;
+width:100% !important;
+}
+
+body{
+overflow-x:hidden !important;
+max-width:100vw !important;
+width:100% !important;
+}
+
+section{
+max-width:100vw !important;
+overflow-x:hidden !important;
+padding:60px 20px !important;
+width:100% !important;
+box-sizing:border-box !important;
+}
+
+img{max-width:100%;height:auto;display:block}
+video{max-width:100%;height:auto;display:block}
+
+/* Global text wrapping for mobile */
+*{
+word-wrap:break-word !important;
+overflow-wrap:break-word !important;
+max-width:100%;
+box-sizing:border-box !important;
+}
+
+h1,h2,h3,h4,h5,h6,p,span,div,a{
+word-wrap:break-word !important;
+overflow-wrap:break-word !important;
+white-space:normal !important;
+hyphens:auto !important;
+max-width:100% !important;
+}
+
+/* Grid visibility - uses style.css unified mobile grid (more visible) */
+.hero-glow,
+.contact-glow{
+width:clamp(300px,70vw,500px) !important;
+height:clamp(300px,70vw,500px) !important;
+opacity:0.3 !important;
+}
+
+.x-grid{
+opacity:0.4 !important;
+}
+
+/* Navigation - DEVICE OPTIMIZED */
+nav{
+width:calc(100% - 1.25rem);
+max-width:100%;
+padding:0.875rem 1.25rem;
+top:0.875rem;
+display:flex !important;
+flex-direction:row !important;
+justify-content:space-between;
+align-items:center;
+gap:1rem;
+left:50%;
+transform:translateX(-50%);
+position:fixed;
+z-index:1000;
+border-radius:1rem;
+box-shadow:0 0.25rem 1.5rem rgba(0,0,0,0.08);
+}
+
+nav img{
+height:2rem;
+max-width:9.375rem;
+width:auto;
+flex-shrink:0;
+margin-right:auto;
+}
+
+.mobile-menu-toggle{
+display:flex !important;
+margin-left:auto;
+}
+
+.nav-links{
+display:none;
+position:absolute;
+top:72px;
+left:10px;
+right:10px;
+background:white;
+backdrop-filter:blur(20px);
+border-radius:16px;
+padding:10px;
+flex-direction:column;
+box-shadow:0 12px 40px rgba(0,0,0,0.15);
+animation:slideDown 0.3s ease;
+order:3;
+}
+
+@keyframes slideDown{
+from{opacity:0;transform:translateY(-10px)}
+to{opacity:1;transform:translateY(0)}
+}
+
+.nav-links.active{
+display:flex;
+}
+
+.nav-links a{
+margin:4px 0;
+width:100%;
+text-align:center;
+font-size:15px;
+padding:14px 20px;
+border-radius:10px;
+min-height:48px;
+display:flex;
+align-items:center;
+justify-content:center;
+transition:all 0.2s ease;
+font-weight:600;
+color:#111;
+}
+
+.nav-links a:hover{
+background:rgba(255,30,30,0.08);
+color:#ff1e1e;
+}
+
+.nav-links a:active{
+transform:scale(0.97);
+background:rgba(255,30,30,0.12);
+}
+
+/* Hero Section - DEVICE OPTIMIZED */
+.services-hero{
+height:auto !important;
+min-height:auto !important;
+padding:5.5rem 1.25rem 3rem !important;
+display:flex !important;
+align-items:center !important;
+justify-content:center !important;
+}
+
+.services-hero-content{
+padding:0 0.625rem !important;
+width:100% !important;
+max-width:100% !important;
+text-align:center !important;
+}
+
+.services-hero h1{
+font-size:clamp(1.875rem,7vw,2.75rem) !important;
+line-height:1.15 !important;
+margin-bottom:0.875rem !important;
+word-wrap:break-word !important;
+font-weight:900 !important;
+letter-spacing:-0.02em !important;
+}
+
+.services-hero p{
+font-size:clamp(0.9375rem,2vw,1rem) !important;
+line-height:1.6 !important;
+margin-top:0.75rem !important;
+word-wrap:break-word !important;
+max-width:42rem !important;
+margin-inline:auto !important;
+color:#555 !important;
+}
+
+.hero-cta{
+margin-top:1.5rem !important;
+display:flex !important;
+flex-direction:column !important;
+gap:0.75rem !important;
+width:100% !important;
+align-items:center !important;
+}
+
+.btn-red,
+.btn-white{
+width:100% !important;
+max-width:17.5rem !important;
+margin:0 !important;
+padding:0.875rem 1.75rem !important;
+font-size:0.9375rem !important;
+text-align:center !important;
+display:inline-flex !important;
+align-items:center !important;
+justify-content:center !important;
+min-height:3rem !important;
+border-radius:2rem !important;
+font-weight:600 !important;
+transition:all 200ms ease !important;
+}
+
+.hero-chip{
+font-size:11px;
+padding:6px 16px;
+}
+
+/* Solution Blocks */
+.solution{
+flex-direction:column !important;
+padding:60px 20px !important;
+gap:40px !important;
+width:100% !important;
+max-width:100vw !important;
+overflow-x:hidden !important;
+}
+
+.solution:nth-child(even){
+flex-direction:column !important;
+}
+
+.solution-text{
+width:100% !important;
+max-width:100% !important;
+text-align:center;
+}
+
+.solution-text h2{
+font-size:clamp(1.75rem,6vw,2.5rem) !important;
+word-wrap:break-word !important;
+text-align:center;
+width:100% !important;
+max-width:100% !important;
+}
+
+.solution-text p{
+font-size:clamp(0.875rem,2vw,1rem) !important;
+word-wrap:break-word !important;
+text-align:center;
+line-height:1.7;
+width:100% !important;
+max-width:100% !important;
+}
+
+.solution-media{
+height:auto !important;
+min-height:250px !important;
+width:100% !important;
+max-width:100% !important;
+}
+
+.solution-media img,
+.solution-media video{
+width:100% !important;
+height:auto !important;
+}
+
+/* Video Section - FIXED */
+.solve{
+height:auto !important;
+min-height:auto !important;
+padding:70px 20px 60px !important;
+width:100% !important;
+max-width:100vw !important;
+overflow-x:hidden !important;
+position:relative !important;
+display:flex !important;
+align-items:center !important;
+justify-content:center !important;
+}
+
+.solve-video{
+width:100% !important;
+height:100% !important;
+position:absolute !important;
+inset:0 !important;
+object-fit:cover !important;
+}
+
+.solve-overlay{
+position:absolute !important;
+inset:0 !important;
+background:linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0,0,0,.6)) !important;
+}
+
+.solve-center{
+width:100% !important;
+max-width:100% !important;
+padding:0 20px !important;
+position:relative !important;
+z-index:2 !important;
+}
+
+.solve-center h2{
+font-size:clamp(1.75rem,6vw,2.5rem) !important;
+word-wrap:break-word !important;
+text-align:center !important;
+width:100% !important;
+max-width:100% !important;
+line-height:1.25 !important;
+margin-bottom:15px !important;
+}
+
+.solve-center p{
+font-size:clamp(0.9375rem,2.1vw,1.0625rem) !important;
+word-wrap:break-word !important;
+text-align:center !important;
+line-height:1.65 !important;
+width:100% !important;
+max-width:100% !important;
+}
+
+/* Solutions Band - DEVICE OPTIMIZED */
+.solutions-band{
+padding:3rem 1.25rem !important;
+width:100% !important;
+max-width:100vw !important;
+overflow-x:hidden !important;
+}
+
+.band-grid{
+display:grid !important;
+grid-template-columns:1fr !important;
+gap:1.25rem !important;
+width:100% !important;
+max-width:100% !important;
+}
+
+.band-card{
+padding:1.75rem 1.25rem !important;
+width:100% !important;
+max-width:100% !important;
+border-radius:1.125rem !important;
+transition:all 250ms ease !important;
+}
+
+.band-card h3{
+font-size:clamp(1.125rem,3.2vw,1.375rem) !important;
+word-wrap:break-word !important;
+text-align:center !important;
+margin-bottom:0.625rem !important;
+font-weight:800 !important;
+line-height:1.3 !important;
+}
+
+.band-card p{
+font-size:clamp(0.875rem,2vw,0.9375rem) !important;
+word-wrap:break-word !important;
+text-align:center !important;
+line-height:1.6 !important;
+color:#e5e7eb !important;
+}
+
+/* Solutions Strip - MOBILE REDESIGN */
+.solutions-strip{
+padding:2rem 1rem 2.5rem !important;
+width:100% !important;
+max-width:100vw !important;
+overflow-x:hidden !important;
+}
+
+.strip-container{
+flex-direction:column !important;
+gap:0 !important;
+width:100% !important;
+max-width:100% !important;
+}
+
+.strip-divider{
+display:none !important;
+}
+
+.strip-item{
+width:100% !important;
+max-width:100% !important;
+text-align:center !important;
+padding:1.25rem 1rem !important;
+background:rgba(255,255,255,0.03) !important;
+border-radius:12px !important;
+margin-bottom:0.75rem !important;
+border:1px solid rgba(255,255,255,0.06) !important;
+transition:all 0.25s ease !important;
+}
+
+.strip-item:last-child{
+margin-bottom:0 !important;
+}
+
+.strip-item h3{
+font-size:clamp(1.0625rem,3vw,1.25rem) !important;
+word-wrap:break-word !important;
+margin-bottom:0.5rem !important;
+font-weight:800 !important;
+line-height:1.25 !important;
+color:#ff1e1e !important;
+letter-spacing:0.02em !important;
+}
+
+.strip-item p{
+font-size:clamp(0.8125rem,2vw,0.9375rem) !important;
+word-wrap:break-word !important;
+line-height:1.55 !important;
+color:rgba(209,213,219,0.95) !important;
+}
+
+/* Who Section - MOBILE REDESIGN */
+.who-section{
+padding:2.5rem 1rem 3rem !important;
+width:100% !important;
+max-width:100vw !important;
+overflow-x:hidden !important;
+}
+
+.who-container{
+flex-direction:column !important;
+gap:2rem !important;
+width:100% !important;
+max-width:100% !important;
+}
+
+.who-left{
+width:100% !important;
+max-width:100% !important;
+text-align:center !important;
+margin-bottom:0.5rem !important;
+}
+
+.who-question{
+font-size:clamp(1.5rem,6.5vw,2.25rem) !important;
+text-align:center !important;
+width:100% !important;
+max-width:100% !important;
+font-weight:900 !important;
+line-height:1.15 !important;
+margin-bottom:0.875rem !important;
+letter-spacing:-0.02em !important;
+color:#111 !important;
+}
+
+.who-desc{
+font-size:clamp(0.875rem,2vw,0.9375rem) !important;
+text-align:center !important;
+max-width:42rem !important;
+margin-inline:auto !important;
+line-height:1.65 !important;
+color:#555 !important;
+}
+
+.who-right{
+width:100% !important;
+max-width:100% !important;
+}
+
+/* MOBILE: Unified card design - accordion style */
+.card-system{
+flex-direction:column !important;
+gap:0.75rem !important;
+width:100% !important;
+max-width:100% !important;
+}
+
+.card-list{
+display:flex !important;
+flex-direction:column !important;
+gap:0.75rem !important;
+width:100% !important;
+}
+
+/* Card + info as unified expandable unit */
+.mobile-card-group{
+width:100% !important;
+margin-bottom:0 !important;
+border-radius:14px !important;
+overflow:hidden !important;
+box-shadow:0 4px 20px rgba(0,0,0,0.06) !important;
+border:1px solid rgba(0,0,0,0.06) !important;
+background:#fff !important;
+}
+
+/* Tap header - clean pill style */
+.sys-card{
+width:100% !important;
+max-width:100% !important;
+padding:1.125rem 1.25rem !important;
+text-align:left !important;
+font-size:clamp(0.9375rem,2.5vw,1rem) !important;
+border-radius:0 !important;
+background:linear-gradient(135deg,#111 0%,#1a1a1a 100%) !important;
+color:#fff !important;
+font-weight:700 !important;
+margin-bottom:0 !important;
+border:none !important;
+display:flex !important;
+align-items:center !important;
+justify-content:space-between !important;
+cursor:pointer !important;
+transition:all 0.25s ease !important;
+-webkit-tap-highlight-color:transparent !important;
+}
+
+.sys-card::after{
+content:"";
+width:20px;
+height:20px;
+border-right:2.5px solid rgba(255,255,255,0.6);
+border-bottom:2.5px solid rgba(255,255,255,0.6);
+transform:rotate(45deg);
+transform-origin:center;
+transition:transform 0.25s ease;
+flex-shrink:0;
+margin-left:0.5rem;
+}
+
+.mobile-card-group.expanded .sys-card::after{
+transform:rotate(-135deg);
+}
+
+.sys-card:active{
+background:linear-gradient(135deg,#ff1e1e 0%,#e01818 100%) !important;
+}
+
+/* Info panel - collapsed by default, expand on tap */
+.info-box-mobile{
+display:none !important;
+padding:0 !important;
+margin:0 !important;
+max-height:0 !important;
+overflow:hidden !important;
+transition:max-height 0.3s ease,padding 0.3s ease !important;
+}
+
+.mobile-card-group.expanded .info-box-mobile{
+display:block !important;
+max-height:400px !important;
+padding:1.25rem 1.25rem 1.5rem !important;
+}
+
+.info-box-mobile{
+background:#fafbfc !important;
+border-radius:0 !important;
+border-top:1px solid rgba(0,0,0,0.06) !important;
+box-shadow:none !important;
+}
+
+.info-box-mobile h3{
+font-size:clamp(1rem,3vw,1.125rem) !important;
+margin-bottom:0.5rem !important;
+font-weight:800 !important;
+color:#111 !important;
+text-align:left !important;
+}
+
+.info-box-mobile p{
+font-size:clamp(0.8125rem,2vw,0.875rem) !important;
+color:#555 !important;
+line-height:1.6 !important;
+text-align:left !important;
+margin:0 !important;
+}
+
+/* DESKTOP/TABLET: Restore original layout */
+@media (min-width:769px){
+
+.mobile-card-group{
+display:contents !important;
+}
+
+.info-box-mobile{
+display:none !important;
+}
+
+.info-box-desktop{
+display:block !important;
+}
+
+.info-area{
+display:block !important;
+width:380px !important;
+height:220px !important;
+position:relative !important;
+}
+
+.card-system{
+flex-direction:row !important;
+gap:60px !important;
+align-items:center !important;
+}
+
+.card-list{
+display:flex !important;
+flex-direction:column !important;
+gap:22px !important;
+}
+
+.sys-card{
+width:320px !important;
+padding:18px 28px !important;
+text-align:left !important;
+font-size:inherit !important;
+}
+
+.sys-card::after{
+display:none !important;
+}
+
+.who-container{
+flex-direction:row !important;
+gap:120px !important;
+align-items:flex-start !important;
+}
+
+.who-left{
+text-align:left !important;
+flex:1 !important;
+}
+
+.who-question{
+text-align:left !important;
+font-size:76px !important;
+}
+
+.who-desc{
+text-align:left !important;
+font-size:22px !important;
+}
+
+.who-right{
+flex:1 !important;
+}
+
+}
+
+/* Unified Section */
+.unified-section{
+padding:60px 20px !important;
+width:100% !important;
+max-width:100vw !important;
+overflow-x:hidden !important;
+}
+
+.unified-container{
+flex-direction:column !important;
+gap:40px !important;
+width:100% !important;
+max-width:100% !important;
+}
+
+.unified-text{
+order:1;
+width:100% !important;
+max-width:100% !important;
+padding:0 10px;
+}
+
+.unified-text h3{
+font-size:clamp(1.75rem,6vw,2.5rem) !important;
+text-align:center;
+width:100% !important;
+max-width:100% !important;
+word-wrap:break-word !important;
+}
+
+.unified-text p{
+font-size:clamp(0.875rem,2vw,1rem) !important;
+text-align:center;
+width:100% !important;
+max-width:100% !important;
+word-wrap:break-word !important;
+line-height:1.7;
+}
+
+.unified-image{
+order:2;
+width:100% !important;
+max-width:100% !important;
+}
+
+.unified-image img{
+width:100% !important;
+height:auto !important;
+border-radius:20px;
+}
+
+/* Contact Section */
+.contact-pro{
+padding:80px 20px !important;
+width:100% !important;
+max-width:100vw !important;
+overflow-x:hidden !important;
+}
+
+.contact-wrap{
+flex-direction:column !important;
+gap:40px !important;
+width:100% !important;
+max-width:100% !important;
+}
+
+.contact-info{
+width:100% !important;
+max-width:100% !important;
+text-align:center;
+}
+
+.contact-info h2{
+font-size:clamp(1.75rem,6vw,2.5rem) !important;
+width:100% !important;
+max-width:100% !important;
+word-wrap:break-word !important;
+}
+
+.contact-info p{
+font-size:clamp(0.875rem,2vw,1rem) !important;
+width:100% !important;
+max-width:100% !important;
+word-wrap:break-word !important;
+}
+
+.info-block{
+text-align:center;
+}
+
+.contact-card{
+padding:40px 20px !important;
+width:100% !important;
+max-width:100% !important;
+}
+
+.contact-form{
+width:100% !important;
+max-width:100% !important;
+}
+
+.input-group{
+width:100% !important;
+max-width:100% !important;
+}
+
+.input-group input,
+.input-group textarea{
+width:100% !important;
+max-width:100% !important;
+}
+
+.contact-btn{
+padding:16px !important;
+font-size:16px !important;
+width:100% !important;
+max-width:100% !important;
+}
+
+/* Footer - uses style.css unified mobile footer */
+}
+
+/* Small Mobile Phones (≤480px) */
+@media (max-width:480px){
+nav{
+padding:0.75rem 1rem;
+}
+
+nav img{
+height:28px;
+max-width:120px;
+}
+
+.services-hero{
+padding:80px 15px 50px;
+min-height:60vh;
+}
+
+.services-hero h1{
+font-size:clamp(1.75rem,8vw,2.5rem);
+}
+
+.services-hero p{
+font-size:clamp(0.875rem,2vw,0.95rem);
+}
+
+.btn-red,
+.btn-white{
+padding:14px 24px;
+font-size:14px;
+}
+
+.solutions-band{
+padding:50px 15px;
+}
+
+.band-card{
+padding:25px 15px;
+}
+
+.who-section{
+padding:2rem 1rem 2.5rem !important;
+}
+
+.who-question{
+font-size:clamp(1.375rem,6vw,2rem) !important;
+margin-bottom:0.75rem !important;
+}
+
+.sys-card{
+padding:1rem 1.125rem !important;
+font-size:0.875rem !important;
+}
+
+.info-box-mobile h3{
+font-size:clamp(0.9375rem,2.8vw,1.0625rem) !important;
+}
+
+.info-box-mobile p{
+font-size:clamp(0.75rem,1.8vw,0.8125rem) !important;
+}
+
+.contact-pro{
+padding:60px 15px;
+}
+
+.contact-card{
+padding:30px 15px;
+}
+
+.unified-section{
+padding:50px 15px;
+}
+
+/* Footer - uses style.css unified mobile footer */
+}
+
+/* Tablet View (769px - 1024px) */
+@media (min-width:769px) and (max-width:1024px){
+nav{
+width:90%;
+padding:14px 30px;
+}
+
+.services-hero{
+padding:100px 30px 60px;
+}
+
+.unified-section{
+padding:100px 30px;
+}
+
+.unified-container{
+gap:40px;
+}
+
+.unified-text h3{
+font-size:clamp(2rem,4vw,2.75rem);
+}
+
+.unified-text p{
+font-size:clamp(1rem,2vw,1.125rem);
+}
+
+.band-grid{
+grid-template-columns:repeat(2,1fr);
+gap:30px;
+}
+
+.who-container{
+gap:60px;
+}
+
+.card-system{
+gap:40px;
+}
+
+.contact-wrap{
+gap:50px;
+}
+}
+
+/* ===== ANIMATED HAMBURGER MENU ===== */
+@media (max-width:768px){
+.mobile-menu-toggle{
+display:flex !important;
+width:44px !important;
+height:44px !important;
+align-items:center !important;
+justify-content:center !important;
+flex-direction:column !important;
+gap:6px !important;
+cursor:pointer !important;
+margin-left:auto !important;
+background:transparent !important;
+border:none !important;
+padding:0 !important;
+}
+
+.mobile-menu-toggle span{
+display:block !important;
+width:24px !important;
+height:2.5px !important;
+background:#111 !important;
+border-radius:3px !important;
+transition:all 0.3s ease !important;
+}
+
+/* Transform to X when active */
+#navLinks.active + .mobile-menu-toggle span:nth-child(1){
+transform:translateY(8.5px) rotate(45deg) !important;
+}
+#navLinks.active + .mobile-menu-toggle span:nth-child(2){
+opacity:0 !important;
+}
+#navLinks.active + .mobile-menu-toggle span:nth-child(3){
+transform:translateY(-8.5px) rotate(-45deg) !important;
+}
+}
+
+@media (min-width:769px){
+.mobile-menu-toggle{
+display:none !important;
+}
+}
+
+/* ===== SCROLL PROGRESS BAR ===== */
+.scroll-progress{
+position:fixed;
+top:0;
+left:0;
+width:0%;
+height:3px;
+background:linear-gradient(90deg,#ff1e1e,#ff4444);
+z-index:10001;
+transition:width 0.1s ease;
+}
+
+/* ===== BACK TO TOP BUTTON ===== */
+.back-to-top{
+position:fixed;
+bottom:30px;
+right:30px;
+width:50px !important;
+height:50px !important;
+min-width:50px !important;
+min-height:50px !important;
+max-width:50px !important;
+max-height:50px !important;
+background:#ff1e1e;
+color:#fff;
+border-radius:50% !important;
+display:flex !important;
+align-items:center !important;
+justify-content:center !important;
+font-size:24px;
+cursor:pointer;
+opacity:0;
+transform:scale(0);
+transition:all 0.3s ease;
+z-index:1000;
+box-shadow:0 4px 12px rgba(255,30,30,0.3);
+border:none;
+flex-shrink:0 !important;
+padding:0 !important;
+}
+
+.back-to-top.visible{
+opacity:1 !important;
+transform:scale(1) !important;
+}
+
+.back-to-top:hover{
+background:#ff4444;
+transform:scale(1.1) !important;
+box-shadow:0 6px 20px rgba(255,30,30,0.4);
+}
+
+/* Mobile specific fix */
+@media (max-width:768px){
+.back-to-top{
+bottom:20px !important;
+right:20px !important;
+width:50px !important;
+height:50px !important;
+}
+}
+
+/* ===== ENHANCED ANIMATIONS ===== */
+.btn-red:hover,.btn-white:hover{
+transform:translateY(-2px);
+box-shadow:0 8px 20px rgba(0,0,0,0.15);
+}
+
+.sys-card:hover{
+transform:translateY(-4px);
+box-shadow:0 8px 24px rgba(0,0,0,0.12);
+}
+</style>
+</head>
+
+<body>
+
+<!-- Skip to main content (accessibility) -->
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<!-- Scroll Progress Bar -->
+<div class="scroll-progress"></div>
+
+<!-- Back to Top Button -->
+<div class="back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</div>
+
+<!-- NAVBAR -->
+<nav id="navbar" class="light">
+  <a href="index.html" class="nav-brand">
+    <img src="images/EX logo.png" alt="Eximatic Logo">
+    <div class="nav-brand-text">
+      <span class="nav-brand-name">Eximatic</span>
+      <span class="nav-brand-tagline">Technologies</span>
+    </div>
+  </a>
+  <div class="nav-links" id="navLinks">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="solutions.html">Solutions</a>
+    <a href="contact.html">Contact</a>
+    <a href="projects.html">Projects</a>
+  </div>
+  <!-- Animated hamburger menu -->
+  <div class="mobile-menu-toggle" id="menuToggle" onclick="toggleMenu()" aria-label="Toggle navigation menu" role="button" tabindex="0">
+      <span></span>
+      <span></span>
+      <span></span>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="services-hero" id="main-content">
+    <div class="hero-glow"></div>
+    <div class="hero-grid"></div>
+
+    <div class="services-hero-content">
+        <h1 >Smart Solutions</h1>
+        <p >Automation, surveillance, power systems and intelligent infrastructure working together to simplify business operations</p>
+        <div class="hero-cta">
+            <a href="services.html" class="btn-red fade-in">Explore Services</a>
+            <a href="contact.html" class="btn-white fade-in">Talk to Eximatic</a>
+        </div>
+    </div>
+</section>
+
+<!-- ================= SOLUTIONS EXPERIENCE ================= -->
+<section class="solve">
+
+    <video autoplay muted loop playsinline class="solve-video">
+        <source src="images/hero 3.mp4" type="video/mp4">
+    </video>
+
+    <div class="solve-overlay"></div>
+
+    <div class="solve-center">
+        <h2>
+            How Eximatic Transforms Workspaces
+        </h2>
+        <p>
+            We don’t provide individual products. We design complete technology
+            environments where automation, surveillance, smart infrastructure
+            and power systems operate as one connected solution.
+        </p>
+    </div>
+
+</section>
+
+
+<section class="solutions-strip">
+
+    <div class="strip-container">
+
+        <div class="strip-item">
+            <h3>Smart Office</h3>
+            <p>Automated, efficient, connected workspace</p>
+        </div>
+
+        <div class="strip-divider"></div>
+
+        <div class="strip-item">
+            <h3>Surveillance</h3>
+            <p>Complete visibility & protection</p>
+        </div>
+
+        <div class="strip-divider"></div>
+
+        <div class="strip-item">
+            <h3>Power Systems</h3>
+            <p>Uninterrupted operations</p>
+        </div>
+
+        <div class="strip-divider"></div>
+
+        <div class="strip-item">
+            <h3>Automation</h3>
+            <p>Reduced manual effort</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ===== BIG VISUAL BLOCK ===== -->
+
+<section class="unified-section">
+
+    <div class="unified-container">
+
+        <div class="unified-image">
+            <img src="images/ofc design.jpg" alt="Smart Office Environment">
+        </div>
+
+        <div class="unified-text">
+            <h3>A Unified Smart Environment</h3>
+            <p>
+                Eximatic integrates smart office devices, surveillance systems,
+                automation controls and power infrastructure into a single
+                synchronized ecosystem. This allows organizations to operate
+                smarter, safer and more efficiently without tech complexity.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ===== OUTCOME BLOCKS ===== -->
+
+
+<section class="solutions-strip">
+
+    <div class="strip-container">
+
+        <div class="strip-item">
+            <h3>Higher Productivity</h3>
+            <p>Automation and smart controls reduce delays and improve team efficiency.</p>
+        </div>
+
+        <div class="strip-divider"></div>
+
+        <div class="strip-item">
+            <h3>Stronger Security</h3>
+            <p>Advanced surveillance and system monitoring keep your assets protected.</p>
+        </div>
+
+        <div class="strip-divider"></div>
+
+        <div class="strip-item">
+            <h3>Operational Continuity</h3>
+            <p> Reliable power and infrastructure ensure uninterrupted workflows.</p>
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- ===== WHO WE ARE STRIP ===== -->
+<section class="who-section">
+
+    <!-- 3D X GRID BACKGROUND -->
+    <div class="x-grid"></div>
+
+    <div class="who-container">
+
+        <!-- LEFT BIG QUESTION -->
+        <div class="who-left">
+            <h2 class="who-question">
+               WHO WE ARE ?
+            </h2>
+
+            <p class="who-desc">
+                Eximatic designs integrated technology ecosystems where hardware,
+                automation, surveillance and operational intelligence function
+                together as a single smart environment for modern enterprises.
+            </p>
+        </div>
+
+      <div class="who-right">
+
+    <div class="card-system">
+
+        <!-- DESKTOP: Separate cards and info area -->
+        <!-- MOBILE: Cards with info stacked together -->
+
+        <div class="card-list">
+
+            <div class="mobile-card-group">
+                <div class="sys-card" data-target="info1">
+                    Smart Infrastructure
+                </div>
+                <div class="info-box info-box-mobile" id="info1-mobile">
+                    <h3>Smart Infrastructure</h3>
+                    <p>
+                        Integrated hardware, networking and system architecture
+                        designed for scalable, high-performance workspaces.
+                    </p>
+                </div>
+            </div>
+
+            <div class="mobile-card-group">
+                <div class="sys-card" data-target="info2">
+                    Secure Systems
+                </div>
+                <div class="info-box info-box-mobile" id="info2-mobile">
+                    <h3>Secure Systems</h3>
+                    <p>
+                        AI surveillance, access control and cybersecurity layers
+                        protecting your assets and data 24×7.
+                    </p>
+                </div>
+            </div>
+
+            <div class="mobile-card-group">
+                <div class="sys-card" data-target="info3">
+                    Automation Driven
+                </div>
+                <div class="info-box info-box-mobile" id="info3-mobile">
+                    <h3>Automation Driven</h3>
+                    <p>
+                        Intelligent automation that reduces manual effort and
+                        optimizes workplace productivity.
+                    </p>
+                </div>
+            </div>
+
+            <div class="mobile-card-group">
+                <div class="sys-card" data-target="info4">
+                    Operational Intelligence
+                </div>
+                <div class="info-box info-box-mobile" id="info4-mobile">
+                    <h3>Operational Intelligence</h3>
+                    <p>
+                        Real-time monitoring, dashboards and process intelligence
+                        for enterprise-level decision making.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- RIGHT INFO PANELS (Desktop Only) -->
+        <div class="info-area">
+
+            <div class="info-box info-box-desktop" id="info1">
+                <h3>Smart Infrastructure</h3>
+                <p>
+                    Integrated hardware, networking and system architecture
+                    designed for scalable, high-performance workspaces.
+                </p>
+            </div>
+
+            <div class="info-box info-box-desktop" id="info2">
+                <h3>Secure Systems</h3>
+                <p>
+                    AI surveillance, access control and cybersecurity layers
+                    protecting your assets and data 24×7.
+                </p>
+            </div>
+
+            <div class="info-box info-box-desktop" id="info3">
+                <h3>Automation Driven</h3>
+                <p>
+                    Intelligent automation that reduces manual effort and
+                    optimizes workplace productivity.
+                </p>
+            </div>
+
+            <div class="info-box info-box-desktop" id="info4">
+                <h3>Operational Intelligence</h3>
+                <p>
+                    Real-time monitoring, dashboards and process intelligence
+                    for enterprise-level decision making.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+
+
+<!-- ===== CONTACT EXPERIENCE ===== -->
+
+<section class="contact-pro">
+
+    <div class="contact-grid"></div>
+    <div class="contact-glow"></div>
+
+    <div class="contact-wrap">
+
+        <!-- LEFT INFO SIDE -->
+        <div class="contact-info">
+            <div class="info-chip">GET IN TOUCH</div>
+
+            <h2>Let’s Make Your Business Smarter</h2>
+
+            <p>
+                Have questions or ready to start? Reach out and let’s design
+                a smarter, secure and automated workspace for you.
+            </p>
+
+            <div class="info-block">
+                <span>Phone</span>
+                <strong>+1-555-789-4321</strong>
+            </div>
+
+            <div class="info-block">
+                <span>Email</span>
+                <strong>contact@eximatictech.com</strong>
+            </div>
+        </div>
+
+        <!-- RIGHT FORM SIDE -->
+        <div class="contact-card">
+
+            <form class="contact-form">
+
+                <div class="input-group">
+                    <input type="text" required>
+                    <label>Your Name</label>
+                </div>
+
+                <div class="input-group">
+                    <input type="email" required>
+                    <label>Email Address*</label>
+                </div>
+
+                <div class="input-group textarea-group">
+                    <textarea required></textarea>
+                    <label>Message*</label>
+                </div>
+
+                <button type="submit" class="contact-btn">Send Message</button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- FOOTER -->
+<footer class="site-footer">
+    <div class="footer-grid">
+        <div>
+            <h3>Eximatic Technologies</h3>
+            <p>Smart solutions for modern enterprises.</p>
+        </div>
+        <div>
+            <h4>Contact</h4>
+            <p>Office No 113, Street No 1<br>Vikash Nagar, Gurugram</p>
+            <p>manager@eximatic.tech</p>
+            <p>+91-7001731117</p>
+        </div>
+        <div>
+            <h4>Quick Links</h4>
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="solutions.html">Solutions</a>
+            <a href="contact.html">Contact</a>
+            <a href="projects.html">Projects</a>
+        </div>
+    </div>
+    <div class="footer-bottom">© 2025. All rights reserved.</div>
+</footer>
+<script>
+const cards = document.querySelectorAll('.sys-card');
+const boxes = document.querySelectorAll('.info-box');
+
+cards.forEach(card=>{
+    card.addEventListener('mouseenter', ()=>{
+        const id = card.getAttribute('data-target');
+        if (!id) return;
+        boxes.forEach(b => b.classList.remove('active'));
+        const target = document.getElementById(id);
+        if (target) target.classList.add('active');
+    });
+});
+
+/* Mobile accordion - tap card to expand/collapse */
+document.addEventListener('DOMContentLoaded', ()=>{
+    const cardList = document.querySelector('.card-list');
+    if (!cardList) return;
+    cardList.addEventListener('click', (e)=>{
+        if (window.innerWidth > 768) return;
+        const card = e.target.closest('.sys-card');
+        if (!card) return;
+        const group = card.closest('.mobile-card-group');
+        if (!group) return;
+        e.preventDefault();
+        const wasExpanded = group.classList.contains('expanded');
+        document.querySelectorAll('.mobile-card-group').forEach(g => g.classList.remove('expanded'));
+        if (!wasExpanded) group.classList.add('expanded');
+    });
+    if (window.innerWidth <= 768) {
+        const first = document.querySelector('.mobile-card-group');
+        if (first) first.classList.add('expanded');
+    }
+});
+window.addEventListener('resize', ()=>{
+    if (window.innerWidth > 768) {
+        document.querySelectorAll('.mobile-card-group').forEach(g => g.classList.remove('expanded'));
+    } else {
+        const first = document.querySelector('.mobile-card-group');
+        if (first && !document.querySelector('.mobile-card-group.expanded')) first.classList.add('expanded');
+    }
+});
+
+// Mobile Menu Toggle
+function toggleMenu(){
+const navLinks = document.getElementById('navLinks');
+navLinks.classList.toggle('active');
+}
+
+document.getElementById('menuToggle')?.addEventListener('keydown',function(e){
+if(e.key==='Enter'||e.key===' '){e.preventDefault();toggleMenu();}
+});
+
+// Close mobile menu when clicking on a link
+document.querySelectorAll('.nav-links a').forEach(link=>{
+link.addEventListener('click', ()=>{
+document.getElementById('navLinks').classList.remove('active');
+});
+});
+</script>
+<script>
+/* ===== FADE IN ON SCROLL (ALL TEXT EXCEPT FOOTER) ===== */
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const textSelectors = `
+        h1, h2, h3, h4, h5, h6,
+        p, a, span, label,
+        .sys-card, .strip-item,
+        .who-desc, .who-question,
+        .contact-info, .info-block,
+        .input-group, .hero-cta,
+        .services-hero-content
+    `;
+
+    const elements = document.querySelectorAll(textSelectors);
+
+    elements.forEach(el => {
+        if (!el.closest('footer')) {
+            el.classList.add('fade-init');
+        }
+    });
+
+    const observer = new IntersectionObserver((entries)=>{
+        entries.forEach(entry=>{
+            if(entry.isIntersecting){
+                entry.target.classList.add('fade-show');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.15 });
+
+    document.querySelectorAll('.fade-init').forEach(el=>{
+        observer.observe(el);
+    });
+
+});
+</script>
+
+<script>
+/* ===== DYNAMIC UX ENHANCEMENTS ===== */
+
+// SCROLL PROGRESS BAR
+window.addEventListener('scroll', () => {
+    const progressBar = document.querySelector('.scroll-progress');
+    if(progressBar){
+        const windowHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        const scrolled = (window.pageYOffset / windowHeight) * 100;
+        progressBar.style.width = scrolled + '%';
+    }
+});
+
+// BACK TO TOP BUTTON
+const backToTop = document.querySelector('.back-to-top');
+if(backToTop){
+    window.addEventListener('scroll', () => {
+        if(window.pageYOffset > 400){
+            backToTop.classList.add('visible');
+        } else {
+            backToTop.classList.remove('visible');
+        }
+    });
+}
+
+// NAVBAR SCROLL EFFECT
+window.addEventListener('scroll', () => {
+    const nav = document.querySelector('nav');
+    const currentScroll = window.pageYOffset;
+    if(currentScroll > 80){
+        nav.style.background = 'rgba(255,255,255,0.98)';
+        nav.style.boxShadow = '0 4px 30px rgba(0,0,0,0.1)';
+    } else {
+        nav.style.background = '';
+        nav.style.boxShadow = '';
+    }
+});
+
+console.log('%c✨ Eximatic Technologies', 'font-size:20px;font-weight:900;color:#ff1e1e');
+</script>
+
+</body>
+</html>

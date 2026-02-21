@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Modern Responsive Demo - Eximatic</title>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #667eea;
+    --secondary: #764ba2;
+    --success: #10b981;
+    --text: #1f2937;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 2rem 1rem;
+}
+
+.container {
+    max-width: min(90%, 1200px);
+    margin: 0 auto;
+}
+
+.header {
+    text-align: center;
+    color: white;
+    margin-bottom: 3rem;
+}
+
+.header h1 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    margin-bottom: 1rem;
+}
+
+.header p {
+    font-size: clamp(1rem, 2.5vw, 1.25rem);
+    opacity: 0.9;
+}
+
+.demo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+    gap: clamp(1rem, 3vw, 2rem);
+    margin-bottom: 2rem;
+}
+
+.demo-card {
+    background: white;
+    border-radius: clamp(12px, 2vw, 20px);
+    padding: clamp(1.5rem, 4vw, 2.5rem);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.demo-card h2 {
+    font-size: clamp(1.25rem, 3vw, 1.75rem);
+    color: var(--text);
+    margin-bottom: 1rem;
+}
+
+.demo-card p {
+    font-size: clamp(0.875rem, 2vw, 1rem);
+    color: #6b7280;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+}
+
+.code-block {
+    background: #1f2937;
+    color: #10b981;
+    padding: clamp(0.75rem, 2vw, 1rem);
+    border-radius: 8px;
+    font-family: 'Monaco', 'Courier New', monospace;
+    font-size: clamp(0.75rem, 1.5vw, 0.875rem);
+    overflow-x: auto;
+    margin: 1rem 0;
+}
+
+.metric {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: #f3f4f6;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    margin: 0.25rem;
+    font-size: clamp(0.75rem, 2vw, 0.875rem);
+}
+
+.metric-value {
+    font-weight: bold;
+    color: var(--primary);
+}
+
+.visual-demo {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    padding: clamp(2rem, 5vw, 4rem);
+    border-radius: 16px;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.visual-demo h3 {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    margin-bottom: 1rem;
+}
+
+.size-indicator {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 1rem 2rem;
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.responsive-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr));
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.grid-item {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem 1rem;
+    border-radius: 12px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.feature-list {
+    list-style: none;
+    padding: 0;
+}
+
+.feature-list li {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #e5e7eb;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.feature-list li:last-child {
+    border-bottom: none;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    background: var(--success);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    flex-shrink: 0;
+}
+
+.touch-target {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 44px;
+    min-height: 44px;
+    background: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: clamp(0.75rem, 2vw, 1rem) clamp(1.5rem, 4vw, 2rem);
+    font-size: clamp(0.875rem, 2vw, 1rem);
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s ease, background 0.3s ease;
+    margin: 0.5rem;
+}
+
+.touch-target:hover {
+    background: var(--secondary);
+}
+
+.touch-target:active {
+    transform: scale(0.97);
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.stat-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.stat-value {
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: bold;
+    color: var(--primary);
+    display: block;
+}
+
+.stat-label {
+    font-size: clamp(0.875rem, 2vw, 1rem);
+    color: #6b7280;
+    margin-top: 0.5rem;
+}
+
+.comparison {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.comparison-item {
+    background: white;
+    padding: 2rem;
+    border-radius: 16px;
+}
+
+.comparison-item h3 {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: clamp(1.125rem, 2.5vw, 1.5rem);
+}
+
+.badge {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.badge-old {
+    background: #fee2e2;
+    color: #dc2626;
+}
+
+.badge-new {
+    background: #d1fae5;
+    color: #059669;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation: none !important;
+        transition: none !important;
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h1>🚀 Modern Responsive Design</h1>
+        <p>Experience fluid, device-agnostic web design</p>
+    </div>
+
+    <div class="visual-demo">
+        <h3>Your screen is</h3>
+        <div class="size-indicator" id="screenSize">-- px</div>
+        <p style="margin-top:1rem;opacity:0.9;">Resize your browser to see smooth scaling!</p>
+    </div>
+
+    <div class="demo-grid">
+        <div class="demo-card">
+            <h2>✨ Fluid Typography</h2>
+            <p>Text scales smoothly between screen sizes using CSS clamp()</p>
+            <div class="code-block">font-size: clamp(1rem, 2.5vw, 1.5rem);</div>
+            <div class="metric">
+                <span>Min:</span>
+                <span class="metric-value">1rem</span>
+            </div>
+            <div class="metric">
+                <span>Current:</span>
+                <span class="metric-value" id="currentSize">--</span>
+            </div>
+            <div class="metric">
+                <span>Max:</span>
+                <span class="metric-value">1.5rem</span>
+            </div>
+        </div>
+
+        <div class="demo-card">
+            <h2>📐 Smart Grids</h2>
+            <p>Grids automatically adjust without media queries</p>
+            <div class="code-block">grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));</div>
+            <p style="color:var(--success);font-weight:600;margin-top:1rem;">👆 This grid is self-responsive!</p>
+        </div>
+
+        <div class="demo-card">
+            <h2>🎯 Touch Targets</h2>
+            <p>All buttons meet WCAG 44x44px minimum</p>
+            <div style="text-align:center;margin-top:1rem;">
+                <button class="touch-target">Tap Me</button>
+                <button class="touch-target">Easy!</button>
+            </div>
+        </div>
+
+        <div class="demo-card">
+            <h2>📱 Device Coverage</h2>
+            <ul class="feature-list">
+                <li><span class="icon">✓</span> Small phones (320px+)</li>
+                <li><span class="icon">✓</span> Standard phones (375px+)</li>
+                <li><span class="icon">✓</span> Tablets (768px+)</li>
+                <li><span class="icon">✓</span> Desktops (1024px+)</li>
+                <li><span class="icon">✓</span> 4K monitors (3840px+)</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="demo-card">
+        <h2>📊 Live Metrics</h2>
+        <div class="stats">
+            <div class="stat-card">
+                <span class="stat-value" id="viewportWidth">--</span>
+                <span class="stat-label">Viewport Width (px)</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-value" id="viewportHeight">--</span>
+                <span class="stat-label">Viewport Height (px)</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-value" id="pixelRatio">--</span>
+                <span class="stat-label">Device Pixel Ratio</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-value" id="orientation">--</span>
+                <span class="stat-label">Orientation</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="visual-demo">
+        <h3>Responsive Grid Demo</h3>
+        <p style="margin-bottom:2rem;">These boxes rearrange automatically</p>
+        <div class="responsive-grid">
+            <div class="grid-item">Box 1</div>
+            <div class="grid-item">Box 2</div>
+            <div class="grid-item">Box 3</div>
+            <div class="grid-item">Box 4</div>
+        </div>
+    </div>
+
+    <div class="demo-card">
+        <h2>⚡ Before vs After</h2>
+        <div class="comparison">
+            <div class="comparison-item">
+                <h3><span class="badge badge-old">OLD</span> Fixed Breakpoints</h3>
+                <ul class="feature-list">
+                    <li>❌ Text jumps at breakpoints</li>
+                    <li>❌ 2-3 media queries only</li>
+                    <li>❌ Fixed pixel values</li>
+                    <li>❌ Not truly responsive</li>
+                </ul>
+            </div>
+            <div class="comparison-item">
+                <h3><span class="badge badge-new">NEW</span> Fluid Design</h3>
+                <ul class="feature-list">
+                    <li><span class="icon">✓</span> Smooth text scaling</li>
+                    <li><span class="icon">✓</span> Infinite breakpoints</li>
+                    <li><span class="icon">✓</span> Fluid values (clamp)</li>
+                    <li><span class="icon">✓</span> Truly responsive</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="demo-card">
+        <h2>🎨 Key Features</h2>
+        <div class="demo-grid">
+            <div>
+                <h3 style="margin-bottom:0.5rem;color:var(--primary);">Fluid Typography</h3>
+                <p>Text scales smoothly between min and max values</p>
+            </div>
+            <div>
+                <h3 style="margin-bottom:0.5rem;color:var(--primary);">Auto Grids</h3>
+                <p>Grids adapt automatically to available space</p>
+            </div>
+            <div>
+                <h3 style="margin-bottom:0.5rem;color:var(--primary);">Smart Spacing</h3>
+                <p>Padding and margins scale with viewport</p>
+            </div>
+            <div>
+                <h3 style="margin-bottom:0.5rem;color:var(--primary);">Touch-Friendly</h3>
+                <p>44x44px minimum tap targets everywhere</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="visual-demo">
+        <h3>🎉 Your Site is Now Production-Ready!</h3>
+        <p style="margin:1rem 0;">Test it at different screen sizes to see the magic ✨</p>
+        <div style="margin-top:2rem;">
+            <a href="/index.html" class="touch-target" style="text-decoration:none;">View Main Site →</a>
+        </div>
+    </div>
+</div>
+
+<script>
+function updateMetrics() {
+    // Screen size
+    const width = window.innerWidth;
+    const height = window.innerHeight;
+    const ratio = window.devicePixelRatio;
+    const orientation = width > height ? 'Landscape' : 'Portrait';
+    
+    document.getElementById('screenSize').textContent = `${width} × ${height} px`;
+    document.getElementById('viewportWidth').textContent = width;
+    document.getElementById('viewportHeight').textContent = height;
+    document.getElementById('pixelRatio').textContent = ratio.toFixed(2);
+    document.getElementById('orientation').textContent = orientation;
+    
+    // Calculate current font size (demo)
+    const minSize = 16; // 1rem
+    const maxSize = 24; // 1.5rem
+    const vwSize = (width * 2.5) / 100;
+    const currentSize = Math.max(minSize, Math.min(maxSize, vwSize));
+    document.getElementById('currentSize').textContent = currentSize.toFixed(1) + 'px';
+}
+
+updateMetrics();
+window.addEventListener('resize', updateMetrics);
+
+// Add active state to touch targets
+document.querySelectorAll('.touch-target').forEach(btn => {
+    btn.addEventListener('click', function() {
+        this.style.background = '#10b981';
+        this.textContent = '✓ Clicked!';
+        setTimeout(() => {
+            this.style.background = '';
+            this.textContent = 'Tap Me';
+        }, 1000);
+    });
+});
+
+console.log('🚀 Modern Responsive Design Active!');
+console.log(`Viewport: ${window.innerWidth}x${window.innerHeight}`);
+console.log(`Device Pixel Ratio: ${window.devicePixelRatio}`);
+</script>
+
+</body>
+</html>

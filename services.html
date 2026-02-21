@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#ffffff">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<!-- SEO Meta Tags -->
+<title>Our Services | Eximatic Technologies - Complete Tech Solutions</title>
+<meta name="description" content="Explore Eximatic's comprehensive services: Automation, Smart Infrastructure, Surveillance, Digital Solutions, Power Management, and Networking.">
+<meta name="keywords" content="automation services, smart infrastructure, surveillance systems, digital solutions, power management, networking">
+<meta property="og:title" content="Our Services | Eximatic Technologies">
+<meta property="og:description" content="Complete tech solutions for modern businesses">
+<link rel="icon" type="image/png" href="images/EX logo.png">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',sans-serif;background:#fff;color:#111;overflow-x:hidden}
+
+/* Fade-in animations */
+.fade-in{
+opacity:0;
+transform:translateY(30px);
+transition:opacity 0.8s ease,transform 0.8s ease;
+}
+.fade-in.show{
+opacity:1;
+transform:translateY(0);
+}
+
+/* NAVBAR */
+nav{
+position:fixed;top:25px;left:50%;transform:translateX(-50%);
+width:92%;padding:16px 50px;display:flex;justify-content:space-between;align-items:center;
+backdrop-filter:blur(18px);
+background:rgba(255,255,255,0.08);
+border:1px solid rgba(255,255,255,0.15);
+border-radius:14px;z-index:1000;
+transition:.3s;
+}
+nav img{height:42px}
+nav a{
+text-decoration:none;margin-left:40px;font-weight:600;color:rgb(15, 14, 14);position:relative;transition:.3s
+}
+nav.light a{color:black}
+nav a::after{
+content:"";position:absolute;left:0;bottom:-6px;width:0;height:2px;background:#ff1e1e;transition:.3s}
+nav a:hover::after{width:100%}
+nav a:hover{color:#ff1e1e}
+
+/* ===== SERVICES HERO ===== */
+.services-hero{
+height:65vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+position:relative;
+padding-top:120px;
+overflow:hidden;
+}
+
+.hero-grid{
+position:absolute;inset:0;
+background-image:
+linear-gradient(rgba(0,0,0,0.03) 1px, transparent 1px),
+linear-gradient(90deg, rgba(0,0,0,0.03) 1px, transparent 1px);
+background-size:60px 60px;
+}
+
+.hero-glow{
+position:absolute;
+width:700px;height:700px;
+background:radial-gradient(circle, rgba(255,30,30,.15), transparent 60%);
+top:-150px;left:-150px;
+}
+
+.services-hero-content{position:relative;z-index:2;max-width:900px}
+
+.hero-chip{
+display:inline-block;
+background:#111;color:#fff;
+padding:8px 22px;border-radius:30px;
+font-size:13px;letter-spacing:1px;margin-bottom:20px
+}
+
+.services-hero h1{
+font-size:86px;
+font-weight:900;
+letter-spacing:-3px;
+}
+
+.services-hero p{
+margin-top:18px;
+font-size:20px;
+color:#555;
+}
+
+.hero-cta{margin-top:32px}
+.btn-red,.btn-white{
+padding:14px 36px;border-radius:40px;
+text-decoration:none;font-weight:600;margin:0 10px;display:inline-block
+}
+.btn-red{background:#ff1e1e;color:white}
+.btn-white{border:2px solid #111;color:#111}
+
+/* ===== SERVICE SECTIONS ===== */
+.service{
+min-height:90vh;
+display:flex;
+align-items:center;
+justify-content:center;
+padding:120px 10%;
+gap:80px;
+}
+
+.service:nth-child(even){flex-direction:row-reverse;background:#fafafa}
+
+.service-text{flex:1}
+.service-text h2{font-size:56px;margin-bottom:20px}
+.service-text p{font-size:19px;color:#444;margin-bottom:20px}
+.service-text ul{line-height:2;font-weight:600}
+
+.service-media{
+flex:1;height:420px;border-radius:30px;
+overflow:hidden;box-shadow:0 40px 80px rgba(0,0,0,.15);
+position:relative;
+}
+
+.service-media video{
+width:100%;height:100%;object-fit:cover
+}
+
+.media-label{
+position:absolute;top:20px;left:20px;
+background:#ff1e1e;color:#fff;
+padding:8px 18px;border-radius:30px;font-size:14px;font-weight:600
+}
+
+/* ===== FOOTER ===== */
+.site-footer{
+background:#111;color:#aaa;padding:80px 10%;
+}
+.footer-grid{
+display:grid;grid-template-columns:2fr 1fr 1fr;gap:60px
+}
+.footer-grid h3,.footer-grid h4{color:#fff;margin-bottom:20px}
+.footer-grid a{display:block;color:#aaa;text-decoration:none;margin-bottom:8px}
+.footer-grid a:hover{color:#ff1e1e}
+.footer-bottom{text-align:center;margin-top:40px;color:#777}
+
+/* ===== MOBILE RESPONSIVE FIXES ===== */
+
+/* Base responsive improvements */
+html{overflow-x:hidden;max-width:100vw}
+body{overflow-x:hidden;max-width:100vw}
+section{max-width:100vw;overflow-x:hidden}
+img{max-width:100%;height:auto;display:block}
+video{max-width:100%;height:auto}
+
+/* Mobile Menu - Professional Design */
+.mobile-menu-toggle{
+display:none;
+font-size:26px;
+cursor:pointer;
+color:#111;
+width:44px;
+height:44px;
+align-items:center;
+justify-content:center;
+border-radius:10px;
+background:transparent;
+transition:all 0.3s ease;
+flex-shrink:0;
+user-select:none;
+-webkit-tap-highlight-color:transparent;
+}
+
+.mobile-menu-toggle:hover{
+background:rgba(0,0,0,0.08);
+}
+
+.mobile-menu-toggle:active{
+transform:scale(0.88);
+background:rgba(0,0,0,0.12);
+}
+
+.nav-links{
+display:flex;
+align-items:center;
+}
+
+/* Mobile - nav uses style.css (unified), Services Hero below */
+@media (max-width:768px){
+
+/* Services Hero - DEVICE OPTIMIZED */
+.services-hero{
+height:auto !important;
+min-height:auto !important;
+padding:5.5rem 1.25rem 3rem !important;
+display:flex !important;
+align-items:center !important;
+justify-content:center !important;
+}
+
+.services-hero-content{
+max-width:100% !important;
+width:100% !important;
+padding:0 0.625rem !important;
+text-align:center !important;
+}
+
+.hero-chip{
+font-size:0.6875rem !important;
+padding:0.375rem 1rem !important;
+margin-bottom:0.875rem !important;
+display:inline-block !important;
+border-radius:2rem !important;
+}
+
+.services-hero h1{
+font-size:clamp(1.875rem,7vw,2.75rem) !important;
+letter-spacing:-0.02em !important;
+line-height:1.15 !important;
+margin-bottom:0.875rem !important;
+word-wrap:break-word !important;
+font-weight:900 !important;
+}
+
+.services-hero p{
+font-size:clamp(0.9375rem,2vw,1rem) !important;
+margin-top:0.75rem !important;
+line-height:1.6 !important;
+word-wrap:break-word !important;
+max-width:42rem !important;
+margin-inline:auto !important;
+color:#555 !important;
+}
+
+.hero-cta{
+margin-top:1.5rem !important;
+display:flex !important;
+flex-direction:column !important;
+gap:0.75rem !important;
+align-items:center !important;
+width:100% !important;
+}
+
+.btn-red,.btn-white{
+width:100% !important;
+max-width:17.5rem !important;
+text-align:center !important;
+padding:0.875rem 1.75rem !important;
+margin:0 !important;
+min-height:3rem !important;
+border-radius:2rem !important;
+font-size:0.9375rem !important;
+font-weight:600 !important;
+transition:all 200ms ease !important;
+}
+
+/* Grid visibility - uses style.css unified mobile grid (more visible) */
+.hero-glow{
+width:clamp(300px,70vw,500px) !important;
+height:clamp(300px,70vw,500px) !important;
+opacity:0.3 !important;
+}
+
+/* SERVICE SECTIONS - DEVICE OPTIMIZED */
+.service{
+min-height:auto !important;
+flex-direction:column !important;
+padding:clamp(3rem,7vh,4.5rem) 1.25rem !important;
+gap:2rem !important;
+width:100% !important;
+max-width:100vw !important;
+box-sizing:border-box !important;
+overflow:hidden !important;
+}
+
+/* Remove alternate layout on mobile */
+.service:nth-child(even){
+flex-direction:column !important;
+background:#fafafa !important;
+}
+
+/* Service Text - Mobile */
+.service-text{
+width:100% !important;
+max-width:100% !important;
+order:2 !important;/* Text comes after media on mobile */
+text-align:center !important;
+padding:0 0.625rem !important;
+}
+
+.service-text h2{
+font-size:clamp(1.625rem,5.5vw,2.125rem) !important;
+margin-bottom:1rem !important;
+line-height:1.25 !important;
+word-wrap:break-word !important;
+font-weight:900 !important;
+letter-spacing:-0.02em !important;
+}
+
+.service-text p{
+font-size:clamp(0.9375rem,2vw,1rem) !important;
+color:#444 !important;
+margin-bottom:1rem !important;
+line-height:1.65 !important;
+word-wrap:break-word !important;
+max-width:42rem !important;
+margin-inline:auto !important;
+}
+
+.service-text ul{
+font-size:clamp(0.875rem,2vw,0.9375rem) !important;
+line-height:1.7 !important;
+font-weight:600 !important;
+padding-left:1.25rem !important;
+text-align:left !important;
+max-width:90% !important;
+margin:0 auto !important;
+}
+
+.service-text ul li{
+margin-bottom:0.5rem !important;
+}
+
+.service-text ul li{
+margin-bottom:8px;
+}
+
+/* Service Media - Mobile */
+.service-media{
+width:100%;
+max-width:100%;
+height:clamp(250px,50vw,350px);
+border-radius:clamp(15px,3vw,20px);
+box-shadow:0 20px 50px rgba(0,0,0,.15);
+order:1;/* Media comes first on mobile */
+overflow:hidden;
+}
+
+.service-media video{
+width:100%;
+height:100%;
+object-fit:cover;
+}
+
+.media-label{
+top:15px;
+left:15px;
+padding:6px 14px;
+font-size:clamp(0.75rem,2vw,0.875rem);
+border-radius:20px;
+}
+
+/* Footer - uses style.css unified mobile footer */
+}
+
+/* Small phones (< 480px) */
+@media (max-width:480px){
+nav{padding:10px 15px;width:96%}
+nav img{height:28px;max-width:120px}
+
+.services-hero{
+padding:80px 15px 50px;
+min-height:60vh;
+}
+
+.services-hero h1{
+font-size:clamp(2rem,9vw,3rem) !important;
+}
+
+.services-hero p{
+font-size:clamp(0.875rem,2.2vw,1rem) !important;
+}
+
+.service{
+padding:clamp(2.5rem,6vh,4rem) clamp(1rem,4vw,1.5rem);
+gap:clamp(1.5rem,4vh,2.5rem);
+}
+
+.service-text h2{
+font-size:clamp(1.5rem,5.5vw,2.25rem) !important;
+}
+
+.service-text p{
+font-size:clamp(0.875rem,2.2vw,1rem) !important;
+}
+
+.service-text ul{
+font-size:clamp(0.8125rem,2vw,0.9375rem);
+line-height:1.8;
+}
+
+.service-media{
+height:clamp(220px,45vw,300px);
+}
+
+/* Footer - uses style.css unified mobile footer */
+}
+
+/* Prevent horizontal scroll */
+*{
+max-width:100%;
+box-sizing:border-box;
+}
+
+/* ===== ANIMATED HAMBURGER MENU ===== */
+@media (max-width:768px){
+.mobile-menu-toggle{
+display:flex !important;
+width:44px !important;
+height:44px !important;
+align-items:center !important;
+justify-content:center !important;
+flex-direction:column !important;
+gap:6px !important;
+cursor:pointer !important;
+margin-left:auto !important;
+background:transparent !important;
+border:none !important;
+padding:0 !important;
+}
+
+.mobile-menu-toggle span{
+display:block !important;
+width:24px !important;
+height:2.5px !important;
+background:#111 !important;
+border-radius:3px !important;
+transition:all 0.3s ease !important;
+}
+
+/* Transform to X when active */
+#navLinks.active + .mobile-menu-toggle span:nth-child(1){
+transform:translateY(8.5px) rotate(45deg) !important;
+}
+#navLinks.active + .mobile-menu-toggle span:nth-child(2){
+opacity:0 !important;
+}
+#navLinks.active + .mobile-menu-toggle span:nth-child(3){
+transform:translateY(-8.5px) rotate(-45deg) !important;
+}
+}
+
+@media (min-width:769px){
+.mobile-menu-toggle{
+display:none !important;
+}
+}
+
+/* ===== SCROLL PROGRESS BAR ===== */
+.scroll-progress{
+position:fixed;
+top:0;
+left:0;
+width:0%;
+height:3px;
+background:linear-gradient(90deg,#ff1e1e,#ff4444);
+z-index:10001;
+transition:width 0.1s ease;
+}
+
+/* ===== BACK TO TOP BUTTON ===== */
+.back-to-top{
+position:fixed;
+bottom:30px;
+right:30px;
+width:50px !important;
+height:50px !important;
+min-width:50px !important;
+min-height:50px !important;
+max-width:50px !important;
+max-height:50px !important;
+background:#ff1e1e;
+color:#fff;
+border-radius:50% !important;
+display:flex !important;
+align-items:center !important;
+justify-content:center !important;
+font-size:24px;
+cursor:pointer;
+opacity:0;
+transform:scale(0);
+transition:all 0.3s ease;
+z-index:1000;
+box-shadow:0 4px 12px rgba(255,30,30,0.3);
+border:none;
+flex-shrink:0 !important;
+padding:0 !important;
+}
+
+.back-to-top.visible{
+opacity:1 !important;
+transform:scale(1) !important;
+}
+
+.back-to-top:hover{
+background:#ff4444;
+transform:scale(1.1) !important;
+box-shadow:0 6px 20px rgba(255,30,30,0.4);
+}
+
+/* Mobile specific fix */
+@media (max-width:768px){
+.back-to-top{
+bottom:20px !important;
+right:20px !important;
+width:50px !important;
+height:50px !important;
+}
+}
+
+/* ===== ENHANCED BUTTON ANIMATIONS ===== */
+.btn-red:hover,.btn-white:hover,button:hover{
+transform:translateY(-2px);
+box-shadow:0 8px 20px rgba(0,0,0,0.15);
+}
+
+.btn-red:active,.btn-white:active,button:active{
+transform:translateY(0) scale(0.98);
+}
+
+/* ===== CARD HOVER EFFECTS ===== */
+.service-card:hover,.tech-card:hover,.card:hover{
+transform:translateY(-6px);
+box-shadow:0 12px 30px rgba(0,0,0,0.12);
+}
+</style>
+</head>
+
+<body>
+
+<!-- Skip to main content (accessibility) -->
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<!-- Scroll Progress Bar -->
+<div class="scroll-progress"></div>
+
+<!-- Back to Top Button -->
+<div class="back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</div>
+
+<!-- NAVBAR -->
+<nav id="navbar" class="light">
+  <a href="index.html" class="nav-brand">
+    <img src="images/EX logo.png" alt="Eximatic Logo">
+    <div class="nav-brand-text">
+      <span class="nav-brand-name">Eximatic</span>
+      <span class="nav-brand-tagline">Technologies</span>
+    </div>
+  </a>
+  <div class="nav-links" id="navLinks">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="solutions.html">Solutions</a>
+    <a href="contact.html">Contact</a>
+    <a href="projects.html">Projects</a>
+  </div>
+  <!-- Animated hamburger menu -->
+  <div class="mobile-menu-toggle" id="menuToggle" onclick="toggleMenu()" aria-label="Toggle navigation menu" role="button" tabindex="0">
+      <span></span>
+      <span></span>
+      <span></span>
+  </div>
+</nav>
+
+
+<!-- HERO -->
+<section class="services-hero" id="main-content">
+    <div class="hero-glow"></div>
+    <div class="hero-grid"></div>
+
+    <div class="services-hero-content">
+        <h1 class="fade-in">Our Services</h1>
+        <p class="fade-in">Smart solutions engineered to modernize, secure and power your workplace infrastructure.</p>
+        <div class="hero-cta">
+            <a href="services.html" class="btn-red fade-in">Explore Services</a>
+            <a href="contact.html" class="btn-white fade-in">Talk to Eximatic</a>
+        </div>
+    </div>
+</section>
+
+<!-- ========== SERVICES START ========== -->
+
+<section class="service">
+
+<div class="service-text">
+<h2 class="fade-in">IT Hardware Infrastructure</h2>
+<p class="fade-in">
+We design and deploy reliable IT hardware setups including enterprise computers,
+servers, networking devices and biometric systems — built to power your
+business with performance, durability and scale.
+</p>
+
+<ul class="fade-in">
+<li>✔ Enterprise laptops & desktops</li>
+<li>✔ Servers & storage solutions</li>
+<li>✔ Networking & connectivity devices</li>
+<li>✔ Biometric and access systems</li>
+</ul>
+</div>
+
+<div class="service-media">
+<span class="media-label" class="fade-in">IT Hardware</span>
+<video autoplay muted loop playsinline>
+  <source src="images/it hardware.mp4" type="video/mp4">
+</video>
+</div>
+
+</section>
+
+
+<section class="service">
+
+<div class="service-text">
+<h2 class="fade-in">Surveillance Systems</h2>
+<p class="fade-in">
+Secure your premises with advanced AI-enabled CCTV surveillance and monitoring
+systems that ensure safety, visibility and control over your workspace.
+</p>
+
+<ul class="fade-in">
+<li>✔ AI CCTV monitoring</li>
+<li>✔ 24×7 recording & alerts</li>
+<li>✔ Entry & exit monitoring</li>
+<li>✔ Centralized surveillance control</li>
+</ul>
+</div>
+
+<div class="service-media">
+<span class="media-label" class="fade-in">Surveillance</span>
+<video autoplay muted loop playsinline>
+  <source src="images/cctv.mp4" type="video/mp4">
+</video>
+</div>
+
+</section>
+
+
+<section class="service">
+
+<div class="service-text">
+<h2 class="fade-in">Smart Office Setup</h2>
+<p class="fade-in">
+Transform traditional workspaces into intelligent smart offices with automated
+controls, energy-saving devices and digital management systems.
+</p>
+
+<ul class="fade-in">
+<li>✔ Smart lighting & energy control</li>
+<li>✔ Digital attendance systems</li>
+<li>✔ Smart access control</li>
+<li>✔ Integrated office automation</li>
+</ul>
+</div>
+
+<div class="service-media">
+<span class="media-label" class="fade-in">Smart Office</span>
+<video autoplay muted loop playsinline>
+  <source src="images/office.mp4" type="video/mp4">
+</video>
+</div>
+
+</section>
+
+
+<section class="service">
+
+<div class="service-text">
+<h2 class="fade-in">Smart Technology Solutions</h2>
+<p class="fade-in">
+Tailored technology implementations that simplify complex business operations
+and create a seamless digital working environment.
+</p>
+
+<ul class="fade-in">
+<li>✔ Customized tech integration</li>
+<li>✔ Digital workplace transformation</li>
+<li>✔ Device & system synchronization</li>
+<li>✔ Modern infrastructure planning</li>
+</ul>
+</div>
+
+<div class="service-media">
+<span class="media-label" class="fade-in">Smart Solutions</span>
+<video autoplay muted loop playsinline>
+  <source src="images/hero video.mp4" type="video/mp4">
+</video>
+</div>
+
+</section>
+
+
+<section class="service">
+
+<div class="service-text">
+<h2 class="fade-in">Intelligent Automation</h2>
+<p class="fade-in">
+We implement intelligent automation that streamlines workflows, reduces human
+errors and frees your team to focus on what truly matters.
+</p>
+
+<ul class="fade-in">
+<li>✔ Workflow automation</li>
+<li>✔ Attendance & access automation</li>
+<li>✔ Process monitoring dashboards</li>
+<li>✔ Centralized digital controls</li>
+</ul>
+</div>
+
+<div class="service-media">
+<span class="media-label" class="fade-in">Automation Boost</span>
+<video autoplay muted loop playsinline>
+  <source src="images/design 4.mp4" type="video/mp4">
+</video>
+</div>
+
+</section>
+
+
+<section class="service">
+
+<div class="service-text">
+<h2 class="fade-in">Secure Technology</h2>
+<p class="fade-in">
+Our security solutions protect your data, devices and infrastructure, giving
+you complete peace of mind in an evolving digital environment.
+</p>
+
+<ul class="fade-in">
+<li>✔ Infrastructure security</li>
+<li>✔ Network protection</li>
+<li>✔ Device-level safeguards</li>
+<li>✔ Secure system architecture</li>
+</ul>
+</div>
+
+<div class="service-media">
+<span class="media-label" class="fade-in">Secure Tech</span>
+<video autoplay muted loop playsinline>
+  <source src="images/secure technology.mp4" type="video/mp4">
+</video>
+</div>
+
+</section>
+
+
+<section class="service">
+
+<div class="service-text">
+<h2 class="fade-in">Business Operations Optimization</h2>
+<p class="fade-in">
+We combine hardware, automation and smart technology to optimize your business
+operations for maximum efficiency and productivity.
+</p>
+
+<ul class="fade-in">
+<li>✔ Process optimization</li>
+<li>✔ Integrated system management</li>
+<li>✔ Reduced operational overhead</li>
+<li>✔ Productivity enhancement</li>
+</ul>
+</div>
+
+<div class="service-media">
+<span class="media-label" class="fade-in">Business Operations</span>
+<video autoplay muted loop playsinline>
+  <source src="images/business2.mp4" type="video/mp4">
+</video>
+</div>
+
+</section>
+<!-- OPERATIONAL INTELLIGENCE SYSTEMS -->
+<section class="service">
+    
+    <div class="service-text">
+        <h2 class="fade-in">Operational Intelligence Systems</h2>
+
+        <p class="fade-in">
+            We develop intelligent monitoring and automation systems that track large
+            platforms, streamline procurement workflows, and provide real-time
+            operational visibility for enterprises and institutions. Our solutions
+            reduce manual dependency, eliminate delays, and turn complex processes
+            into measurable, optimized workflows.
+        </p>
+
+        <ul class="fade-in">
+            <li>✔ Platform Monitoring & Data Intelligence</li>
+            <li>✔ Workflow & Procurement Process Tracking</li>
+            <li>✔ Real-time Operational Dashboards</li>
+            <li>✔ Automated Reporting & Alerts</li>
+            <li>✔ Process Optimization for Large Organizations</li>
+        </ul>
+    </div>
+
+    <div class="service-media">
+        <span class="media-label" class="fade-in">Operations Intelligence</span>
+        <video autoplay muted loop playsinline>
+            <source src="images/operational intelligence.mp4" type="video/mp4">
+        </video>
+    </div>
+
+</section>
+
+<!-- ========== SERVICES END ========== -->
+
+<!-- FOOTER -->
+<footer class="site-footer">
+    <div class="footer-grid">
+        <div>
+            <h3>Eximatic Technologies</h3>
+            <p>Smart solutions for modern enterprises.</p>
+        </div>
+        <div>
+            <h4>Contact</h4>
+            <p>Office No 113, Street No 1<br>Vikash Nagar, Gurugram</p>
+            <p>manager@eximatic.tech</p>
+            <p>+91-7001731117</p>
+        </div>
+        <div>
+            <h4>Quick Links</h4>
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="solutions.html">Solutions</a>
+            <a href="contact.html">Contact</a>
+            <a href="projects.html">Projects</a>
+        </div>
+    </div>
+    <div class="footer-bottom">© 2025. All rights reserved.</div>
+</footer>
+<script>
+const faders = document.querySelectorAll('.fade-in');
+
+const observer = new IntersectionObserver((entries, obs)=>{
+    entries.forEach(entry=>{
+        if(entry.isIntersecting){
+            entry.target.classList.add('show');
+            obs.unobserve(entry.target);
+        }
+    });
+},{threshold:0.2});
+
+faders.forEach(el=>observer.observe(el));
+</script>
+
+<script>
+// Mobile menu toggle
+function toggleMenu(){
+const navLinks = document.getElementById('navLinks');
+navLinks.classList.toggle('active');
+}
+
+document.getElementById('menuToggle')?.addEventListener('keydown',function(e){
+if(e.key==='Enter'||e.key===' '){e.preventDefault();toggleMenu();}
+});
+
+// Close mobile menu when clicking on a link
+document.querySelectorAll('.nav-links a').forEach(link=>{
+link.addEventListener('click', ()=>{
+document.getElementById('navLinks').classList.remove('active');
+});
+});
+</script>
+
+<script>
+/* ===== DYNAMIC UX ENHANCEMENTS ===== */
+
+// SCROLL PROGRESS BAR
+window.addEventListener('scroll', () => {
+    const progressBar = document.querySelector('.scroll-progress');
+    if(progressBar){
+        const windowHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        const scrolled = (window.pageYOffset / windowHeight) * 100;
+        progressBar.style.width = scrolled + '%';
+    }
+});
+
+// BACK TO TOP BUTTON
+const backToTop = document.querySelector('.back-to-top');
+if(backToTop){
+    window.addEventListener('scroll', () => {
+        if(window.pageYOffset > 400){
+            backToTop.classList.add('visible');
+        } else {
+            backToTop.classList.remove('visible');
+        }
+    });
+}
+
+// NAVBAR SCROLL EFFECT
+window.addEventListener('scroll', () => {
+    const nav = document.querySelector('nav');
+    const currentScroll = window.pageYOffset;
+    if(currentScroll > 80){
+        nav.classList.add('scrolled');
+        nav.style.background = 'rgba(255,255,255,0.98)';
+        nav.style.boxShadow = '0 4px 30px rgba(0,0,0,0.1)';
+    } else {
+        nav.classList.remove('scrolled');
+        nav.style.background = '';
+        nav.style.boxShadow = '';
+    }
+});
+
+// SMOOTH ANCHOR LINKS
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e){
+        const href = this.getAttribute('href');
+        if(href !== '#' && href.length > 1){
+            e.preventDefault();
+            const target = document.querySelector(href);
+            if(target){
+                target.scrollIntoView({behavior:'smooth',block:'start'});
+            }
+        }
+    });
+});
+
+console.log('%c✨ Eximatic Technologies', 'font-size:20px;font-weight:900;color:#ff1e1e');
+</script>
+
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mobile Overflow Debug Tool</title>
+<style>
+body{
+    font-family:Arial,sans-serif;
+    padding:20px;
+    background:#f5f5f5;
+}
+button{
+    padding:15px 30px;
+    font-size:16px;
+    background:#ff1e1e;
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    margin:10px 0;
+    display:block;
+}
+button:hover{
+    background:#ff4444;
+}
+#results{
+    background:white;
+    padding:20px;
+    border-radius:8px;
+    margin-top:20px;
+    max-height:500px;
+    overflow-y:auto;
+}
+.error{
+    color:#ff1e1e;
+    font-weight:bold;
+}
+.success{
+    color:#10b981;
+    font-weight:bold;
+}
+.warning{
+    color:#f59e0b;
+}
+</style>
+</head>
+<body>
+
+<h1>🔍 Mobile Overflow Debugger</h1>
+<p>Use this tool to find elements causing horizontal overflow on the projects page.</p>
+
+<button onclick="checkOverflow()">Check for Overflow Issues</button>
+<button onclick="findWidestElements()">Find Widest Elements</button>
+<button onclick="checkViewport()">Check Viewport Stats</button>
+
+<div id="results"></div>
+
+<script>
+function checkOverflow(){
+    const results = document.getElementById('results');
+    const bodyWidth = document.body.scrollWidth;
+    const viewportWidth = window.innerWidth;
+    const hasOverflow = bodyWidth > viewportWidth;
+    
+    let html = '<h2>Overflow Check Results:</h2>';
+    html += `<p><strong>Viewport Width:</strong> ${viewportWidth}px</p>`;
+    html += `<p><strong>Body Scroll Width:</strong> ${bodyWidth}px</p>`;
+    html += `<p><strong>Difference:</strong> ${bodyWidth - viewportWidth}px</p>`;
+    
+    if(hasOverflow){
+        html += `<p class="error">❌ OVERFLOW DETECTED! Body is ${bodyWidth - viewportWidth}px wider than viewport.</p>`;
+    } else {
+        html += `<p class="success">✅ NO OVERFLOW! Page fits perfectly.</p>`;
+    }
+    
+    results.innerHTML = html;
+}
+
+function findWidestElements(){
+    const results = document.getElementById('results');
+    const viewportWidth = window.innerWidth;
+    const elements = [];
+    
+    document.querySelectorAll('*').forEach(el => {
+        const width = el.scrollWidth;
+        const rect = el.getBoundingClientRect();
+        
+        if(width > viewportWidth){
+            elements.push({
+                element: el,
+                width: width,
+                tag: el.tagName.toLowerCase(),
+                className: el.className,
+                id: el.id,
+                overflow: width - viewportWidth
+            });
+        }
+    });
+    
+    elements.sort((a, b) => b.overflow - a.overflow);
+    
+    let html = '<h2>Elements Wider Than Viewport:</h2>';
+    
+    if(elements.length === 0){
+        html += '<p class="success">✅ No elements exceed viewport width!</p>';
+    } else {
+        html += `<p class="error">Found ${elements.length} elements wider than viewport:</p>`;
+        html += '<ol>';
+        elements.slice(0, 10).forEach(item => {
+            html += `<li>`;
+            html += `<strong>${item.tag}</strong>`;
+            if(item.id) html += ` #${item.id}`;
+            if(item.className) html += ` .${item.className.split(' ').join('.')}`;
+            html += `<br>Width: ${item.width}px (${item.overflow}px overflow)`;
+            html += `</li>`;
+        });
+        html += '</ol>';
+    }
+    
+    results.innerHTML = html;
+}
+
+function checkViewport(){
+    const results = document.getElementById('results');
+    
+    let html = '<h2>Viewport Statistics:</h2>';
+    html += `<p><strong>Window Width:</strong> ${window.innerWidth}px</p>`;
+    html += `<p><strong>Window Height:</strong> ${window.innerHeight}px</p>`;
+    html += `<p><strong>Document Width:</strong> ${document.documentElement.scrollWidth}px</p>`;
+    html += `<p><strong>Document Height:</strong> ${document.documentElement.scrollHeight}px</p>`;
+    html += `<p><strong>Body Width:</strong> ${document.body.scrollWidth}px</p>`;
+    html += `<p><strong>Body Height:</strong> ${document.body.scrollHeight}px</p>`;
+    html += `<p><strong>Device Pixel Ratio:</strong> ${window.devicePixelRatio}</p>`;
+    
+    const hasHorizontalScroll = document.documentElement.scrollWidth > window.innerWidth;
+    const hasVerticalScroll = document.documentElement.scrollHeight > window.innerHeight;
+    
+    html += '<br>';
+    html += hasHorizontalScroll ? 
+        '<p class="error">❌ Horizontal scroll detected</p>' : 
+        '<p class="success">✅ No horizontal scroll</p>';
+    html += hasVerticalScroll ? 
+        '<p class="success">✅ Vertical scroll (normal)</p>' : 
+        '<p class="warning">⚠️ No vertical scroll</p>';
+    
+    results.innerHTML = html;
+}
+
+// Auto-run on load
+window.addEventListener('load', () => {
+    setTimeout(checkOverflow, 500);
+});
+</script>
+
+</body>
+</html>

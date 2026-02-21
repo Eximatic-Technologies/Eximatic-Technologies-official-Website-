@@ -1,0 +1,1917 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#0b0b0d">
+
+<!-- Preconnect for faster font loading -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<!-- SEO Meta Tags -->
+<title>Eximatic Technologies | Smart Infrastructure Solutions</title>
+<meta name="description" content="Eximatic Technologies provides comprehensive smart infrastructure solutions including digital hardware, automation, surveillance, and power management for modern businesses.">
+<meta name="keywords" content="smart infrastructure, automation, digital solutions, surveillance, power management, Eximatic">
+<meta name="author" content="Eximatic Technologies">
+<meta name="robots" content="index, follow">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Eximatic Technologies | Smart Infrastructure Solutions">
+<meta property="og:description" content="Simplify operations with reliable tech expertise. Smart infrastructure solutions for modern businesses.">
+<meta property="og:image" content="images/EX logo.png">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Eximatic Technologies | Smart Infrastructure Solutions">
+<meta name="twitter:description" content="Simplify operations with reliable tech expertise.">
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="images/EX logo.png">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+/* ===== MODERN RESPONSIVE FOUNDATION ===== */
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+
+/* Prevent iOS text size adjust */
+html{
+-webkit-text-size-adjust:100%;
+-moz-text-size-adjust:100%;
+text-size-adjust:100%;
+overflow-x:hidden;
+max-width:100vw;
+scroll-behavior:smooth;
+font-size:16px;
+}
+
+body{
+font-family:'Inter',sans-serif;
+background:#0b0b0d52;
+color:white;
+overflow-x:hidden;
+max-width:100vw;
+position:relative;
+line-height:1.6;
+-webkit-font-smoothing:antialiased;
+-moz-osx-font-smoothing:grayscale;
+}
+
+/* Fluid Typography - OPTIMIZED for all devices */
+h1{font-size:clamp(1.75rem,6vw,4rem);line-height:1.15;letter-spacing:-0.02em;margin-bottom:1rem}
+h2{font-size:clamp(1.5rem,4.5vw,3rem);line-height:1.2;letter-spacing:-0.01em;margin-bottom:0.875rem}
+h3{font-size:clamp(1.125rem,2.8vw,1.75rem);line-height:1.3;margin-bottom:0.75rem}
+h4{font-size:clamp(1rem,2.2vw,1.375rem);line-height:1.4;margin-bottom:0.625rem}
+p{font-size:clamp(0.9375rem,2vw,1.0625rem);line-height:1.65;margin-bottom:1rem}
+
+/* ===== RESPONSIVE IMAGES & MEDIA (Modern Technique) ===== */
+/* Intrinsic Ratios for Images */
+img,video,iframe,embed{
+max-width:100%;
+height:auto;
+display:block;
+}
+
+img{
+object-fit:contain;
+image-rendering:crisp-edges;
+image-rendering:-webkit-optimize-contrast;
+}
+
+/* Picture element support */
+picture{display:block;width:100%}
+picture img{width:100%;height:auto}
+
+/* Background videos - Cover technique */
+.hero-video,.solve-video,.bg-video,.auto-bg-video{
+position:absolute !important;
+inset:0 !important;
+width:100% !important;
+height:100% !important;
+object-fit:cover !important;
+pointer-events:none;
+}
+
+/* Content images - Contain technique */
+.about-logo,.logo-img,.product-img{
+max-width:100%;
+height:auto;
+object-fit:contain;
+}
+
+/* ===== RESPONSIVE TYPOGRAPHY ===== */
+/* Fluid, smooth scaling text */
+p,h1,h2,h3,h4,h5,h6,span,a,li{
+word-wrap:break-word;
+overflow-wrap:break-word;
+hyphens:auto;
+}
+
+/* Better text rendering */
+body{
+text-rendering:optimizeLegibility;
+font-feature-settings:"kern" 1;
+font-kerning:normal;
+}
+
+/* ===== FLEXIBLE CONTAINERS - OPTIMIZED ===== */
+/* Perfect spacing for all devices */
+.container,.section-container{
+width:100%;
+max-width:min(92%,1320px);
+margin-inline:auto;
+padding-inline:clamp(1rem,4vw,2rem);
+}
+
+/* Consistent section spacing */
+section{
+padding-block:clamp(3rem,8vh,6rem);
+width:100%;
+max-width:100vw;
+overflow-x:hidden;
+}
+
+/* Flexible sections */
+section{
+width:100%;
+max-width:100vw;
+overflow-x:hidden;
+padding-block:clamp(2rem,8vh,6rem);
+}
+
+/* ===== MODERN RESPONSIVE BREAKPOINTS ===== */
+
+/* Extra Small Devices (Phones, 320px - 480px) */
+@media (max-width:30em){
+:root{font-size:14px}
+section{padding-block:clamp(1.5rem,5vh,3rem)}
+.container{padding-inline:1rem}
+}
+
+/* Small Devices (Large Phones, 481px - 768px) */
+@media (min-width:30.0625em) and (max-width:48em){
+:root{font-size:15px}
+section{padding-block:clamp(2rem,6vh,4rem)}
+}
+
+/* Medium Devices (Tablets, 769px - 1024px) */
+@media (min-width:48.0625em) and (max-width:64em){
+:root{font-size:16px}
+.container{max-width:min(85%,1200px)}
+}
+
+/* Large Devices (Desktops, 1025px+) */
+@media (min-width:64.0625em){
+:root{font-size:16px}
+.container{max-width:min(90%,1400px)}
+}
+
+/* Mobile-First Media Query */
+@media (max-width:48em){
+/* Global mobile resets */
+html,body{
+overflow-x:hidden !important;
+max-width:100vw !important;
+font-size:16px;
+}
+
+/* Images */
+img{max-width:100% !important;height:auto !important}
+video{max-width:100% !important;object-fit:cover !important}
+
+/* Sections */
+section{
+max-width:100vw !important;
+overflow-x:hidden !important;
+padding-inline:clamp(1.25rem,5vw,2rem);
+padding-block:clamp(3rem,8vh,5rem);
+}
+
+/* Typography - Enhanced readability */
+h1{
+font-size:clamp(2rem,7.5vw,3.25rem) !important;
+letter-spacing:-0.02em !important;
+line-height:1.15 !important;
+font-weight:900 !important;
+}
+
+h2{
+font-size:clamp(1.625rem,5.5vw,2.625rem) !important;
+letter-spacing:-0.015em !important;
+line-height:1.2 !important;
+font-weight:800 !important;
+}
+
+h3{
+font-size:clamp(1.25rem,4.5vw,2rem) !important;
+letter-spacing:-0.01em !important;
+line-height:1.3 !important;
+font-weight:700 !important;
+}
+
+p{
+font-size:clamp(0.9375rem,2.8vw,1.125rem) !important;
+line-height:1.75 !important;
+font-weight:400 !important;
+letter-spacing:0.01em !important;
+}
+
+/* Text wrapping - Critical for mobile */
+*{
+max-width:100%;
+word-wrap:break-word !important;
+overflow-wrap:break-word !important;
+}
+
+h1,h2,h3,h4,h5,h6,p,span,div,a,li{
+word-wrap:break-word;
+overflow-wrap:break-word;
+white-space:normal;
+hyphens:auto;
+}
+
+/* Touch targets (44x44px minimum) */
+button,a,.btn{
+min-height:48px;
+min-width:48px;
+padding:clamp(0.875rem,2.5vw,1.125rem) clamp(1.75rem,4.5vw,2.25rem);
+}
+
+/* Phone images */
+.auto-media-inner img,.glass-video img,img[src*="phone"],img[src*="mobile"]{
+max-width:min(280px,90%);
+height:auto;
+object-fit:contain;
+margin-inline:auto;
+}
+}
+
+/* ===== TEXT FADE IN ===== */
+.fade-in{
+    opacity:0;
+    transform:translateY(40px);
+    transition:opacity .9s ease, transform .9s ease;
+}
+.fade-in.show{
+    opacity:1;
+    transform:translateY(0);
+}
+
+
+/* ===== RESPONSIVE NAVBAR ===== */
+nav{
+position:fixed;
+top:clamp(15px,3vw,25px);
+left:50%;
+transform:translateX(-50%);
+width:clamp(90%,95vw,92%);
+padding:clamp(12px,2vw,16px) clamp(20px,4vw,50px);
+display:flex;
+justify-content:space-between;
+align-items:center;
+backdrop-filter:blur(18px);
+background:rgba(255,255,255,0.08);
+border:1px solid rgba(255,255,255,0.15);
+border-radius:clamp(10px,2vw,14px);
+z-index:1000;
+transition:all .3s ease;
+max-width:100vw;
+box-sizing:border-box;
+}
+
+nav img{
+height:clamp(28px,5vw,42px);
+width:auto;
+max-width:150px;
+object-fit:contain;
+}
+
+nav a{
+text-decoration:none;
+margin-left:clamp(20px,3vw,40px);
+font-weight:600;
+color:white;
+position:relative;
+transition:.3s;
+font-size:clamp(0.875rem,1.5vw,1rem);
+}
+
+nav.light a{color:black}
+
+nav a::after{
+content:"";
+position:absolute;
+left:0;
+bottom:-6px;
+width:0;
+height:2px;
+background:#ff1e1e;
+transition:.3s;
+}
+
+nav a:hover::after{width:100%}
+nav a:hover{color:#ff1e1e}
+
+/* MOBILE MENU - Professional Design */
+.mobile-menu-toggle{
+display:none;
+font-size:26px;
+cursor:pointer;
+color:white;
+width:44px;
+height:44px;
+align-items:center;
+justify-content:center;
+border-radius:10px;
+background:transparent;
+transition:all 0.3s ease;
+flex-shrink:0;
+user-select:none;
+-webkit-tap-highlight-color:transparent;
+}
+
+.mobile-menu-toggle:hover{
+background:rgba(255,255,255,0.1);
+}
+
+.mobile-menu-toggle:active{
+transform:scale(0.88);
+background:rgba(255,255,255,0.15);
+}
+
+nav.light .mobile-menu-toggle{color:black}
+nav.light .mobile-menu-toggle:hover{background:rgba(0,0,0,0.08)}
+nav.light .mobile-menu-toggle:active{background:rgba(0,0,0,0.12)}
+
+.nav-links{display:flex;align-items:center}
+
+/* ===== MOBILE-SPECIFIC STYLES (Modern Approach) ===== */
+@media (max-width:48em){
+/* Navigation - Professional Mobile Design */
+nav{
+width:calc(100% - 20px);
+max-width:95vw;
+padding:14px 20px;
+top:15px;
+display:flex !important;
+flex-direction:row !important;
+justify-content:space-between;
+align-items:center;
+gap:15px;
+}
+
+nav img{
+height:32px;
+max-width:150px;
+width:auto;
+flex-shrink:0;
+margin-right:auto;
+}
+
+.mobile-menu-toggle{
+display:flex !important;
+margin-left:auto;
+}
+
+.nav-links{
+display:none;
+position:absolute;
+top:72px;
+left:10px;
+right:10px;
+background:white;
+backdrop-filter:blur(20px);
+border-radius:16px;
+padding:10px;
+flex-direction:column;
+box-shadow:0 12px 40px rgba(0,0,0,0.15);
+animation:slideDown 0.3s ease;
+order:3;
+}
+
+@keyframes slideDown{
+from{opacity:0;transform:translateY(-10px)}
+to{opacity:1;transform:translateY(0)}
+}
+
+.nav-links.active{display:flex}
+
+.nav-links a{
+margin:4px 0;
+width:100%;
+text-align:center;
+font-size:15px;
+padding:14px 20px;
+border-radius:10px;
+min-height:48px;
+display:flex;
+align-items:center;
+justify-content:center;
+transition:all 0.2s ease;
+font-weight:600;
+color:#111;
+}
+
+.nav-links a:hover{
+background:rgba(255,30,30,0.08);
+color:#ff1e1e;
+}
+
+.nav-links a:active{
+transform:scale(0.97);
+background:rgba(255,30,30,0.12);
+}
+
+nav.light .nav-links{background:white}
+nav.light .nav-links a{color:#111}
+nav.light .nav-links a:hover{background:rgba(255,30,30,0.08);color:#ff1e1e}
+
+/* Hero - Mobile optimized */
+.hero{
+height:auto;
+min-height:60vh !important;
+max-height:70vh !important;
+padding:clamp(80px,12vh,100px) clamp(1.25rem,5vw,2rem) clamp(2rem,5vh,3rem);
+display:flex;
+align-items:center;
+justify-content:center;
+position:relative;
+overflow:hidden;
+}
+
+.hero-video{
+filter:brightness(0.5) !important;
+}
+
+.hero-content{
+margin-top:0;
+padding-inline:clamp(1rem,4vw,2rem);
+max-width:100%;
+text-align:center;
+position:relative;
+z-index:2;
+}
+
+.hero h1{
+font-size:clamp(2rem,7.5vw,3rem) !important;
+letter-spacing:-0.02em !important;
+line-height:1.15 !important;
+font-weight:900 !important;
+margin-bottom:clamp(0.75rem,2vh,1rem) !important;
+color:#fff !important;
+text-shadow:0 2px 10px rgba(0,0,0,0.3);
+}
+
+.hero p{
+font-size:clamp(0.9375rem,2.8vw,1.125rem) !important;
+margin-top:0 !important;
+line-height:1.6 !important;
+max-width:90%;
+margin-inline:auto;
+color:#fff !important;
+text-shadow:0 1px 5px rgba(0,0,0,0.3);
+}
+
+/* Curved Sections - Fluid */
+.curved{
+padding:clamp(3rem,7vh,4.5rem) clamp(1.5rem,5vw,2.5rem);
+border-top-left-radius:clamp(30px,8vw,45px);
+border-top-right-radius:clamp(30px,8vw,45px);
+margin-top:clamp(-30px,-5vw,-40px);
+background:#fff !important;
+}
+
+.about-eng{
+background:#fff !important;
+}
+
+/* About Grid - Responsive */
+.about-grid{
+grid-template-columns:1fr !important;
+gap:clamp(1.5rem,4vh,2rem) !important;
+max-width:100%;
+padding:0;
+}
+
+.about-right{
+order:2;
+display:flex;
+justify-content:center;
+align-items:center;
+max-width:100%;
+padding-block:clamp(1rem,3vh,1.5rem);
+}
+
+.about-left{
+max-width:100%;
+padding:0;
+text-align:left;
+order:1;
+}
+
+.about-left h2{
+font-size:clamp(1.75rem,5vw,2.5rem) !important;
+line-height:1.2;
+margin-bottom:clamp(1rem,2.5vh,1.5rem);
+word-wrap:break-word;
+font-weight:800 !important;
+letter-spacing:-0.015em !important;
+}
+
+.about-left p{
+font-size:clamp(0.9375rem,2.5vw,1.0625rem) !important;
+line-height:1.7;
+margin-bottom:clamp(0.875rem,2vh,1.125rem);
+word-wrap:break-word;
+font-weight:400 !important;
+}
+
+.about-sub{
+margin-top:clamp(0.875rem,2vh,1.25rem);
+opacity:0.9;
+}
+
+.about-points{
+font-size:clamp(0.875rem,2.2vw,1rem);
+margin-top:clamp(1.5rem,3.5vh,2rem);
+max-width:100%;
+display:grid;
+gap:clamp(0.625rem,1.8vh,0.875rem);
+}
+
+.about-points div{
+padding:clamp(0.75rem,1.8vw,0.875rem) 0;
+line-height:1.65;
+font-weight:500;
+}
+
+.logo-grid-wrap{
+height:clamp(120px,20vh,150px);
+max-width:100%;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.about-logo{
+width:clamp(100px,25vw,140px) !important;
+max-width:70% !important;
+height:auto !important;
+margin:0 auto;
+display:block;
+object-fit:contain;
+opacity:0.95;
+}
+
+/* tech-grid - uses style.css unified mobile grid (more visible) */
+
+/* Solve Section - Modern responsive */
+.solve{
+height:auto;
+min-height:clamp(550px,75vh,85vh);
+padding:clamp(3.5rem,8vh,5rem) clamp(1.5rem,5vw,2.5rem);
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+.solve-center,.solve-content{
+max-width:100%;
+padding-inline:0;
+text-align:center;
+}
+
+.solve h2{
+font-size:clamp(2rem,6vw,3rem) !important;
+line-height:1.1;
+margin-bottom:clamp(1.25rem,3vh,1.75rem);
+font-weight:900 !important;
+letter-spacing:-0.02em !important;
+}
+
+.solve p,.solve-intro{
+font-size:clamp(1rem,2.8vw,1.1875rem) !important;
+line-height:1.7;
+margin-bottom:clamp(1.5rem,3.5vh,2rem);
+max-width:95%;
+margin-inline:auto;
+}
+
+.solve-lines{
+margin-top:clamp(2rem,5vh,3rem);
+display:grid;
+gap:clamp(1rem,2.5vw,1.5rem);
+max-width:100%;
+}
+
+.solve-line{
+font-size:clamp(0.9375rem,2.3vw,1.0625rem);
+padding:clamp(1rem,3vw,1.375rem) clamp(1.25rem,4vw,1.75rem);
+line-height:1.7;
+background:rgba(0,0,0,0.5);
+border-radius:clamp(12px,2.5vw,16px);
+backdrop-filter:blur(15px);
+border:1px solid rgba(255,255,255,0.15);
+text-align:left;
+font-weight:500;
+}
+
+/* Services - Responsive grid */
+.services-pro{
+padding:clamp(3.5rem,8vh,5.5rem) clamp(1.5rem,5vw,2.5rem);
+}
+
+.services-head{
+margin-bottom:clamp(2.5rem,5vh,3.5rem);
+text-align:center;
+}
+
+.services-head h2{
+font-size:clamp(1.875rem,5.5vw,2.75rem) !important;
+line-height:1.15;
+margin-bottom:clamp(1rem,2.5vh,1.5rem);
+font-weight:800 !important;
+letter-spacing:-0.015em !important;
+}
+
+.services-head p{
+font-size:clamp(1rem,2.8vw,1.1875rem) !important;
+line-height:1.7;
+margin-bottom:clamp(1.5rem,3.5vh,2rem);
+max-width:95%;
+margin-inline:auto;
+}
+
+.explore-btn{
+padding:clamp(0.875rem,2.5vw,1.125rem) clamp(1.75rem,4.5vw,2.25rem);
+font-size:clamp(0.9375rem,2.3vw,1.0625rem);
+border-radius:clamp(8px,2vw,12px);
+min-height:48px;
+display:inline-flex;
+align-items:center;
+justify-content:center;
+font-weight:600;
+}
+
+.services-grid{
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr)) !important;
+gap:clamp(1.5rem,4vw,2.5rem) !important;
+max-width:100%;
+padding:0 10px;
+}
+
+.service-card{
+padding:clamp(1.75rem,4.5vw,2.75rem) clamp(1.5rem,4vw,2.25rem) !important;
+border-radius:clamp(16px,3.5vw,24px) !important;
+text-align:left;
+}
+
+.service-card h3{
+font-size:clamp(1.25rem,3.5vw,1.625rem) !important;
+margin-bottom:clamp(0.875rem,2vh,1.25rem);
+font-weight:700 !important;
+line-height:1.25;
+letter-spacing:-0.01em !important;
+}
+
+.service-card p{
+font-size:clamp(0.9375rem,2.3vw,1.0625rem) !important;
+line-height:1.75;
+font-weight:400 !important;
+}
+
+.learn-btn{
+padding:clamp(0.75rem,2.3vw,1rem) clamp(1.5rem,4vw,1.875rem);
+font-size:clamp(0.875rem,2.2vw,1rem);
+margin-top:clamp(1rem,2.5vh,1.375rem);
+border-radius:clamp(24px,5vw,32px);
+min-height:48px;
+display:inline-flex;
+align-items:center;
+justify-content:center;
+font-weight:600;
+}
+
+.services-network{display:none !important}
+
+/* Footer - Responsive */
+footer{
+grid-template-columns:1fr !important;
+gap:clamp(2rem,5vw,3rem) !important;
+padding:clamp(3rem,7vh,4.5rem) clamp(1.5rem,5vw,2.5rem) !important;
+text-align:center;
+}
+
+footer h4{
+font-size:clamp(1.125rem,2.8vw,1.375rem);
+margin-bottom:clamp(1rem,2.5vh,1.375rem);
+font-weight:700 !important;
+letter-spacing:-0.01em !important;
+}
+
+footer p,footer a{
+font-size:clamp(0.9375rem,2.3vw,1.0625rem);
+line-height:1.8;
+font-weight:400 !important;
+margin-bottom:clamp(0.5rem,1.5vh,0.75rem);
+}
+
+footer a{
+display:inline-block;
+transition:color 0.3s ease;
+}
+
+.bottom{
+padding:clamp(1.25rem,3vh,1.75rem) clamp(1rem,3vw,1.5rem);
+font-size:clamp(0.875rem,2vw,1rem);
+margin-top:clamp(1rem,3vh,1.5rem);
+border-top:1px solid rgba(255,255,255,0.1);
+}
+
+/* Modal - Touch-friendly */
+.service-modal{
+padding:clamp(1rem,3vw,1.5rem);
+}
+
+.service-modal-body{
+width:clamp(90%,95vw,95%);
+max-width:95vw;
+padding:clamp(2rem,5vw,2.5rem) clamp(1.25rem,4vw,2rem);
+border-radius:clamp(20px,4vw,25px) clamp(8px,2vw,10px) clamp(20px,4vw,25px) clamp(8px,2vw,10px);
+max-height:85vh;
+overflow-y:auto;
+-webkit-overflow-scrolling:touch;
+}
+
+.service-modal-body h2{
+font-size:clamp(1.375rem,4vw,1.875rem) !important;
+line-height:1.2;
+margin-bottom:clamp(0.875rem,2vh,1.125rem);
+}
+
+.service-modal-body p{
+font-size:clamp(0.875rem,2.5vw,1rem) !important;
+line-height:1.7;
+margin-bottom:clamp(0.75rem,2vh,1rem);
+}
+
+.close-modal{
+font-size:clamp(26px,5vw,32px);
+top:clamp(10px,2vw,15px);
+right:clamp(12px,3vw,18px);
+min-width:44px;
+min-height:44px;
+display:flex;
+align-items:center;
+justify-content:center;
+cursor:pointer;
+transition:transform .2s ease;
+}
+
+.close-modal:active{
+transform:scale(0.9);
+}
+
+/* Generic - Responsive */
+.grid{
+grid-template-columns:1fr !important;
+gap:clamp(1.25rem,3vw,2rem) !important;
+max-width:100%;
+}
+
+.card{
+padding:clamp(1.25rem,4vw,2rem) clamp(1rem,3vw,1.5rem);
+max-width:100%;
+overflow:hidden;
+}
+
+.card h3,.card h4{
+font-size:clamp(1.125rem,3vw,1.5rem) !important;
+margin-bottom:clamp(0.75rem,1.5vh,1rem);
+line-height:1.3;
+}
+
+.card p{
+font-size:clamp(0.875rem,2vw,1rem) !important;
+line-height:1.7;
+margin-bottom:clamp(0.625rem,1.5vh,0.875rem);
+}
+
+.card ul{
+font-size:clamp(0.875rem,2vw,1rem);
+line-height:1.8;
+padding-left:clamp(1rem,3vw,1.5rem);
+}
+
+.card ul li{
+margin-bottom:clamp(0.5rem,1.5vh,0.75rem);
+}
+
+.flex{
+grid-template-columns:1fr !important;
+gap:clamp(1.5rem,4vw,2.5rem) !important;
+max-width:100%;
+}
+
+/* Contact/Form sections - Responsive */
+.contact-info,.contact-section{
+padding:clamp(1.25rem,3vw,2rem);
+max-width:100%;
+}
+
+.contact-info h3,.contact-info h4{
+font-size:clamp(1.25rem,3.5vw,1.625rem) !important;
+margin-bottom:clamp(0.875rem,2vh,1.125rem);
+}
+
+.contact-info p,.contact-info a{
+font-size:clamp(0.9375rem,2.5vw,1.125rem) !important;
+line-height:1.7;
+margin-bottom:clamp(0.625rem,1.5vh,0.875rem);
+word-wrap:break-word;
+}
+
+/* Phone/Device mockups - Responsive sizing */
+.phone-mockup,.device-image,.product-image{
+max-width:clamp(220px,60vw,280px) !important;
+height:auto !important;
+margin:0 auto;
+display:block;
+object-fit:contain;
+}
+
+/* Lists - Touch-friendly spacing */
+ul,ol{
+padding-left:clamp(1.25rem,4vw,2rem);
+max-width:100%;
+}
+
+ul li,ol li{
+font-size:clamp(0.875rem,2vw,1rem);
+line-height:1.7;
+margin-bottom:clamp(0.5rem,1.5vh,0.75rem);
+}
+
+/* Buttons - Touch targets */
+button,.btn,a.btn{
+min-height:44px;
+min-width:44px;
+padding:clamp(0.75rem,2vw,1rem) clamp(1.5rem,4vw,2rem);
+font-size:clamp(0.875rem,2vw,1rem);
+border-radius:clamp(6px,2vw,8px);
+cursor:pointer;
+transition:transform .2s ease,background .3s ease;
+}
+
+button:active,.btn:active{
+transform:scale(0.97);
+}
+}
+
+/* ===== EXTRA SMALL DEVICES (< 480px) ===== */
+@media (max-width:30em){
+/* Optimize base font size */
+:root{font-size:15px}
+
+/* Navigation - Ultra compact */
+nav{
+padding:clamp(10px,2vw,12px) clamp(15px,3.5vw,18px);
+width:calc(100% - 20px);
+}
+
+nav img{
+height:clamp(26px,5.5vw,30px) !important;
+max-width:clamp(100px,28vw,130px) !important;
+}
+
+/* Hero - Optimized for small screens */
+.hero{
+height:auto !important;
+min-height:55vh !important;
+max-height:65vh !important;
+padding:clamp(80px,12vh,100px) clamp(1rem,4vw,1.5rem) clamp(2rem,5vh,2.5rem) !important;
+}
+
+.hero h1{
+font-size:clamp(1.875rem,7vw,2.5rem) !important;
+letter-spacing:-0.02em !important;
+line-height:1.15 !important;
+}
+
+.hero p{
+font-size:clamp(0.875rem,2.5vw,1rem) !important;
+line-height:1.6;
+}
+
+/* About - Compact */
+.about-left h2,.services-head h2{
+font-size:clamp(1.5rem,4.5vw,2rem) !important;
+line-height:1.2;
+}
+
+.about-left p,.services-head p{
+font-size:clamp(0.875rem,2.2vw,1rem) !important;
+line-height:1.6;
+}
+
+.logo-grid-wrap{
+height:clamp(80px,15vh,100px) !important;
+padding:clamp(0.5rem,2vh,1rem);
+}
+
+.about-logo{
+width:clamp(80px,20vw,100px) !important;
+max-width:60% !important;
+}
+
+.about-points{
+font-size:clamp(0.8125rem,2vw,0.9375rem);
+}
+
+.about-grid{
+gap:clamp(1rem,3vh,1.5rem) !important;
+}
+
+.about-points div{
+padding:clamp(0.5rem,1.5vw,0.625rem) 0;
+}
+
+/* Solve - Optimized */
+.solve{
+padding:clamp(2rem,5vh,3rem) clamp(0.875rem,3vw,1.25rem);
+}
+
+.solve h2{
+font-size:clamp(1.625rem,5vw,2.25rem) !important;
+}
+
+.solve p,.solve-intro{
+font-size:clamp(0.8125rem,2.2vw,0.9375rem) !important;
+}
+
+.solve-line{
+font-size:clamp(0.75rem,2vw,0.875rem);
+padding:clamp(0.75rem,2vw,1rem) clamp(0.875rem,2.5vw,1.125rem);
+}
+
+/* Services - Compact cards */
+.services-pro{
+padding:clamp(2.5rem,6vh,4rem) clamp(0.875rem,3vw,1.25rem);
+}
+
+.service-card{
+padding:clamp(1.25rem,3.5vw,2rem) clamp(0.875rem,2.5vw,1.25rem) !important;
+}
+
+.service-card h3{
+font-size:clamp(1rem,3vw,1.375rem) !important;
+margin-bottom:clamp(0.625rem,1.5vh,0.875rem);
+}
+
+.service-card p{
+font-size:clamp(0.8125rem,2vw,0.9375rem) !important;
+line-height:1.6;
+}
+
+.service-card ul li{
+font-size:clamp(0.75rem,2vw,0.875rem);
+}
+
+/* Cards - Space-efficient */
+.card{
+padding:clamp(1rem,3vw,1.5rem) clamp(0.875rem,2.5vw,1.25rem);
+}
+
+.card h3,.card h4{
+font-size:clamp(1rem,3vw,1.375rem) !important;
+}
+
+.card p{
+font-size:clamp(0.8125rem,2vw,0.9375rem) !important;
+}
+
+.card ul li{
+font-size:clamp(0.8125rem,2vw,0.9375rem);
+}
+
+/* Contact - Compact */
+.contact-info h3,.contact-info h4{
+font-size:clamp(1.125rem,3vw,1.5rem) !important;
+}
+
+.contact-info p,.contact-info a{
+font-size:clamp(0.875rem,2.2vw,1rem) !important;
+}
+
+/* Phone mockups - Smaller */
+.phone-mockup,.device-image,.product-image{
+max-width:clamp(180px,50vw,220px) !important;
+}
+
+/* Footer - uses style.css unified mobile footer */
+
+/* Buttons - Maintain touch targets */
+button,.btn,a.btn{
+min-height:44px;
+font-size:clamp(0.8125rem,2vw,0.9375rem);
+padding:clamp(0.625rem,2vw,0.875rem) clamp(1.25rem,3.5vw,1.75rem);
+}
+}
+
+/* ===== RESPONSIVE HERO SECTION ===== */
+.hero{
+position:relative;
+height:clamp(500px,100vh,100vh);
+min-height:100svh;/* Modern viewport unit */
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+overflow:hidden;
+}
+
+/* Mobile hero override */
+@media (max-width:768px){
+.hero{
+min-height:60vh !important;
+max-height:70vh !important;
+height:auto !important;
+}
+}
+}
+
+.hero-video{
+position:absolute;
+inset:0;
+width:100%;
+height:100%;
+object-fit:cover;
+filter:brightness(45%);
+}
+
+.hero-content{
+position:relative;
+z-index:2;
+margin-top:clamp(60px,12vh,180px);
+max-width:min(90%,900px);
+padding-inline:clamp(1rem,4vw,2rem);
+width:100%;
+}
+
+.hero h1{
+font-size:clamp(2.5rem,10vw,7rem);
+font-weight:900;
+line-height:1.05;
+letter-spacing:clamp(-2px,-0.5vw,-4px);
+margin-bottom:clamp(0.75rem,2vh,1.25rem);
+}
+
+.hero p{
+margin-top:clamp(12px,2vh,18px);
+font-size:clamp(0.95rem,2.5vw,1.25rem);
+color:#d1d5db;
+line-height:1.6;
+max-width:min(100%,600px);
+margin-inline:auto;
+}
+
+/* ===== RESPONSIVE CURVED SECTIONS ===== */
+.curved{
+background:white;
+color:black;
+padding:clamp(3rem,10vh,8.75rem) clamp(1.25rem,8vw,10%);
+border-top-left-radius:clamp(40px,10vw,120px);
+border-top-right-radius:clamp(40px,10vw,120px);
+margin-top:clamp(-40px,-6vw,-80px);
+position:relative;
+z-index:5;
+max-width:100%;
+overflow-x:hidden;
+box-sizing:border-box;
+}
+
+.curved > *{
+max-width:100%;
+box-sizing:border-box;
+}
+
+.curved h2{
+font-size:clamp(2rem,5vw,3.5rem);
+margin-bottom:clamp(1rem,2.5vh,1.75rem);
+line-height:1.2;
+}
+
+.curved p{
+font-size:clamp(0.95rem,2vw,1.25rem);
+line-height:1.7;
+margin-bottom:clamp(0.75rem,2vh,1.25rem);
+}
+/* ===== MODERN RESPONSIVE GRID ===== */
+.flex{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(min(300px,100%),1fr));
+gap:clamp(2rem,5vw,5rem);
+align-items:center;
+}
+
+/* 2-column grid on larger screens */
+@media (min-width:48em){
+.flex{grid-template-columns:1.2fr 1fr}
+}
+
+/* ===== RESPONSIVE SOLVE SECTION ===== */
+.solve{
+position:relative;
+height:clamp(600px,90vh,90vh);
+min-height:80svh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+overflow:hidden;
+box-sizing:border-box;
+padding-block:clamp(3rem,8vh,6rem);
+}
+
+.solve video{
+position:absolute;
+inset:0;
+width:100%;
+height:100%;
+object-fit:cover;
+filter:brightness(25%);
+}
+
+.solve::after{
+content:"";
+position:absolute;
+inset:0;
+background:rgba(0,0,0,0);
+}
+
+.solve-content,.solve-center{
+position:relative;
+z-index:2;
+max-width:min(90%,900px);
+padding-inline:clamp(1rem,4vw,2rem);
+box-sizing:border-box;
+width:100%;
+}
+
+.solve h2{
+font-size:clamp(2rem,6vw,4.375rem);
+font-weight:900;
+max-width:100%;
+line-height:1.1;
+margin-bottom:clamp(1rem,2vh,1.5rem);
+}
+
+.solve p,.solve-intro{
+font-size:clamp(0.95rem,2.5vw,1.5rem);
+color:#e5e7eb;
+margin-top:clamp(12px,2vh,20px);
+max-width:100%;
+line-height:1.6;
+}
+
+.solve-lines{
+max-width:100%;
+box-sizing:border-box;
+margin-top:clamp(1.5rem,4vh,2.5rem);
+display:grid;
+gap:clamp(0.75rem,2vw,1rem);
+}
+
+.solve-line{
+max-width:100%;
+box-sizing:border-box;
+padding:clamp(0.875rem,2.5vw,1.25rem);
+background:rgba(0,0,0,0.4);
+backdrop-filter:blur(8px);
+border-radius:clamp(8px,1.5vw,12px);
+font-size:clamp(0.875rem,2vw,1.125rem);
+line-height:1.6;
+border:1px solid rgba(255,255,255,0.1);
+}
+
+/* ===== MODERN RESPONSIVE GRID SYSTEM ===== */
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(min(280px,100%),1fr));
+gap:clamp(1.5rem,4vw,2.5rem);
+margin-top:clamp(2rem,5vh,3.75rem);
+max-width:100%;
+box-sizing:border-box;
+}
+
+/* 2-column on tablets and up */
+@media (min-width:48em){
+.grid{grid-template-columns:repeat(2,1fr)}
+}
+
+.card{
+background:white;
+border-radius:clamp(15px,2vw,20px);
+padding:clamp(1.5rem,4vw,2.5rem);
+box-shadow:0 20px 60px rgba(0,0,0,.1);
+transition:transform .4s ease,box-shadow .4s ease,border-color .4s ease;
+border:1px solid #eee;
+position:relative;
+overflow:hidden;
+max-width:100%;
+box-sizing:border-box;
+}
+
+.card::before{
+content:"";
+position:absolute;
+inset:0;
+background:linear-gradient(120deg,transparent,rgba(255,30,30,.15),transparent);
+transform:translateX(-100%);
+transition:.6s;
+}
+
+.card:hover::before{transform:translateX(100%)}
+
+.card:hover{
+transform:translateY(-12px);
+border-color:#ff1e1e;
+box-shadow:0 30px 80px rgba(0,0,0,.15);
+}
+
+.card > *{max-width:100%;box-sizing:border-box}
+
+.card h3{
+font-size:clamp(1.25rem,3vw,1.625rem);
+margin-bottom:clamp(0.75rem,2vh,1rem);
+line-height:1.3;
+}
+
+.card p{
+font-size:clamp(0.9rem,2vw,1.0625rem);
+line-height:1.7;
+}
+
+/* Ensure ALL images responsive */
+.card img,.service-card img,.about-logo,section img{
+max-width:100% !important;
+height:auto !important;
+object-fit:contain !important;
+display:block;
+}
+
+/* Service cards specific */
+.service-card{
+box-sizing:border-box;
+max-width:100%;
+padding:clamp(1.5rem,4vw,3rem) clamp(1.25rem,3vw,3rem);
+}
+
+.service-card > *{max-width:100%;box-sizing:border-box}
+
+.service-card h3{
+font-size:clamp(1.25rem,3vw,1.625rem);
+margin-bottom:clamp(0.75rem,1.5vh,0.875rem);
+}
+
+.service-card p{
+font-size:clamp(0.875rem,2vw,1.0625rem);
+line-height:1.7;
+}
+
+/* ===== RESPONSIVE FOOTER ===== */
+footer{
+background:#111;
+color:#aaa;
+padding:clamp(3rem,8vh,5rem) clamp(1.25rem,8vw,10%);
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(min(250px,100%),1fr));
+gap:clamp(2rem,5vw,3.75rem);
+max-width:100%;
+overflow-x:hidden;
+box-sizing:border-box;
+}
+
+/* 3-column on larger screens */
+@media (min-width:64em){
+footer{grid-template-columns:2fr 1fr 1fr}
+}
+
+footer h4{
+color:white;
+margin-bottom:clamp(0.875rem,2vh,1.25rem);
+max-width:100%;
+font-size:clamp(1.125rem,2.5vw,1.375rem);
+}
+
+footer p,footer a{
+font-size:clamp(0.8125rem,1.8vw,0.875rem);
+color:#aaa;
+text-decoration:none;
+display:block;
+margin-bottom:clamp(0.5rem,1vh,0.625rem);
+max-width:100%;
+word-wrap:break-word;
+line-height:1.7;
+}
+
+footer a{
+transition:color .3s ease;
+}
+
+footer a:hover{
+color:#ff1e1e;
+}
+
+footer div{
+max-width:100%;
+word-wrap:break-word;
+box-sizing:border-box;
+}
+
+footer > div > *{
+max-width:100%;
+word-wrap:break-word;
+}
+
+.bottom{
+text-align:center;
+padding:clamp(1.25rem,3vh,1.875rem);
+color:#777;
+background:#0b0b0d;
+max-width:100%;
+box-sizing:border-box;
+font-size:clamp(0.75rem,1.5vw,0.875rem);
+}
+
+/* ===== ANIMATED HAMBURGER MENU ===== */
+@media (max-width:768px){
+.mobile-menu-toggle{
+display:flex !important;
+width:44px !important;
+height:44px !important;
+align-items:center !important;
+justify-content:center !important;
+flex-direction:column !important;
+gap:6px !important;
+cursor:pointer !important;
+margin-left:auto !important;
+background:transparent !important;
+border:none !important;
+padding:0 !important;
+}
+
+.mobile-menu-toggle span{
+display:block !important;
+width:24px !important;
+height:2.5px !important;
+background:#111 !important;
+border-radius:3px !important;
+transition:all 0.3s ease !important;
+}
+
+/* Transform to X when active */
+#navLinks.active + .mobile-menu-toggle span:nth-child(1){
+transform:translateY(8.5px) rotate(45deg) !important;
+}
+#navLinks.active + .mobile-menu-toggle span:nth-child(2){
+opacity:0 !important;
+}
+#navLinks.active + .mobile-menu-toggle span:nth-child(3){
+transform:translateY(-8.5px) rotate(-45deg) !important;
+}
+}
+
+@media (min-width:769px){
+.mobile-menu-toggle{
+display:none !important;
+}
+}
+
+/* ===== SCROLL PROGRESS BAR ===== */
+.scroll-progress{
+position:fixed;
+top:0;
+left:0;
+width:0%;
+height:3px;
+background:linear-gradient(90deg,#ff1e1e,#ff4444);
+z-index:10001;
+transition:width 0.1s ease;
+}
+
+/* ===== BACK TO TOP BUTTON ===== */
+.back-to-top{
+position:fixed;
+bottom:30px;
+right:30px;
+width:50px !important;
+height:50px !important;
+min-width:50px !important;
+min-height:50px !important;
+max-width:50px !important;
+max-height:50px !important;
+background:#ff1e1e;
+color:#fff;
+border-radius:50% !important;
+display:flex !important;
+align-items:center !important;
+justify-content:center !important;
+font-size:24px;
+cursor:pointer;
+opacity:0;
+transform:scale(0);
+transition:all 0.3s ease;
+z-index:1000;
+box-shadow:0 4px 12px rgba(255,30,30,0.3);
+border:none;
+flex-shrink:0 !important;
+padding:0 !important;
+}
+
+.back-to-top.visible{
+opacity:1 !important;
+transform:scale(1) !important;
+}
+
+.back-to-top:hover{
+background:#ff4444;
+transform:scale(1.1) !important;
+box-shadow:0 6px 20px rgba(255,30,30,0.4);
+}
+
+/* Mobile specific fix */
+@media (max-width:768px){
+.back-to-top{
+bottom:20px !important;
+right:20px !important;
+width:50px !important;
+height:50px !important;
+}
+}
+
+/* ===== ENHANCED BUTTON ANIMATIONS ===== */
+.btn-red:hover,.btn-white:hover,button:hover{
+transform:translateY(-2px);
+box-shadow:0 8px 20px rgba(0,0,0,0.15);
+}
+
+.btn-red:active,.btn-white:active,button:active{
+transform:translateY(0) scale(0.98);
+}
+
+/* ===== CARD HOVER EFFECTS ===== */
+.service-card:hover,.project-item:hover,.sector-card:hover{
+transform:translateY(-6px);
+box-shadow:0 12px 30px rgba(0,0,0,0.12);
+}
+</style>
+</head>
+
+<body>
+
+<!-- Skip to main content (accessibility) -->
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<!-- Scroll Progress Bar -->
+<div class="scroll-progress"></div>
+
+<!-- Back to Top Button -->
+<div class="back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</div>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <a href="index.html" class="nav-brand">
+    <img src="images/EX logo.png" alt="Eximatic Logo">
+    <div class="nav-brand-text">
+      <span class="nav-brand-name">Eximatic</span>
+      <span class="nav-brand-tagline">Technologies</span>
+    </div>
+  </a>
+  <div class="nav-links" id="navLinks">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="solutions.html">Solutions</a>
+    <a href="contact.html">Contact</a>
+    <a href="projects.html">Projects</a>
+  </div>
+  <!-- Animated hamburger menu -->
+  <div class="mobile-menu-toggle" id="menuToggle" onclick="toggleMenu()" aria-label="Toggle navigation menu" role="button" tabindex="0">
+      <span></span>
+      <span></span>
+      <span></span>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="main-content">
+<video autoplay muted loop playsinline class="hero-video">
+<source src="images/hero video 2.mp4" type="video/mp4">
+</video>
+<div class="hero-content">
+<h1 class="fade-in">WELCOME TO<br>EXIMATIC</h1>
+<p class="fade-in">Simplify operations with reliable tech expertise</p>
+</div>
+</section>
+
+<!-- ABOUT -->
+<section class="curved light-section about-eng">
+
+    <div class="about-grid">
+
+        <div class="about-left">
+            <h2 class="fade-in" >About Eximatic Technologies</h2>
+            <p class="fade-in">
+                Our mission is to deliver innovative IT solutions across hardware,
+                automation, smart offices and cybersecurity — empowering businesses
+                with future-ready infrastructure and seamless technology integration.
+            </p>
+
+            <p class="about-sub" class="fade-in">
+                We help organizations modernize their workspace, secure their assets,
+                and simplify operations with reliable IT expertise and dedicated support.
+            </p>
+
+            <div class="about-points"class="fade-in">
+                <div>✔ Future-Ready Infrastructure</div>
+                <div>✔ Reliable IT Hardware & Support</div>
+                <div>✔ Smart Office Automation</div>
+                <div>✔ Enterprise-Grade Security</div>
+            </div>
+        </div>
+
+        <div class="about-right">
+            <div class="logo-grid-wrap">
+                <div class="tech-grid"></div>
+                <img src="images/full logo.png" alt="Eximatic Full Logo" class="about-logo">
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- WHAT WE SOLVE -->
+<section class="solve">
+
+    <video autoplay muted loop playsinline class="solve-video">
+        <source src="images/design 1.mp4" type="video/mp4">
+    </video>
+
+    <div class="solve-center">
+
+        <h2 class="fade-in">What We Solve</h2>
+
+        <p class="solve-intro fade-in">
+            Reducing tech hassle and enabling confident scaling with modern infrastructure.
+        </p>
+
+        <div class="solve-lines">
+
+            <div class="solve-line fade-in">
+                Outdated systems and unreliable IT infrastructure slowing your team down.
+            </div>
+
+            <div class="solve-line fade-in">
+                Manual office processes wasting time and creating operational gaps.
+            </div>
+
+            <div class="solve-line fade-in">
+                Security, surveillance and data protection risks in modern workplaces.
+            </div>
+
+            <div class="solve-line fade-in">
+                Power interruptions and poor energy management affecting productivity.
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- SERVICES -->
+<section class="curved light-section services-pro">
+
+    <div class="services-head fade-in">
+        <h2>Our Services</h2>
+        <p>
+            Enterprise-grade solutions designed to simplify operations, enhance security,
+            and modernize your workspace with future-ready infrastructure.
+        </p>
+        <a href="services.html" class="explore-btn">Explore All Services →</a>
+    </div>
+
+    <!-- Animated Network Layer -->
+    <div class="services-network">
+        <svg viewBox="0 0 1000 600" preserveAspectRatio="none">
+            <path d="M150 120 C 350 80, 650 80, 850 120" />
+            <path d="M150 120 C 200 300, 200 300, 150 480" />
+            <path d="M850 120 C 800 300, 800 300, 850 480" />
+            <path d="M150 480 C 350 520, 650 520, 850 480" />
+        </svg>
+    </div>
+
+    <div class="services-grid">
+
+        <div class="service-card fade-in">
+            <h3>IT Hardware</h3>
+            <p>
+                Enterprise laptops, servers, networking devices, biometric systems and
+                infrastructure hardware tailored for performance, durability, and scale.
+            </p>
+            <button class="learn-btn" onclick="openService('hardware')">Learn More →</button>
+
+        </div>
+
+        <div class="service-card fade-in">
+            <h3>Automation</h3>
+            <p>
+                Smart office automation, attendance systems, access control,
+                and integrated digital workflows that reduce manual effort.
+            </p>
+            <button class="learn-btn" onclick="openService('automation')">Learn More →</button>
+
+        </div>
+
+        <div class="service-card fade-in">
+            <h3>Security</h3>
+            <p>
+                AI CCTV surveillance, monitoring solutions, and cybersecurity systems
+                that protect assets, data, and operations 24×7.
+            </p>
+            <button class="learn-btn" onclick="openService('security')">Learn More →</button>
+
+        </div>
+
+        <div class="service-card fade-in">
+            <h3>Power & Energy</h3>
+            <p>
+                Reliable power backup, UPS systems, and intelligent energy
+                management to keep operations running without interruption.
+            </p>
+            <button class="learn-btn" onclick="openService('power')">Learn More →</button>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+<div>
+<h4 class="fade-in">Eximatic Technologies</h4>
+<p class="fade-in">Smart solutions for modern enterprises.</p>
+</div>
+<div>
+<h4 class="fade-in">Contact</h4>
+<p class="fade-in">Office No 113, Street No 1<br>Vikash Nagar, Gurugram</p>
+<p class="fade-in">manager@eximatic.tech</p>
+<p class="fade-in">+91-7001731117</p>
+</div>
+<div>
+<h4>Quick Links</h4>
+<a href="index.html">Home</a>
+<a href="services.html">Services</a>
+<a href="solutions.html">Solutions</a>
+<a href="contact.html">Contact</a>
+<a href="projects.html">Projects</a>
+</div>
+</footer>
+<div class="bottom">© 2025. All rights reserved.</div>
+
+<!-- SERVICE DETAIL MODAL -->
+<div class="service-modal" id="serviceModal">
+    <div class="service-modal-body">
+        <span class="close-modal" onclick="closeService()">×</span>
+        <div id="serviceContent"></div>
+    </div>
+</div>
+
+<script>
+// Navbar color change based on background
+const nav = document.getElementById('navbar');
+const lightSections = document.querySelectorAll('.light-section');
+
+function updateNavColor(){
+    let light = false;
+    lightSections.forEach(sec=>{
+        const r = sec.getBoundingClientRect();
+        if(r.top <= 90 && r.bottom >= 90){
+            light = true;
+        }
+    });
+    nav.classList.toggle('light', light);
+}
+
+window.addEventListener('scroll', updateNavColor);
+window.addEventListener('load', updateNavColor);
+</script>
+<script>
+const faders = document.querySelectorAll('.fade-in');
+
+const observer = new IntersectionObserver((entries, obs)=>{
+    entries.forEach(entry=>{
+        if(entry.isIntersecting){
+            entry.target.classList.add('show');
+            obs.unobserve(entry.target);
+        }
+    });
+},{threshold:0.2});
+
+faders.forEach(el=>observer.observe(el));
+</script>
+<script>
+const serviceData = {
+hardware: `
+<h2>IT Hardware Solutions</h2>
+<p>We provide enterprise-grade laptops, servers, networking devices, biometric systems and full infrastructure hardware tailored for scalability and performance.</p>
+<p>Our hardware solutions are trusted by offices, institutions, and enterprises for reliability and long-term durability.</p>
+<p>We consult, deploy, and maintain hardware ecosystems designed for seamless business operations.</p>
+`,
+
+automation: `
+<h2>Smart Office Automation</h2>
+<p>Automation reduces manual effort and increases operational efficiency through smart attendance, access control, and workflow systems.</p>
+<p>We integrate devices, software, and control systems into one seamless digital office environment.</p>
+<p>Experience a workplace where technology works for you intelligently.</p>
+`,
+
+security: `
+<h2>Advanced Security & Surveillance</h2>
+<p>AI-powered CCTV, monitoring solutions, and cybersecurity systems that protect your assets and data 24×7.</p>
+<p>We design surveillance networks and cyber protection layers tailored for modern threats.</p>
+<p>Safety, monitoring, and data integrity — all in one solution.</p>
+`,
+
+power: `
+<h2>Power Backup & Energy Management</h2>
+<p>Reliable UPS systems and intelligent power backup that ensures your operations never stop.</p>
+<p>We implement smart energy monitoring and management for efficient consumption.</p>
+<p>Stable power infrastructure for uninterrupted productivity.</p>
+`
+};
+
+function openService(key){
+document.getElementById('serviceContent').innerHTML = serviceData[key];
+document.getElementById('serviceModal').classList.add('show');
+}
+
+function closeService(){
+document.getElementById('serviceModal').classList.remove('show');
+}
+</script>
+
+<script>
+// Mobile menu toggle
+function toggleMenu(){
+const navLinks = document.getElementById('navLinks');
+navLinks.classList.toggle('active');
+}
+
+document.getElementById('menuToggle')?.addEventListener('keydown',function(e){
+if(e.key==='Enter'||e.key===' '){e.preventDefault();toggleMenu();}
+});
+
+// Close mobile menu when clicking on a link
+document.querySelectorAll('.nav-links a').forEach(link=>{
+link.addEventListener('click', ()=>{
+document.getElementById('navLinks').classList.remove('active');
+});
+});
+</script>
+
+<script>
+/* ===== DYNAMIC UX ENHANCEMENTS ===== */
+
+// 1. SCROLL PROGRESS BAR
+window.addEventListener('scroll', () => {
+    const progressBar = document.querySelector('.scroll-progress');
+    if(progressBar){
+        const windowHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        const scrolled = (window.pageYOffset / windowHeight) * 100;
+        progressBar.style.width = scrolled + '%';
+    }
+});
+
+// 2. BACK TO TOP BUTTON
+const backToTop = document.querySelector('.back-to-top');
+if(backToTop){
+    window.addEventListener('scroll', () => {
+        if(window.pageYOffset > 400){
+            backToTop.classList.add('visible');
+        } else {
+            backToTop.classList.remove('visible');
+        }
+    });
+}
+
+// 3. NAVBAR SCROLL EFFECT
+let lastScroll = 0;
+window.addEventListener('scroll', () => {
+    const nav = document.querySelector('nav');
+    const currentScroll = window.pageYOffset;
+    
+    if(currentScroll > 80){
+        nav.classList.add('scrolled');
+    } else {
+        nav.classList.remove('scrolled');
+    }
+    
+    lastScroll = currentScroll;
+});
+
+// 4. SMOOTH ANCHOR LINKS
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e){
+        const href = this.getAttribute('href');
+        if(href !== '#' && href.length > 1){
+            e.preventDefault();
+            const target = document.querySelector(href);
+            if(target){
+                target.scrollIntoView({
+                    behavior:'smooth',
+                    block:'start'
+                });
+            }
+        }
+    });
+});
+
+// 5. NUMBER COUNTER ANIMATION (for metrics)
+const counterObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if(entry.isIntersecting){
+            const counter = entry.target;
+            const text = counter.textContent;
+            const number = parseInt(text.replace(/[^0-9]/g, ''));
+            
+            if(number > 0){
+                counter.setAttribute('data-target', number);
+                let current = 0;
+                const increment = number / 100;
+                const duration = 2000;
+                const stepTime = duration / 100;
+                
+                const updateCounter = () => {
+                    current += increment;
+                    if(current < number){
+                        counter.textContent = Math.ceil(current) + text.replace(/[0-9]/g, '').trim();
+                        setTimeout(updateCounter, stepTime);
+                    } else {
+                        counter.textContent = text;
+                    }
+                };
+                
+                updateCounter();
+                counterObserver.unobserve(counter);
+            }
+        }
+    });
+}, {threshold:0.5});
+
+document.querySelectorAll('.metric h3, .metric h2').forEach(counter => {
+    if(/\d/.test(counter.textContent)){
+        counterObserver.observe(counter);
+    }
+});
+
+// 6. FORM VALIDATION
+const forms = document.querySelectorAll('form');
+forms.forEach(form => {
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        
+        const submitBtn = form.querySelector('button[type="submit"]');
+        const originalText = submitBtn.textContent;
+        const originalBg = submitBtn.style.background;
+        
+        // Show loading
+        submitBtn.textContent = 'Sending...';
+        submitBtn.disabled = true;
+        
+        // Simulate submission (replace with actual form handling)
+        setTimeout(() => {
+            submitBtn.textContent = '✓ Sent Successfully!';
+            submitBtn.style.background = '#10b981';
+            
+            setTimeout(() => {
+                submitBtn.textContent = originalText;
+                submitBtn.style.background = originalBg;
+                submitBtn.disabled = false;
+                form.reset();
+            }, 3000);
+        }, 1000);
+    });
+});
+
+console.log('%c✨ Eximatic Technologies', 'font-size:20px;font-weight:900;color:#ff1e1e');
+console.log('%cDynamic UX Features Active', 'font-size:12px;color:#666');
+</script>
+
+</body>
+</html>

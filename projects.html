@@ -1,0 +1,2478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+<!-- SEO Meta Tags -->
+<title>Our Projects | Eximatic Technologies - Success Stories</title>
+<meta name="description" content="Explore Eximatic's successful project implementations across industries. See how we deliver smart infrastructure solutions.">
+<meta name="keywords" content="project portfolio, case studies, implementations, success stories, eximatic projects">
+<meta property="og:title" content="Our Projects | Eximatic Technologies">
+<meta property="og:description" content="Successful smart infrastructure implementations">
+<link rel="icon" type="image/png" href="images/EX logo.png">
+<meta name="theme-color" content="#ffffff">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{
+    overflow-x:hidden;
+    width:100%;
+    max-width:100%;
+    background:#fff;
+}
+body{
+    font-family:'Inter',sans-serif;
+    background:#fff;
+    color:#111;
+    overflow-x:hidden;
+}
+
+section{
+    width:100%;
+    max-width:100%;
+    overflow-x:hidden;
+    box-sizing:border-box;
+}
+
+/* ===== NAVBAR - Match index/services/solutions (compact) ===== */
+nav{
+position:fixed !important;
+top:clamp(15px,3vw,25px) !important;
+left:50%;
+transform:translateX(-50%);
+width:clamp(90%,95vw,92%) !important;
+padding:clamp(12px,2vw,16px) clamp(20px,4vw,50px) !important;
+display:flex;
+justify-content:space-between;
+align-items:center;
+backdrop-filter:blur(18px);
+-webkit-backdrop-filter:blur(18px);
+background:rgba(255,255,255,0.98);
+border:1px solid rgba(0,0,0,0.08);
+border-radius:clamp(10px,2vw,14px);
+z-index:1000;
+transition:all .3s ease;
+max-width:100vw;
+box-sizing:border-box;
+box-shadow:0 4px 24px rgba(0,0,0,0.08);
+}
+nav img{
+height:clamp(28px,5vw,42px) !important;
+max-height:clamp(28px,5vw,42px) !important;
+width:auto;
+max-width:150px;
+object-fit:contain;
+}
+nav a{
+text-decoration:none;
+margin-left:clamp(20px,3vw,40px);
+font-weight:600;
+color:rgb(15, 14, 14);
+position:relative;
+transition:.3s;
+font-size:clamp(0.875rem,1.5vw,1rem);
+}
+nav.light a{color:black}
+nav a::after{
+content:"";
+position:absolute;
+left:0;
+bottom:-6px;
+width:0;
+height:2px;
+background:#ff1e1e;
+transition:.3s;
+}
+nav a:hover::after{width:100%}
+nav a:hover{color:#ff1e1e}
+
+/* Desktop: hide hamburger. Mobile: style.css shows it */
+@media (min-width:769px){
+.mobile-menu-toggle{display:none !important}
+}
+.nav-links{display:flex;align-items:center}
+
+/* ===== HERO ===== */
+.services-hero{
+height:65vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+position:relative;
+padding-top:120px;
+overflow:hidden;
+background:#fff;
+}
+
+.services-hero.light-section{
+background:#fff;
+}
+
+.hero-grid{
+position:absolute;
+inset:0;
+background-image:
+linear-gradient(rgba(0,0,0,0.03) 1px, transparent 1px),
+linear-gradient(90deg, rgba(0,0,0,0.03) 1px, transparent 1px);
+background-size:60px 60px;
+}
+
+.hero-glow{
+position:absolute;
+width:700px;
+height:700px;
+background:radial-gradient(circle, rgba(255,30,30,.15), transparent 60%);
+top:-150px;
+left:-150px;
+}
+
+.services-hero-content{
+position:relative;
+z-index:2;
+max-width:900px;
+}
+
+.services-hero h1{
+font-size:86px;
+font-weight:900;
+letter-spacing:-3px;
+}
+
+.services-hero p{
+margin-top:18px;
+font-size:20px;
+color:#555;
+}
+
+.hero-cta{margin-top:32px}
+.btn-red,.btn-white{
+padding:14px 36px;
+border-radius:40px;
+text-decoration:none;
+font-weight:600;
+margin:0 10px;
+display:inline-block;
+}
+.btn-red{background:#ff1e1e;color:white}
+.btn-white{border:2px solid #111;color:#111}
+
+/* ================= X GRID BACKGROUND ================= */
+.x-bg{
+position:fixed;
+inset:0;
+z-index:-1;
+background:
+repeating-linear-gradient(45deg, rgba(0,0,0,0.035) 0 2px, transparent 2px 90px),
+repeating-linear-gradient(-45deg, rgba(0,0,0,0.035) 0 2px, transparent 2px 90px);
+transform:perspective(1400px) rotateX(60deg) scale(2);
+transform-origin:top;
+opacity:.45;
+}
+
+/* Show decorative shapes on desktop */
+@media (min-width:769px){
+.hero-grid,.hero-glow,.x-bg,.exec-grid{
+display:block !important;
+}
+}
+
+/* ================= HERO (Desktop) ================= */
+.projects-hero{
+height:85vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:0 8%;
+position:relative;
+overflow:hidden;
+}
+
+.projects-hero h1{
+font-size:96px;
+font-weight:900;
+letter-spacing:-3px;
+position:relative;
+z-index:2;
+}
+
+.projects-hero p{
+font-size:22px;
+color:#555;
+margin-top:25px;
+max-width:900px;
+position:relative;
+z-index:2;
+}
+
+/* ================= METRIC STRIP (Desktop) ================= */
+.metric-strip{
+display:flex;
+justify-content:space-around;
+align-items:center;
+padding:80px 5%;
+background:#0b0b0d;
+color:#fff;
+text-align:center;
+gap:40px;
+flex-wrap:wrap;
+width:100%;
+max-width:100%;
+overflow:hidden;
+box-sizing:border-box;
+margin:0;
+}
+
+.metric{
+flex:1 1 min(200px, 45%);
+min-width:0;
+max-width:250px;
+box-sizing:border-box;
+}
+
+.metric h3{
+font-size:clamp(3rem,6vw,4rem);
+color:#ff1e1e;
+font-weight:900;
+line-height:1;
+margin-bottom:10px;
+}
+
+.metric p{
+margin-top:10px;
+color:rgba(255,255,255,0.85);
+font-size:clamp(1rem,2vw,1.125rem);
+font-weight:500;
+}
+
+/* ================= SECTORS ================= */
+.sectors{
+padding:120px 5%;
+max-width:1400px;
+margin:0 auto;
+}
+.sectors h2{
+font-size:clamp(2.5rem,6vw,4rem);
+font-weight:900;
+margin-bottom:60px;
+text-align:center;
+}
+
+.sector-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit, minmax(min(260px, 100%), 1fr));
+gap:30px;
+max-width:100%;
+}
+
+/* Tablet - 2 columns */
+@media (min-width:769px) and (max-width:1024px){
+.sector-grid{
+grid-template-columns:repeat(2,1fr);
+gap:30px;
+}
+}
+
+/* Desktop 3 columns */
+@media (min-width:1025px){
+.sector-grid{
+grid-template-columns:repeat(3,1fr);
+gap:35px;
+}
+}
+
+.sector-card{
+padding:35px;
+border-radius:16px;
+border:1px solid #eee;
+transition:all 0.3s ease;
+cursor:pointer;
+background:#fff;
+position:relative;
+overflow:hidden;
+height:100%;
+}
+
+.sector-card::before{
+content:"";
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:4px;
+background:linear-gradient(90deg,#ff1e1e,#ff4444);
+transform:scaleX(0);
+transform-origin:left;
+transition:transform 0.4s ease;
+}
+
+.sector-card:hover{
+transform:translateY(-8px);
+box-shadow:0 20px 60px rgba(0,0,0,.12);
+border-color:#ff1e1e;
+}
+
+.sector-card:hover::before{
+transform:scaleX(1);
+}
+
+.sector-card h3{
+font-size:clamp(1.375rem,2.5vw,1.75rem);
+margin-bottom:12px;
+color:#ff1e1e;
+font-weight:800;
+}
+
+.sector-card p{
+color:#555;
+line-height:1.7;
+font-size:clamp(0.9375rem,1.8vw,1.0625rem);
+}
+
+/* ================= PROJECT STORY BLOCK (Desktop) ================= */
+.story{
+padding:100px 5%;
+display:flex;
+position:relative;
+gap:80px;
+align-items:center;
+max-width:1400px;
+margin:0 auto;
+}
+
+.story:nth-child(even){
+flex-direction:row-reverse;
+background:#fafafa;
+}
+
+.story-text{
+flex:1;
+}
+.story-text h2{
+font-size:clamp(2rem,5vw,3.5rem);
+font-weight:900;
+margin-bottom:20px;
+line-height:1.2;
+}
+.story-text p{
+font-size:clamp(1rem,2vw,1.25rem);
+color:#555;
+line-height:1.8;
+}
+
+.story-lines{
+flex:1;
+display:flex;
+flex-direction:column;
+gap:20px;
+}
+
+.line{
+height:6px;
+background:#e5e5e5;
+border-radius:6px;
+overflow:hidden;
+}
+.line span{
+display:block;
+height:100%;
+width:0;
+background:#ff1e1e;
+transition:2s ease;
+}
+
+/* animate on scroll */
+.line.visible span{
+width:100%;
+}
+
+/* ================= PROCESS TIMELINE ================= */
+.timeline{
+padding:200px 8%;
+text-align:center;
+}
+.timeline h2{
+font-size:64px;
+font-weight:900;
+margin-bottom:80px;
+}
+
+.steps{
+display:flex;
+justify-content:space-between;
+position:relative;
+}
+.steps::before{
+content:"";
+position:absolute;
+top:40px;
+left:0;
+right:0;
+height:3px;
+background:#ddd;
+}
+
+.step{
+width:22%;
+position:relative;
+}
+.step-circle{
+width:80px;
+height:80px;
+border-radius:50%;
+background:#111;
+color:#fff;
+display:flex;
+align-items:center;
+justify-content:center;
+margin:auto;
+font-weight:700;
+font-size:22px;
+border:6px solid #fff;
+box-shadow:0 0 0 2px #ddd;
+}
+.step h4{
+margin-top:20px;
+font-size:22px;
+}
+.step p{
+margin-top:10px;
+color:#666;
+}
+
+/* ================= CLOSING ================= */
+.closing{
+padding:180px 8%;
+text-align:center;
+}
+.closing h2{
+font-size:72px;
+font-weight:900;
+}
+.closing p{
+margin-top:20px;
+font-size:22px;
+color:#555;
+}
+/* ===== FOOTER ===== */
+footer{
+text-align:center;
+padding:60px;
+color:#777;
+border-top:1px solid #eee;
+margin-top:80px;
+}
+
+.site-footer{
+padding:60px 20px;
+}
+
+.footer-grid{
+display:grid;
+grid-template-columns:2fr 1fr 1fr;
+gap:60px;
+}
+
+.footer-grid h3,.footer-grid h4{
+margin-bottom:20px;
+}
+
+.footer-grid a{
+display:block;
+color:#777;
+text-decoration:none;
+margin-bottom:8px;
+}
+
+.footer-grid a:hover{
+color:#ff1e1e;
+}
+
+.footer-bottom{
+margin-top:40px;
+color:#777;
+}
+
+/* ===== PROJECT SHOWCASE ===== */
+.projects-showcase{
+padding:80px clamp(1rem,5%,2rem);
+position:relative;
+width:100%;
+max-width:1400px;
+margin:0 auto;
+}
+
+.showcase-title{
+font-size:clamp(2.5rem,6vw,4rem);
+font-weight:900;
+text-align:center;
+margin-bottom:80px;
+letter-spacing:-2px;
+}
+
+/* GRID - Desktop (3 columns by default) */
+.project-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit, minmax(min(280px, 100%), 1fr));
+gap:40px;
+max-width:100%;
+}
+
+/* Tablet - 2 columns */
+@media (min-width:769px) and (max-width:1024px){
+.project-grid{
+grid-template-columns:repeat(2,1fr);
+gap:35px;
+}
+
+.projects-hero h1{
+font-size:72px;
+}
+
+.projects-hero p{
+font-size:20px;
+}
+
+.metric h3{
+font-size:52px;
+}
+
+.exec-title{
+font-size:52px;
+margin-bottom:80px;
+}
+
+.timeline{
+width:90%;
+}
+
+.step{
+width:23%;
+min-width:150px;
+}
+}
+
+/* Desktop 3 columns for larger screens */
+@media (min-width:1025px){
+.project-grid{
+grid-template-columns:repeat(3,1fr);
+}
+}
+
+/* ITEM */
+.project-item{
+padding:35px;
+border-radius:16px;
+border:1px solid #e8e8e8;
+background:#fff;
+transition:all 0.3s cubic-bezier(.23,1,.32,1);
+cursor:pointer;
+position:relative;
+overflow:hidden;
+height:100%;
+display:flex;
+flex-direction:column;
+}
+
+.project-item::before{
+content:"";
+position:absolute;
+top:0;
+left:0;
+height:4px;
+width:0;
+background:linear-gradient(90deg,#ff1e1e,#ff4444);
+transition:width 0.4s ease;
+}
+
+.project-item:hover{
+transform:translateY(-8px);
+box-shadow:0 20px 60px rgba(0,0,0,.12);
+border-color:rgba(255,30,30,0.3);
+}
+
+.project-item:hover::before{
+width:100%;
+}
+
+/* top */
+.proj-top{
+display:flex;
+justify-content:space-between;
+align-items:center;
+font-size:12px;
+margin-bottom:16px;
+letter-spacing:0.5px;
+font-weight:600;
+color:#999;
+gap:10px;
+flex-wrap:wrap;
+}
+
+.proj-id{
+color:#ff1e1e;
+font-weight:700;
+}
+
+.proj-type{
+color:#666;
+}
+
+/* title */
+.project-item h3{
+font-size:clamp(1.25rem,2.5vw,1.5rem);
+margin-bottom:12px;
+font-weight:800;
+line-height:1.3;
+color:#111;
+}
+
+/* desc */
+.project-item p{
+color:#555;
+line-height:1.7;
+margin-bottom:20px;
+font-size:clamp(0.9375rem,1.8vw,1rem);
+flex-grow:1;
+}
+
+/* tags */
+.proj-tags{
+display:flex;
+gap:8px;
+flex-wrap:wrap;
+margin-top:auto;
+}
+
+.proj-tags span{
+font-size:11px;
+padding:6px 12px;
+border-radius:20px;
+background:#f5f5f5;
+font-weight:600;
+color:#666;
+transition:all 0.2s ease;
+}
+
+.project-item:hover .proj-tags span{
+background:#ffe8e8;
+color:#ff1e1e;
+}
+/* ===== EXECUTION TIMELINE - DESKTOP (default) ===== */
+.execution-section{
+position:relative;
+min-height:auto;
+padding:100px 5% 120px;
+overflow:hidden;
+background:#fafafa;
+}
+
+/* Signature grid - Desktop only */
+.exec-grid{
+position:absolute;
+inset:0;
+background-image:
+linear-gradient(rgba(0,0,0,0.035) 1px, transparent 1px),
+linear-gradient(90deg, rgba(0,0,0,0.035) 1px, transparent 1px);
+background-size:70px 70px;
+z-index:0;
+}
+
+.exec-title{
+text-align:center;
+font-size:clamp(2.5rem,6vw,4rem);
+font-weight:900;
+letter-spacing:-2px;
+position:relative;
+z-index:2;
+margin-bottom:80px;
+color:#111;
+}
+
+/* Timeline wrapper */
+.timeline{
+position:relative;
+width:100%;
+max-width:1200px;
+margin:auto;
+z-index:2;
+}
+
+/* base line */
+.progress-line{
+position:absolute;
+top:40px;
+left:0;
+right:0;
+height:4px;
+background:#e5e5e5;
+z-index:1;
+}
+
+.progress-fill{
+height:100%;
+width:0%;
+background:#ff1e1e;
+transition:width .2s ease;
+}
+
+/* steps row - HORIZONTAL by default */
+.steps{
+display:flex;
+justify-content:space-between;
+position:relative;
+flex-direction:row;
+align-items:flex-start;
+gap:20px;
+}
+
+.steps::before{
+content:"";
+position:absolute;
+top:40px;
+left:0;
+right:0;
+height:3px;
+background:#ddd;
+z-index:0;
+}
+
+/* step */
+.step{
+text-align:center;
+flex:1;
+max-width:220px;
+min-width:180px;
+opacity:.3;
+transform:translateY(40px);
+transition:.6s ease;
+position:relative;
+z-index:2;
+padding:0;
+background:transparent;
+box-shadow:none;
+border:none;
+}
+
+.step.active{
+opacity:1;
+transform:translateY(0);
+}
+
+.circle{
+width:80px;
+height:80px;
+border-radius:50%;
+background:#111;
+color:#fff;
+display:flex;
+align-items:center;
+justify-content:center;
+margin:auto;
+font-weight:800;
+font-size:22px;
+border:6px solid #fff;
+box-shadow:0 10px 30px rgba(0,0,0,.15);
+position:relative;
+}
+
+.step.active .circle{
+background:#ff1e1e;
+box-shadow:0 12px 35px rgba(255,30,30,0.3);
+}
+
+.step h3,.step h4{
+margin-top:20px;
+font-size:clamp(1.125rem,2vw,1.25rem);
+font-weight:700;
+color:#111;
+}
+
+.step p{
+margin-top:10px;
+font-size:clamp(0.875rem,1.5vw,0.9375rem);
+color:#666;
+line-height:1.6;
+}
+
+/* ===== CLOSING VIDEO SECTION ===== */
+.closing{
+position:relative;
+min-height:70vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+overflow:hidden;
+color:#fff;
+padding:80px 5%;
+}
+
+/* video */
+.closing-video{
+position:absolute;
+inset:0;
+width:100%;
+height:100%;
+object-fit:cover;
+z-index:0;
+filter:brightness(45%);
+}
+
+/* dark overlay */
+.closing-overlay{
+position:absolute;
+inset:0;
+background:linear-gradient(to bottom, rgba(0, 0, 0, 0.04), rgba(0,0,0,.7));
+z-index:1;
+}
+
+/* signature grid */
+.closing-grid{
+position:absolute;
+inset:0;
+background-image:
+linear-gradient(rgba(255,255,255,0.06) 1px, transparent 1px),
+linear-gradient(90deg, rgba(255,255,255,0.06) 1px, transparent 1px);
+background-size:70px 70px;
+z-index:2;
+}
+
+/* content */
+.closing-content{
+position:relative;
+z-index:3;
+max-width:900px;
+padding:0 20px;
+margin:0 auto;
+}
+
+.closing-content h2{
+font-size:clamp(2.5rem,7vw,4.25rem);
+font-weight:900;
+letter-spacing:-2px;
+margin-bottom:20px;
+line-height:1.1;
+}
+
+.closing-content p{
+font-size:clamp(1.125rem,2.5vw,1.375rem);
+color:#e5e7eb;
+line-height:1.6;
+}
+
+/* ===== FADE IN ANIMATION ===== */
+.fade-in{
+    opacity:0;
+    transform:translateY(40px);
+    transition:opacity .9s cubic-bezier(.23,1,.32,1),
+               transform .9s cubic-bezier(.23,1,.32,1);
+    will-change:opacity, transform;
+}
+
+.fade-in.show{
+    opacity:1;
+    transform:translateY(0);
+}
+
+/* ===== MOBILE RESPONSIVE FIXES ===== */
+
+/* Base improvements */
+html{
+overflow-x:hidden !important;
+max-width:100% !important;
+box-sizing:border-box !important;
+width:100% !important;
+}
+body{
+max-width:100% !important;
+overflow-x:hidden !important;
+box-sizing:border-box !important;
+width:100% !important;
+position:relative !important;
+margin:0 !important;
+padding:0 !important;
+}
+*{
+box-sizing:border-box !important;
+}
+section{
+width:100% !important;
+max-width:100% !important;
+overflow-x:hidden !important;
+box-sizing:border-box !important;
+margin:0 !important;
+}
+img{
+max-width:100% !important;
+height:auto !important;
+display:block !important;
+}
+video{
+max-width:100% !important;
+height:auto !important;
+}
+/* Force hide any absolute positioned decorative elements that might overflow */
+.hero-glow,
+.hero-grid,
+.x-bg,
+.exec-grid{
+overflow:hidden !important;
+}
+
+/* Prevent vertical text breaking globally */
+h1,h2,h3,h4,h5,h6,p,span,a,li,div{
+word-wrap:break-word;
+overflow-wrap:break-word;
+word-break:normal;
+hyphens:auto;
+}
+
+/* MOBILE STYLES - Projects page (nav uses style.css - same as all pages) */
+@media (max-width:768px){
+
+/* NUCLEAR OPTION: Force everything to stay within viewport */
+html{
+overflow-x:clip !important;
+overflow-y:auto !important;
+max-width:100vw !important;
+width:100% !important;
+position:relative !important;
+overscroll-behavior-x:none !important;
+}
+
+body{
+overflow-x:clip !important;
+overflow-y:visible !important;
+max-width:100vw !important;
+width:100% !important;
+margin:0 !important;
+padding:0 !important;
+position:relative !important;
+overscroll-behavior-x:none !important;
+}
+
+/* Force all top-level containers to respect viewport - use clip to avoid nested scrollers */
+body > section,
+body > div{
+max-width:100% !important;
+overflow-x:clip !important;
+overflow-y:visible !important;
+position:relative !important;
+left:0 !important;
+right:0 !important;
+margin-left:0 !important;
+margin-right:0 !important;
+}
+body > nav{
+max-width:100% !important;
+overflow:visible !important;
+position:fixed !important;
+}
+
+/* CRITICAL FIX: Prevent vertical text breaking */
+*{
+min-width:0;
+box-sizing:border-box !important;
+}
+/* Nav brand must not shrink - keep logo + text visible */
+nav .nav-brand{
+min-width:fit-content !important;
+flex-shrink:0 !important;
+}
+
+section,div,article,main{
+width:100% !important;
+max-width:100% !important;
+box-sizing:border-box !important;
+overflow-x:clip !important;
+overflow-y:visible !important;
+}
+nav, nav *, nav .nav-brand, nav .nav-brand-text, nav .nav-brand-name, nav .nav-brand-tagline{
+overflow:visible !important;
+}
+
+/* Force hamburger to show on mobile */
+nav .mobile-menu-toggle{
+display:flex !important;
+visibility:visible !important;
+opacity:1 !important;
+width:44px !important;
+height:44px !important;
+min-width:44px !important;
+min-height:44px !important;
+}
+nav .mobile-menu-toggle span{
+display:block !important;
+width:24px !important;
+height:2.5px !important;
+background:#111 !important;
+}
+
+h1,h2,h3,h4,h5,h6,p,span,a,li{
+width:auto !important;
+max-width:100% !important;
+word-wrap:break-word !important;
+overflow-wrap:break-word !important;
+word-break:normal !important;
+hyphens:auto !important;
+white-space:normal !important;
+}
+
+/* Hero - DEVICE OPTIMIZED */
+.services-hero{
+height:auto !important;
+min-height:auto !important;
+padding:7rem 1.25rem 3rem !important;
+display:flex !important;
+align-items:center !important;
+justify-content:center !important;
+background:#fff !important;
+}
+
+.services-hero-content{
+max-width:100% !important;
+width:100% !important;
+padding:0 0.625rem !important;
+margin:0 !important;
+text-align:center !important;
+}
+
+.services-hero h1{
+font-size:clamp(1.875rem,7vw,2.75rem) !important;
+letter-spacing:-0.02em !important;
+line-height:1.15 !important;
+margin-bottom:0.875rem !important;
+word-wrap:break-word !important;
+font-weight:900 !important;
+}
+
+.services-hero p{
+font-size:clamp(0.9375rem,2vw,1rem) !important;
+margin-top:0.75rem !important;
+line-height:1.6 !important;
+word-wrap:break-word !important;
+max-width:42rem !important;
+margin-inline:auto !important;
+color:#555 !important;
+}
+
+.hero-cta{
+margin-top:1.5rem !important;
+display:flex !important;
+flex-direction:column !important;
+gap:0.75rem !important;
+align-items:center !important;
+width:100% !important;
+}
+
+.btn-red,.btn-white{
+width:100% !important;
+max-width:17.5rem !important;
+text-align:center !important;
+padding:0.875rem 1.75rem !important;
+margin:0 !important;
+min-height:3rem !important;
+font-size:0.9375rem !important;
+font-weight:600 !important;
+border-radius:2rem !important;
+transition:all 200ms ease !important;
+}
+
+/* Grid visibility - uses style.css unified mobile grid (more visible) */
+.hero-glow,.x-bg{
+display:none !important;
+}
+
+/* Projects Hero - Fixed */
+.projects-hero{
+height:auto !important;
+min-height:auto !important;
+padding:90px 20px 50px !important;
+display:flex !important;
+align-items:center !important;
+justify-content:center !important;
+}
+
+.projects-hero h1{
+font-size:clamp(2rem,8vw,3rem) !important;
+letter-spacing:clamp(-1.2px,-0.4vw,-2px) !important;
+line-height:1.2 !important;
+margin-bottom:15px !important;
+}
+
+.projects-hero p{
+font-size:clamp(0.9375rem,2.2vw,1.0625rem) !important;
+margin-top:15px !important;
+line-height:1.65 !important;
+}
+
+/* Metrics Strip - OPTIMIZED (clip avoids nested scrollers) */
+.metric-strip{
+flex-direction:column !important;
+padding:3rem 1rem !important;
+gap:2rem !important;
+width:100% !important;
+max-width:100% !important;
+overflow-x:clip !important;
+overflow-y:visible !important;
+box-sizing:border-box !important;
+margin:0 !important;
+margin-left:0 !important;
+margin-right:0 !important;
+left:0 !important;
+right:0 !important;
+position:relative !important;
+}
+
+.metric{
+width:100% !important;
+max-width:100% !important;
+text-align:center !important;
+box-sizing:border-box !important;
+padding:0 1.25rem !important;
+margin:0 !important;
+}
+
+.metric h3{
+font-size:clamp(2.25rem,7vw,3rem) !important;
+line-height:1 !important;
+margin:0 0 0.5rem 0 !important;
+white-space:nowrap !important;
+padding:0 !important;
+}
+
+.metric p{
+font-size:clamp(0.9375rem,2vw,1rem) !important;
+margin:0.5rem 0 0 0 !important;
+padding:0 !important;
+line-height:1.4 !important;
+word-wrap:break-word !important;
+overflow-wrap:break-word !important;
+max-width:100% !important;
+}
+
+/* Projects Showcase - DEVICE OPTIMIZED (clip avoids nested scrollers) */
+.projects-showcase{
+padding:clamp(3rem,8vh,5rem) 1.25rem !important;
+width:100% !important;
+max-width:100vw !important;
+box-sizing:border-box !important;
+overflow-x:clip !important;
+overflow-y:visible !important;
+}
+
+.showcase-title{
+font-size:clamp(1.75rem,5.5vw,2.5rem) !important;
+margin-bottom:2.5rem !important;
+letter-spacing:-0.02em !important;
+width:100% !important;
+max-width:100% !important;
+word-wrap:break-word !important;
+text-align:center !important;
+font-weight:900 !important;
+line-height:1.2 !important;
+}
+
+/* Project Grid - Perfect for all devices */
+.project-grid{
+display:grid !important;
+grid-template-columns:1fr !important;
+gap:1.25rem !important;
+width:100% !important;
+max-width:100% !important;
+padding:0 !important;
+}
+
+@media(min-width:640px){
+.project-grid{
+grid-template-columns:repeat(2,1fr) !important;
+gap:1.5rem !important;
+}
+}
+
+@media(min-width:1024px){
+.project-grid{
+grid-template-columns:repeat(3,1fr) !important;
+gap:2rem !important;
+}
+}
+
+.project-item{
+padding:1.5rem !important;
+border-radius:1.125rem !important;
+width:100% !important;
+max-width:100% !important;
+min-width:0 !important;
+word-wrap:break-word !important;
+overflow-wrap:break-word !important;
+hyphens:auto !important;
+background:white !important;
+box-shadow:0 0.5rem 1.5rem rgba(0,0,0,0.06) !important;
+border:1px solid #e8e8e8 !important;
+margin:0 !important;
+transition:all 250ms ease !important;
+}
+
+.proj-top{
+font-size:0.75rem !important;
+margin-bottom:0.875rem !important;
+display:flex !important;
+flex-wrap:wrap !important;
+gap:0.625rem !important;
+width:100% !important;
+}
+
+.project-item h3{
+font-size:clamp(1.125rem,3.5vw,1.375rem) !important;
+margin-bottom:0.75rem !important;
+width:100% !important;
+max-width:100% !important;
+word-wrap:break-word !important;
+overflow-wrap:break-word !important;
+line-height:1.3 !important;
+font-weight:800 !important;
+}
+
+.project-item p{
+font-size:clamp(0.875rem,2.2vw,0.9375rem) !important;
+line-height:1.65 !important;
+margin-bottom:1rem !important;
+width:100% !important;
+max-width:100% !important;
+word-wrap:break-word !important;
+overflow-wrap:break-word !important;
+color:#555 !important;
+}
+
+.proj-tags{
+width:100% !important;
+max-width:100% !important;
+display:flex !important;
+flex-wrap:wrap !important;
+gap:0.5rem !important;
+}
+
+.proj-tags span{
+font-size:0.6875rem !important;
+padding:0.375rem 0.75rem !important;
+white-space:nowrap !important;
+border-radius:1rem !important;
+background:#f5f5f5 !important;
+font-weight:600 !important;
+}
+
+/* Sectors - OPTIMIZED (clip avoids nested scrollers) */
+.sectors{
+padding:clamp(3rem,8vh,5rem) 1.25rem !important;
+width:100% !important;
+max-width:100vw !important;
+box-sizing:border-box !important;
+overflow-x:clip !important;
+overflow-y:visible !important;
+}
+
+.sectors h2{
+font-size:clamp(1.75rem,5.5vw,2.5rem) !important;
+margin-bottom:2.5rem !important;
+width:100% !important;
+max-width:100% !important;
+word-wrap:break-word !important;
+text-align:center !important;
+font-weight:900 !important;
+line-height:1.2 !important;
+}
+
+.sector-grid{
+display:grid !important;
+grid-template-columns:1fr !important;
+gap:1.25rem !important;
+width:100% !important;
+max-width:100% !important;
+padding:0 !important;
+}
+
+@media(min-width:640px){
+.sector-grid{
+grid-template-columns:repeat(2,1fr) !important;
+gap:1.5rem !important;
+}
+}
+
+@media(min-width:1024px){
+.sector-grid{
+grid-template-columns:repeat(3,1fr) !important;
+gap:2rem !important;
+}
+}
+
+.sector-card{
+padding:1.5rem !important;
+border-radius:1.125rem !important;
+width:100% !important;
+max-width:100% !important;
+min-width:0 !important;
+box-sizing:border-box !important;
+transition:all 250ms ease !important;
+}
+
+.sector-card h3{
+font-size:clamp(1.125rem,3.2vw,1.375rem) !important;
+margin-bottom:0.75rem !important;
+width:100% !important;
+max-width:100% !important;
+word-wrap:break-word !important;
+font-weight:800 !important;
+line-height:1.3 !important;
+}
+
+.sector-card p{
+font-size:clamp(0.875rem,2.2vw,0.9375rem) !important;
+line-height:1.65 !important;
+width:100% !important;
+max-width:100% !important;
+word-wrap:break-word !important;
+color:#555 !important;
+}
+
+/* Story Sections - OPTIMIZED (clip avoids nested scrollers) */
+.story{
+flex-direction:column !important;
+padding:clamp(3rem,7vh,4.5rem) 1.25rem !important;
+gap:2rem !important;
+width:100% !important;
+max-width:100vw !important;
+box-sizing:border-box !important;
+overflow-x:clip !important;
+overflow-y:visible !important;
+}
+
+.story:nth-child(even){
+flex-direction:column !important;
+background:#fafafa !important;
+}
+
+.story-text{
+width:100% !important;
+max-width:100% !important;
+min-width:0 !important;
+box-sizing:border-box !important;
+text-align:center !important;
+}
+
+.story-text h2{
+font-size:clamp(1.625rem,5vw,2.25rem) !important;
+margin-bottom:1rem !important;
+line-height:1.25 !important;
+width:100% !important;
+max-width:100% !important;
+word-wrap:break-word !important;
+font-weight:900 !important;
+}
+
+.story-text p{
+font-size:clamp(0.9375rem,2.2vw,1rem) !important;
+line-height:1.65 !important;
+width:100% !important;
+max-width:42rem !important;
+margin-inline:auto !important;
+word-wrap:break-word !important;
+color:#555 !important;
+}
+
+.story-lines{
+width:100% !important;
+max-width:100% !important;
+gap:1rem !important;
+box-sizing:border-box !important;
+display:flex !important;
+flex-direction:column !important;
+}
+
+.line{
+height:0.375rem !important;
+width:100% !important;
+max-width:100% !important;
+border-radius:0.25rem !important;
+}
+
+/* Execution Timeline - Mobile REDESIGNED */
+@media (max-width:768px){
+
+.execution-section{
+height:auto !important;
+min-height:auto;
+padding:clamp(3rem,7vh,4.5rem) 1.25rem;
+width:100%;
+max-width:100%;
+box-sizing:border-box;
+overflow-x:clip !important;
+overflow-y:visible !important;
+background:#fff !important;
+border:none !important;
+}
+
+.exec-grid{
+display:none !important;
+}
+
+.exec-title{
+font-size:clamp(1.75rem,6vw,2.5rem) !important;
+margin-bottom:2.5rem !important;
+width:100% !important;
+max-width:100% !important;
+word-wrap:break-word !important;
+text-align:center !important;
+color:#111 !important;
+font-weight:900 !important;
+line-height:1.2 !important;
+}
+
+.timeline{
+width:100% !important;
+max-width:100% !important;
+padding:0 !important;
+box-sizing:border-box !important;
+border:none !important;
+}
+
+.progress-line{
+display:none !important;
+}
+
+.steps{
+flex-direction:column !important;
+gap:1.5rem !important;
+width:100% !important;
+max-width:100% !important;
+padding:0 !important;
+border:none !important;
+}
+
+.steps::before{
+display:none !important;
+}
+
+/* Modern Card Design for Mobile */
+.step{
+width:100% !important;
+max-width:100% !important;
+margin:0 !important;
+opacity:1 !important;
+transform:none !important;
+padding:2rem 1.5rem 1.75rem !important;
+background:linear-gradient(135deg, #fff 0%, #fafafa 100%) !important;
+border-radius:1.25rem !important;
+position:relative !important;
+overflow:visible !important;
+box-shadow:0 0.5rem 2rem rgba(0,0,0,0.08) !important;
+border:2px solid #e5e7eb !important;
+box-shadow:0 8px 24px rgba(0,0,0,0.06);
+border:none !important;
+box-sizing:border-box;
+position:relative;
+overflow:hidden;
+}
+
+.step::before{
+content:"";
+position:absolute;
+top:0;
+left:0;
+right:0;
+height:3px;
+background:linear-gradient(90deg,#ff1e1e,#ff4444);
+}
+
+/* Modern Badge - Top Left Corner */
+.circle,.step-circle,.step-badge{
+position:absolute !important;
+top:-0.75rem !important;
+left:1.25rem !important;
+width:3.5rem !important;
+height:3.5rem !important;
+font-size:1.5rem !important;
+border:3px solid #fff !important;
+box-shadow:0 0.5rem 1.5rem rgba(255,30,30,0.35) !important;
+background:linear-gradient(135deg, #ff1e1e 0%, #ff4444 100%) !important;
+color:#fff !important;
+margin:0 !important;
+display:flex !important;
+align-items:center !important;
+justify-content:center !important;
+font-weight:900 !important;
+border-radius:1rem !important;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-weight:800;
+position:relative;
+}
+
+.circle::after{
+content:"";
+position:absolute;
+inset:-8px;
+border-radius:50%;
+border:2px solid rgba(255,30,30,0.15);
+}
+
+.step.active .circle{
+background:linear-gradient(135deg,#ff1e1e 0%,#ff4444 100%);
+box-shadow:0 8px 30px rgba(255,30,30,0.4);
+}
+
+.step h3,.step h4{
+margin-top:1.75rem !important;
+margin-bottom:0.75rem !important;
+font-size:clamp(1.125rem,3.5vw,1.375rem) !important;
+font-weight:800 !important;
+width:100% !important;
+max-width:100% !important;
+word-wrap:break-word !important;
+text-align:left !important;
+color:#111 !important;
+line-height:1.3 !important;
+}
+
+.step p{
+margin-top:0 !important;
+margin-bottom:0 !important;
+font-size:clamp(0.875rem,2.2vw,0.9375rem) !important;
+color:#555 !important;
+width:100% !important;
+max-width:100% !important;
+word-wrap:break-word !important;
+text-align:left !important;
+line-height:1.65 !important;
+}
+
+}
+/* End mobile media query */
+
+/* Closing Section - video layout fix for mobile */
+.closing{
+position:relative !important;
+height:auto !important;
+min-height:55vh !important;
+padding:3rem 1.25rem 4rem !important;
+display:flex !important;
+align-items:center !important;
+justify-content:center !important;
+overflow:hidden !important;
+background:#0b0b0d !important;
+}
+
+/* Hide grid and overlay on mobile */
+.closing-grid{
+display:none !important;
+}
+
+.closing-overlay{
+display:none !important;
+}
+
+/* Video - ensure it fills and displays */
+.closing-video{
+position:absolute !important;
+inset:0 !important;
+width:100% !important;
+height:100% !important;
+object-fit:cover !important;
+z-index:0 !important;
+filter:brightness(45%) !important;
+}
+
+.closing-content{
+position:relative !important;
+z-index:3 !important;
+max-width:100%;
+padding:0 1.25rem;
+margin:0 auto;
+}
+
+.closing-content h2{
+font-size:clamp(1.875rem,6.5vw,2.75rem) !important;
+letter-spacing:-1px;
+margin-bottom:1rem;
+line-height:1.15;
+}
+
+.closing-content p{
+font-size:clamp(0.9375rem,2.2vw,1.0625rem) !important;
+line-height:1.6;
+margin:0;
+max-width:28rem;
+margin-inline:auto;
+}
+
+/* Footer - uses style.css unified mobile footer */
+
+/* Remove all debugging/testing borders */
+section,article,main,header,footer,
+.execution-section,.timeline,.steps,
+.services-hero,.projects-hero{
+border:none !important;
+outline:none !important;
+}
+
+/* Keep only intentional borders */
+.project-item{
+border:1px solid #e8e8e8 !important;
+}
+
+.sector-card{
+border:1px solid #eee !important;
+}
+
+.step{
+border:2px solid #e5e7eb !important;
+}
+
+/* Active state for touch */
+.step:active{
+transform:scale(0.98) !important;
+box-shadow:0 0.25rem 1rem rgba(0,0,0,0.12) !important;
+}
+
+}
+
+/* SMALL PHONES (≤ 480px) - ULTRA OPTIMIZED */
+@media (max-width:480px){
+
+.services-hero{
+padding:5rem 1rem 2.5rem;
+min-height:auto;
+}
+
+.services-hero h1{
+font-size:clamp(1.75rem,8vw,2.5rem) !important;
+}
+
+.services-hero p{
+font-size:clamp(0.875rem,2vw,0.9375rem) !important;
+}
+
+.projects-hero{
+padding:5rem 1rem 2.5rem;
+}
+
+.metric-strip{
+padding:2.5rem 1rem !important;
+gap:1.75rem !important;
+width:100% !important;
+max-width:100% !important;
+overflow-x:clip !important;
+overflow-y:visible !important;
+box-sizing:border-box !important;
+margin:0 !important;
+left:0 !important;
+right:0 !important;
+position:relative !important;
+}
+
+.metric{
+width:100% !important;
+max-width:100% !important;
+box-sizing:border-box !important;
+padding:0 1rem !important;
+margin:0 !important;
+}
+
+.metric h3{
+font-size:clamp(2rem,7vw,2.75rem) !important;
+margin:0 0 0.5rem 0 !important;
+padding:0 !important;
+}
+
+.metric p{
+margin:0.5rem 0 0 0 !important;
+padding:0 !important;
+}
+
+.projects-showcase{
+padding:2.5rem 1rem;
+}
+
+.showcase-title{
+margin-bottom:2rem;
+font-size:clamp(1.625rem,5.5vw,2.25rem) !important;
+}
+
+.project-grid{
+gap:1rem !important;
+}
+
+.project-item{
+padding:1.25rem 1rem;
+}
+
+.project-item h3{
+font-size:clamp(1rem,3.2vw,1.25rem) !important;
+}
+
+.sectors{
+padding:2.5rem 1rem;
+}
+
+.sector-grid{
+gap:1rem !important;
+}
+
+.story{
+padding:2.5rem 1rem;
+gap:1.75rem !important;
+}
+
+.execution-section{
+padding:2.5rem 1rem !important;
+}
+
+.exec-title{
+font-size:clamp(1.625rem,5.5vw,2.25rem) !important;
+margin-bottom:2rem !important;
+}
+
+.steps{
+gap:1.25rem !important;
+padding:0 !important;
+}
+
+.step{
+padding:1.75rem 1.25rem 1.5rem !important;
+}
+
+.circle,.step-circle,.step-badge{
+width:3rem !important;
+height:3rem !important;
+font-size:1.25rem !important;
+top:-0.625rem !important;
+left:1rem !important;
+}
+
+.step h3,.step h4{
+margin-top:1.5rem !important;
+font-size:clamp(1rem,3.2vw,1.25rem) !important;
+}
+
+.step p{
+font-size:clamp(0.8125rem,2vw,0.875rem) !important;
+}
+
+.closing{
+position:relative !important;
+padding:3rem 1.25rem 4rem !important;
+min-height:50vh !important;
+display:flex !important;
+align-items:center !important;
+justify-content:center !important;
+overflow:hidden !important;
+background:#0b0b0d !important;
+}
+
+.closing-grid{
+display:none !important;
+}
+
+.closing-overlay{
+display:none !important;
+}
+
+.closing-video{
+position:absolute !important;
+inset:0 !important;
+width:100% !important;
+height:100% !important;
+object-fit:cover !important;
+z-index:0 !important;
+}
+
+.closing-content{
+position:relative !important;
+z-index:3 !important;
+padding:0 1rem !important;
+margin:0 auto !important;
+}
+
+.closing-content h2{
+font-size:clamp(1.875rem,6.5vw,2.75rem) !important;
+margin-bottom:1rem !important;
+line-height:1.15 !important;
+}
+
+.closing-content p{
+font-size:clamp(0.9375rem,2.2vw,1.0625rem) !important;
+line-height:1.6 !important;
+margin:0 !important;
+max-width:28rem !important;
+margin-inline:auto !important;
+}
+
+/* Footer - uses style.css unified mobile footer */
+}
+
+/* CRITICAL: Prevent overflow - do NOT use max-width on * as it breaks flex/grid */
+html,body{
+overflow-x:hidden !important;
+}
+
+/* Remove any debugging/testing borders */
+section,div,article{
+border:none !important;
+}
+
+/* Only keep intentional borders */
+.project-item,.sector-card,.service-card{
+border:1px solid #eee !important;
+}
+
+/* Allow flex/grid children to shrink properly */
+.project-grid > *,
+.sector-grid > *,
+.story > *,
+.steps > *,
+.metric-strip > *{
+min-width:0 !important;
+box-sizing:border-box !important;
+}
+
+/* Text elements must wrap */
+h1,h2,h3,h4,h5,h6{
+word-wrap:break-word !important;
+overflow-wrap:break-word !important;
+word-break:normal !important;
+white-space:normal !important;
+hyphens:auto !important;
+}
+
+p,span,a,li{
+word-wrap:break-word !important;
+overflow-wrap:break-word !important;
+word-break:normal !important;
+white-space:normal !important;
+}
+
+/* ===== SCROLL PROGRESS BAR ===== */
+.scroll-progress{
+position:fixed;
+top:0;
+left:0;
+width:0%;
+height:3px;
+background:linear-gradient(90deg,#ff1e1e,#ff4444);
+z-index:10001;
+transition:width 0.1s ease;
+}
+@media (max-width:768px){
+.scroll-progress{
+display:none !important;
+visibility:hidden !important;
+height:0 !important;
+min-height:0 !important;
+max-height:0 !important;
+overflow:hidden !important;
+position:absolute !important;
+left:-9999px !important;
+pointer-events:none !important;
+}
+}
+
+/* ===== BACK TO TOP BUTTON ===== */
+.back-to-top{
+position:fixed;
+bottom:30px;
+right:30px;
+width:50px !important;
+height:50px !important;
+min-width:50px !important;
+min-height:50px !important;
+max-width:50px !important;
+max-height:50px !important;
+background:#ff1e1e;
+color:#fff;
+border-radius:50% !important;
+display:flex !important;
+align-items:center !important;
+justify-content:center !important;
+font-size:24px;
+cursor:pointer;
+opacity:0;
+transform:scale(0);
+transition:all 0.3s ease;
+z-index:1000;
+box-shadow:0 4px 12px rgba(255,30,30,0.3);
+border:none;
+flex-shrink:0 !important;
+padding:0 !important;
+}
+
+.back-to-top.visible{
+opacity:1 !important;
+transform:scale(1) !important;
+}
+
+.back-to-top:hover{
+background:#ff4444;
+transform:scale(1.1) !important;
+box-shadow:0 6px 20px rgba(255,30,30,0.4);
+}
+
+/* Mobile specific fix */
+@media (max-width:768px){
+.back-to-top{
+bottom:20px !important;
+right:20px !important;
+width:50px !important;
+height:50px !important;
+}
+
+/* ULTRA AGGRESSIVE MOBILE LAYOUT FIX */
+html,body{
+width:100% !important;
+max-width:100% !important;
+overflow-x:hidden !important;
+margin:0 !important;
+padding:0 !important;
+}
+
+/* Force every section to stay within viewport (clip avoids nested scrollers) */
+section{
+width:100% !important;
+max-width:100% !important;
+margin-left:0 !important;
+margin-right:0 !important;
+padding-left:0 !important;
+padding-right:0 !important;
+overflow-x:clip !important;
+overflow-y:visible !important;
+box-sizing:border-box !important;
+}
+
+section.closing{
+padding:3rem 1.25rem 4rem !important;
+overflow:hidden !important;
+}
+
+/* METRIC STRIP - Mobile optimized 2x2 grid (clip avoids nested scrollers) */
+.metric-strip{
+display:grid !important;
+grid-template-columns:1fr 1fr !important;
+gap:1.5rem !important;
+width:100% !important;
+max-width:100% !important;
+padding:2.5rem 1rem !important;
+margin:0 !important;
+overflow-x:clip !important;
+overflow-y:visible !important;
+box-sizing:border-box !important;
+}
+
+.metric-strip .metric{
+display:flex !important;
+flex-direction:column !important;
+align-items:center !important;
+justify-content:center !important;
+width:100% !important;
+max-width:100% !important;
+margin:0 !important;
+padding:1rem 0.5rem !important;
+box-sizing:border-box !important;
+text-align:center !important;
+}
+
+.metric-strip .metric:last-child{
+margin-bottom:0 !important;
+}
+
+.metric h3{
+margin:0 0 0.5rem 0 !important;
+padding:0 !important;
+font-size:clamp(2.25rem,8vw,3rem) !important;
+}
+
+.metric p{
+margin:0 !important;
+padding:0 !important;
+font-size:clamp(1rem,3vw,1.125rem) !important;
+}
+}
+
+/* ===== ENHANCED ANIMATIONS ===== */
+.btn-red:hover,.btn-white:hover{
+transform:translateY(-2px);
+box-shadow:0 8px 20px rgba(0,0,0,0.15);
+}
+
+.step:hover{
+transform:translateY(-2px);
+box-shadow:0 8px 24px rgba(0,0,0,0.12);
+}
+
+</style>
+</head>
+
+<body class="projects-page">
+
+<!-- Skip to main content (accessibility) -->
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<!-- Back to Top Button -->
+<div class="back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</div>
+
+<!-- NAVBAR -->
+<nav id="navbar" class="light">
+  <a href="index.html" class="nav-brand">
+    <img src="images/EX logo.png" alt="Eximatic Logo">
+    <div class="nav-brand-text">
+      <span class="nav-brand-name">Eximatic</span>
+      <span class="nav-brand-tagline">Technologies</span>
+    </div>
+  </a>
+  <div class="nav-links" id="navLinks">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="solutions.html">Solutions</a>
+    <a href="contact.html">Contact</a>
+    <a href="projects.html">Projects</a>
+  </div>
+  <!-- Animated hamburger menu -->
+  <div class="mobile-menu-toggle" id="menuToggle" onclick="toggleMenu()" aria-label="Toggle navigation menu" role="button" tabindex="0">
+      <span></span>
+      <span></span>
+      <span></span>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="services-hero light-section" id="main-content">
+    <div class="hero-glow"></div>
+    <div class="hero-grid"></div>
+
+    <div class="services-hero-content">
+        <h1>Our Projects</h1>
+        <p>Delivering intelligent infrastructure, automation, surveillance and operational systems across modern enterprises.</p>
+        <div class="hero-cta">
+            <a href="services.html" class="btn-red">Explore Services</a>
+            <a href="contact.html" class="btn-white">Talk to Eximatic</a>
+        </div>
+    </div>
+</section>
+
+<!-- METRICS -->
+<section class="metric-strip">
+<div class="metric">
+<h3>120+</h3>
+<p>Deployments</p>
+</div>
+<div class="metric">
+<h3>40+</h3>
+<p>Organizations</p>
+</div>
+<div class="metric">
+<h3>6</h3>
+<p>Industries</p>
+</div>
+<div class="metric">
+<h3>24×7</h3>
+<p>Monitoring Systems</p>
+</div>
+</section>
+
+<!-- SECTORS -->
+<section class="projects-showcase">
+
+    <h2 class="showcase-title">Selected Project Deployments</h2>
+
+    <div class="project-grid">
+
+        <div class="project-item">
+            <div class="proj-top">
+                <span class="proj-id">PX-01</span>
+                <span class="proj-type">Corporate Office</span>
+            </div>
+            <h3>Smart Office Infrastructure Deployment</h3>
+            <p>Enterprise hardware, biometric access, networking, CCTV and automation integrated into a unified smart environment.</p>
+            <div class="proj-tags">
+                <span>Networking</span>
+                <span>Biometric</span>
+                <span>Automation</span>
+                <span>Surveillance</span>
+            </div>
+        </div>
+
+        <div class="project-item">
+            <div class="proj-top">
+                <span class="proj-id">PX-02</span>
+                <span class="proj-type">Manufacturing Unit</span>
+            </div>
+            <h3>AI Surveillance & Monitoring System</h3>
+            <p>24×7 monitoring dashboards, alert systems and secure camera network across large industrial premises.</p>
+            <div class="proj-tags">
+                <span>AI CCTV</span>
+                <span>Monitoring</span>
+                <span>Dashboards</span>
+            </div>
+        </div>
+
+        <div class="project-item">
+            <div class="proj-top">
+                <span class="proj-id">PX-03</span>
+                <span class="proj-type">Educational Campus</span>
+            </div>
+            <h3>Campus Automation & Energy Management</h3>
+            <p>Smart lighting, attendance, access control and energy optimization for large campus infrastructure.</p>
+            <div class="proj-tags">
+                <span>Energy</span>
+                <span>Access Control</span>
+                <span>Attendance</span>
+            </div>
+        </div>
+
+        <div class="project-item">
+            <div class="proj-top">
+                <span class="proj-id">PX-04</span>
+                <span class="proj-type">Government Organization</span>
+            </div>
+            <h3>Operational Intelligence Platform</h3>
+            <p>Real-time platform monitoring, automated reporting and workflow intelligence for large departments.</p>
+            <div class="proj-tags">
+                <span>Monitoring</span>
+                <span>Reporting</span>
+                <span>Intelligence</span>
+            </div>
+        </div>
+
+        <div class="project-item">
+            <div class="proj-top">
+                <span class="proj-id">PX-05</span>
+                <span class="proj-type">Logistics Warehouse</span>
+            </div>
+            <h3>Warehouse Surveillance & Power Continuity</h3>
+            <p>Integrated surveillance, automation and uninterrupted power architecture for logistics operations.</p>
+            <div class="proj-tags">
+                <span>Power</span>
+                <span>Surveillance</span>
+                <span>Automation</span>
+            </div>
+        </div>
+
+        <div class="project-item">
+            <div class="proj-top">
+                <span class="proj-id">PX-06</span>
+                <span class="proj-type">IT Enterprise</span>
+            </div>
+            <h3>Secure Networking & Central Monitoring</h3>
+            <p>Enterprise-grade secure network setup with centralized monitoring dashboards and device management.</p>
+            <div class="proj-tags">
+                <span>Networking</span>
+                <span>Security</span>
+                <span>Monitoring</span>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- STORY BLOCKS WITH ANIMATED LINES -->
+<section class="story">
+<div class="story-text">
+<h2>Smart Office Infrastructure Deployment</h2>
+<p>Enterprise hardware, biometric access, surveillance and centralized dashboards deployed as a unified smart environment.</p>
+</div>
+<div class="story-lines">
+<div class="line"><span></span></div>
+<div class="line"><span></span></div>
+<div class="line"><span></span></div>
+</div>
+</section>
+
+<section class="story">
+<div class="story-text">
+<h2>AI Surveillance & Monitoring Systems</h2>
+<p>Real-time CCTV visibility, alert systems and secure network architecture for 24×7 safety.</p>
+</div>
+<div class="story-lines">
+<div class="line"><span></span></div>
+<div class="line"><span></span></div>
+<div class="line"><span></span></div>
+</div>
+</section>
+
+<!-- PROCESS -->
+<section class="execution-section" id="execution">
+
+    <div class="exec-grid"></div>
+
+    <h2 class="exec-title">How We Execute Projects</h2>
+
+    <div class="timeline">
+
+        <div class="progress-line">
+            <div class="progress-fill"></div>
+        </div>
+
+        <div class="steps">
+
+            <div class="step" data-step="1">
+                <div class="circle">01</div>
+                <h3>Site Analysis</h3>
+                <p>Workspace evaluation and planning.</p>
+            </div>
+
+            <div class="step" data-step="2">
+                <div class="circle">02</div>
+                <h3>Design Architecture</h3>
+                <p>Smart layout & integration design.</p>
+            </div>
+
+            <div class="step" data-step="3">
+                <div class="circle">03</div>
+                <h3>Deployment</h3>
+                <p>Hardware, surveillance & automation install.</p>
+            </div>
+
+            <div class="step" data-step="4">
+                <div class="circle">04</div>
+                <h3>Monitoring</h3>
+                <p>Dashboards & operational intelligence.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CLOSING -->
+<section class="closing">
+
+    <!-- Background Video -->
+    <video autoplay muted loop playsinline class="closing-video">
+        <source src="images/design 5.mp4" type="video/mp4">
+    </video>
+
+    <!-- Dark overlay -->
+    <div class="closing-overlay"></div>
+
+    <!-- Signature grid -->
+    <div class="closing-grid"></div>
+
+    <!-- Content -->
+    <div class="closing-content">
+        <h2>Engineered. Deployed. Monitored.</h2>
+        <p>Every project is built as a living intelligent ecosystem.</p>
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+    <div class="footer-grid">
+        <div>
+            <h3>Eximatic Technologies</h3>
+            <p>Smart solutions for modern enterprises.</p>
+        </div>
+        <div>
+            <h4>Contact</h4>
+            <p>Office No 113, Street No 1<br>Vikash Nagar, Gurugram</p>
+            <p>manager@eximatic.tech</p>
+            <p>+91-7001731117</p>
+        </div>
+        <div>
+            <h4>Quick Links</h4>
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="solutions.html">Solutions</a>
+            <a href="contact.html">Contact</a>
+            <a href="projects.html">Projects</a>
+        </div>
+    </div>
+    <div class="footer-bottom">© 2025. All rights reserved.</div>
+</footer>
+
+<script>
+// animate bars on scroll
+const lines = document.querySelectorAll('.line');
+
+function reveal(){
+lines.forEach(line=>{
+const rect = line.getBoundingClientRect();
+if(rect.top < window.innerHeight - 100){
+line.classList.add('visible');
+}
+});
+}
+window.addEventListener('scroll',reveal);
+</script>
+
+<script>
+const section = document.querySelector('.execution-section');
+const fill = document.querySelector('.progress-fill');
+const steps = document.querySelectorAll('.step');
+
+if(section && fill && steps.length){
+window.addEventListener('scroll', () => {
+    const rect = section.getBoundingClientRect();
+    const windowH = window.innerHeight;
+
+    const progress = Math.min(
+        Math.max((windowH - rect.top) / (rect.height), 0),
+        1
+    );
+
+    fill.style.width = (progress * 100) + '%';
+
+    steps.forEach((step, i) => {
+        if (progress > (i + 1) * 0.18) {
+            step.classList.add('active');
+        }
+    });
+});
+}
+</script>
+
+<script>
+/* ===== GLOBAL FADE IN ON SCROLL ===== */
+const faders = document.querySelectorAll(
+    'h1, h2, h3, h4, p, .metric, .project-item, .sector-card, .story-text, .step, .showcase-title, .exec-title, .closing-content'
+);
+
+faders.forEach(el => el.classList.add('fade-in'));
+
+const observer = new IntersectionObserver((entries)=>{
+    entries.forEach(entry=>{
+        if(entry.isIntersecting){
+            entry.target.classList.add('show');
+        }
+    });
+},{ threshold: 0.15 });
+
+faders.forEach(el => observer.observe(el));
+</script>
+<script>
+/* ===== DYNAMIC UX ENHANCEMENTS ===== */
+
+// SCROLL PROGRESS BAR - hide on mobile to prevent layout issues
+const progressBar = document.querySelector('.scroll-progress');
+if(progressBar){
+    function updateProgressBar(){
+        if(window.innerWidth <= 768){
+            progressBar.style.display = 'none';
+            return;
+        }
+        progressBar.style.display = '';
+        const windowHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        const scrolled = (window.pageYOffset / windowHeight) * 100;
+        progressBar.style.width = scrolled + '%';
+    }
+    window.addEventListener('scroll', updateProgressBar);
+    window.addEventListener('resize', updateProgressBar);
+    updateProgressBar();
+}
+
+// BACK TO TOP BUTTON
+const backToTop = document.querySelector('.back-to-top');
+if(backToTop){
+    window.addEventListener('scroll', () => {
+        if(window.pageYOffset > 400){
+            backToTop.classList.add('visible');
+        } else {
+            backToTop.classList.remove('visible');
+        }
+    });
+}
+
+// NAVBAR SCROLL EFFECT (match services)
+window.addEventListener('scroll', () => {
+    const nav = document.querySelector('nav');
+    if(nav){
+        const currentScroll = window.pageYOffset;
+        if(currentScroll > 80){
+            nav.style.background = 'rgba(255,255,255,0.98)';
+            nav.style.boxShadow = '0 4px 30px rgba(0,0,0,0.1)';
+        } else {
+            nav.style.background = '';
+            nav.style.boxShadow = '';
+        }
+    }
+});
+
+console.log('%c✨ Eximatic Technologies', 'font-size:20px;font-weight:900;color:#ff1e1e');
+</script>
+
+<script>
+// Toggle Menu Function
+function toggleMenu(){
+const navLinks = document.getElementById('navLinks');
+navLinks.classList.toggle('active');
+}
+
+document.getElementById('menuToggle')?.addEventListener('keydown',function(e){
+if(e.key==='Enter'||e.key===' '){e.preventDefault();toggleMenu();}
+});
+
+// Close mobile menu when clicking on a link
+document.querySelectorAll('.nav-links a').forEach(link=>{
+link.addEventListener('click', ()=>{
+document.getElementById('navLinks').classList.remove('active');
+});
+});
+</script>
+
+<script>
+/* ===== MOBILE OVERFLOW FIX - FORCE CORRECT ON LOAD ===== */
+(function(){
+    // Only run on mobile/tablet
+    if(window.innerWidth <= 768){
+        // Force fix on DOM load
+        document.addEventListener('DOMContentLoaded', function(){
+            fixOverflow();
+        });
+        
+        // Also fix after window load
+        window.addEventListener('load', function(){
+            setTimeout(fixOverflow, 100);
+        });
+        
+        // Fix on resize
+        window.addEventListener('resize', function(){
+            if(window.innerWidth <= 768){
+                fixOverflow();
+            }
+        });
+        
+        function fixOverflow(){
+            document.documentElement.style.cssText = 'width:100%!important;max-width:100%!important;overflow-x:clip!important;overflow-y:auto!important;margin:0!important;padding:0!important';
+            document.body.style.cssText = 'width:100%!important;max-width:100%!important;overflow-x:clip!important;overflow-y:visible!important;margin:0!important;padding:0!important';
+            const metricStrip = document.querySelector('.metric-strip');
+            if(metricStrip){
+                metricStrip.style.cssText = 'display:flex!important;width:100%!important;max-width:100%!important;overflow-x:clip!important;overflow-y:visible!important;margin:0!important;padding:3rem 1rem!important;box-sizing:border-box!important;flex-wrap:wrap!important';
+            }
+            document.querySelectorAll('section').forEach(function(section){
+                section.style.maxWidth = '100%';
+                section.style.overflowX = 'clip';
+                section.style.overflowY = 'visible';
+                section.style.boxSizing = 'border-box';
+            });
+        }
+        
+        // Run immediately if DOM already loaded
+        if(document.readyState === 'complete' || document.readyState === 'interactive'){
+            fixOverflow();
+        }
+    }
+})();
+</script>
+<!-- Scroll Progress Bar (at end - hidden on mobile) -->
+<div class="scroll-progress"></div>
+</body>
+</html>
